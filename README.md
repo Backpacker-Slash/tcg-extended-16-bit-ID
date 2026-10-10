@@ -6,7 +6,7 @@ Modified disassembly of [Pokémon TCG](https://github.com/pret/poketcg) that sup
 
 
 ## Features
-- Increases maximum number of cards from 254 to 511;
+- Increases maximum number of cards from 254 to 1023;
 - Supports card/duelist graphics with 3 palettes (updated with graphics from [the sequel](https://github.com/pret/poketcg2));
 - Ported new attack animations from the sequel;
 - Fixed documented bugs from the original game;
