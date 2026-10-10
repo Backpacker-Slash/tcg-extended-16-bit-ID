@@ -35,7 +35,7 @@ AddDeckToCollection:
 	ld c, a
 	ld a, [hli] ; combined high
 	push hl
-	ld d, a ; d = combined high
+	push af ; preserve combined high nibbles  ;//old ld d, a ; d = combined high
 
 	; Card 1
 	swap a
@@ -47,8 +47,12 @@ AddDeckToCollection:
 	inc [hl]
 
 	; Card 2
-	ld a, d
+	; ld a, d
+	; and $0f
+
+	pop af ; restore combined high nibbles
 	and $0f
+
 	ld h, a
 	ld l, c
 	add hl, de
@@ -356,6 +360,7 @@ HandleDeckBuildScreen:
 
 	xor a
 	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
 	ld [wCurCardTypeFilter], a ; FILTER_GRASS
 	call PrintFilteredCardList
 
@@ -382,8 +387,10 @@ HandleDeckBuildScreen:
 	jr z, .check_down_btn
 	; need to refresh the filtered card list
 	ld [wCurCardTypeFilter], a
-	ld hl, wCardListVisibleOffset
-	ld [hl], 0
+	xor a
+	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
+	ld a, [wCurCardTypeFilter]
 	call PrintFilteredCardList
 	ld a, NUM_FILTERS
 	ld [wCardListNumCursorPositions], a
@@ -405,7 +412,9 @@ HandleDeckBuildScreen:
 ; input was made to jump to the card list
 .jump_to_list
 	ld a, [wNumEntriesInCurFilter]
-	or a
+	ld b, a
+	ld a, [wNumEntriesInCurFilterHigh]
+	or b
 	jr z, .wait_input
 	xor a
 .wait_list_input
@@ -413,15 +422,18 @@ HandleDeckBuildScreen:
 	call InitCardSelectionParams
 	ld a, [wNumEntriesInCurFilter]
 	ld [wNumCardListEntries], a
+	ld a, [wNumEntriesInCurFilterHigh]
+	ld [wNumCardListEntriesHigh], a
+	or a
+	jr nz, .ok ; any nonzero high byte means more than 255 entries
+	ld a, [wNumEntriesInCurFilter]
 	ld hl, wNumVisibleCardListEntries
 	cp [hl]
 	jr nc, .ok
-	; if total number of entries is greater than or equal to
-	; the number of visible entries, then set number of cursor positions
-	; as number of visible entries
+	; list shorter than visible window: limit cursor positions to its size
 	ld [wCardListNumCursorPositions], a
 .ok
-	ld hl, PrintDeckBuildingCardList
+	ld hl, UpdateDeckBuilderFilteredWindow
 	ld d, h
 	ld a, l
 	ld hl, wCardListUpdateFunction
@@ -567,11 +579,15 @@ ConfirmDeckConfiguration:
 	ld a, [hl]
 	ld hl, wCardListVisibleOffsetBackup
 	ld [hl], a
+	ld a, [wCardListVisibleOffsetHigh]
+	ld [wCardListVisibleOffsetBackupHigh], a
 	call HandleDeckConfirmationMenu
 	ld hl, wCardListVisibleOffsetBackup
 	ld a, [hl]
 	ld hl, wCardListVisibleOffset
 	ld [hl], a
+	ld a, [wCardListVisibleOffsetBackupHigh]
+	ld [wCardListVisibleOffsetHigh], a
 	call DrawCardTypeIconsAndPrintCardCounts
 	ld hl, FiltersCardSelectionParams
 	call InitCardSelectionParams
@@ -1014,24 +1030,22 @@ CreateFilteredCardList:
 	push de
 	push hl
 
-; clear wOwnedCardsCountList and wFilteredCardList
+; clear the bounded ID window (80 entries plus a terminator)
 	push af
-	ld a, DECK_SIZE
-	ld hl, wOwnedCardsCountList
-	call ClearMemory_Bank2
 	ld a, (MAX_NUM_CARDS_PER_TYPE + 1) * 2
 	ld hl, wFilteredCardList
 	call ClearMemory_Bank2
 	pop af
 
-; loops all cards in collection
-	ld hl, $0
+; hl = absolute index in the filtered result (16-bit)
+; de = card ID being scanned (1..NUM_CARDS)
+	ld hl, 0
 	ld de, 0
-	ld b, a ; input card type
+	ld b, a ; input card type/filter
 .loop_card_ids
 	inc de
 	call GetCardType
-	jr c, .store_count
+	jp c, .store_count
 	ld c, a
 	ld a, b
 	cp $ff
@@ -1052,29 +1066,68 @@ CreateFilteredCardList:
 .add_card
 	push bc
 	push hl
-	ld bc, wFilteredCardList
-	add hl, hl
-	add hl, bc
-	ld [hl], e
-	inc hl
-	ld [hl], d
 	ld hl, wTempCardCollection
 	add hl, de
 	ld a, [hl]
 	pop hl
 	cp CARD_NOT_OWNED
-	jr z, .next_card ; jump if never seen card
+	jr z, .next_card ; never seen
 	or a
-	jr nz, .ok ; has at least 1
+	jr nz, .store_window_entry
 	call IsCardInAnyDeck
-	jr c, .next_card ; jump if not in any deck
-.ok
-	push hl
-	ld bc, wOwnedCardsCountList
-	add hl, bc
-	ld [hl], a
+	jr c, .next_card ; zero count and not in a saved deck
+
+.store_window_entry
+; Keep the card only if its filtered-list rank is inside the current window.
+; The complete result is still counted even when this rank is outside the window.
+	push hl ; absolute rank
+	ld a, h
+	ld hl, wCardListVisibleOffsetHigh
+	cp [hl]
+	jr c, .outside_window
+	jr nz, .rank_after_offset
+; high bytes equal; compare low bytes
 	pop hl
+	push hl
+	ld a, l
+	ld hl, wCardListVisibleOffset
+	cp [hl]
+	jr c, .outside_window
+.rank_after_offset
+	pop hl ; restore absolute rank
+	push hl ; keep it while computing the local window index
+	ld b, h ; preserve rank high byte before hl becomes an offset pointer
+	ld a, l
+	ld hl, wCardListVisibleOffset
+	sub [hl]
+	ld c, a
+	ld a, b
 	inc hl
+	sbc [hl]
+	ld b, a ; bc = rank - window start
+	ld a, b
+	or a
+	jr nz, .restore_rank
+	ld a, c
+	cp MAX_NUM_CARDS_PER_TYPE
+	jr nc, .restore_rank
+	ld l, c
+	ld h, 0
+	add hl, hl
+	ld bc, wFilteredCardList
+	add hl, bc
+	ld [hl], e
+	inc hl
+	ld [hl], d
+.restore_rank
+	pop hl
+	inc hl ; count this included card
+	jr .next_card
+.outside_window
+	pop hl
+	inc hl ; count this included card even though it is outside the window
+	jr .next_card
+
 .next_card
 	pop bc
 	jr .loop_card_ids
@@ -1082,20 +1135,12 @@ CreateFilteredCardList:
 .store_count
 	ld a, l
 	ld [wNumEntriesInCurFilter], a
-; add terminator bytes in both lists
+	ld a, h
+	ld [wNumEntriesInCurFilterHigh], a
+; make the window terminator explicit (the buffer was cleared above as well)
 	xor a
-	ld c, l
-	ld b, h
-
-	ld hl, wOwnedCardsCountList
-	add hl, bc
-	ld [hl], $ff
-
-	ld hl, wFilteredCardList
-	sla c
-	add hl, bc
-	ld [hli], a ; $00
-	ld [hl], a ; $00
+	ld [wFilteredCardList + 2 * MAX_NUM_CARDS_PER_TYPE], a
+	ld [wFilteredCardList + 2 * MAX_NUM_CARDS_PER_TYPE + 1], a
 	pop hl
 	pop de
 	pop bc
@@ -1218,39 +1263,15 @@ GetCountOfCardInCurDeck:
 	pop hl
 	ret
 
-; returns total count of card ID de
-; looks it up in wFilteredCardList
-; then uses the index to retrieve the count
-; value from wOwnedCardsCountList
+; returns the current available count for the 12-bit card ID in de.
+; wTempCardCollection is the already-prepared count table (collection plus
+; cards that were in the deck/list when this screen was opened).
 GetOwnedCardCount:
 	push hl
-	ld hl, wFilteredCardList
-	ld b, -1
-.loop
-	inc b
-	ld a, [hli]
-	or [hl]
-	jr z, .not_found
-	dec hl
-	push bc
-	ld a, [hli]
-	ld c, a
-	ld b, [hl]
-	inc hl
-	call CompareDEtoBC
-	pop bc
-	jr nz, .loop
-	ld hl, wOwnedCardsCountList
-	push de
-	ld e, b
-	ld d, $00
+	ld hl, wTempCardCollection
 	add hl, de
-	pop de
 	ld a, [hl]
-	pop hl
-	ret
-.not_found
-	xor a
+	and $7f ; strip CARD_NOT_OWNED marker; low bits are the usable deck count
 	pop hl
 	ret
 
@@ -1439,6 +1460,10 @@ PrintCardTypeCounts:
 ; a = card type filter
 PrintFilteredCardList:
 	push af
+	ld a, TRUE
+	ld [wWindowedCardListMode], a
+	pop af
+	push af
 	ld hl, CardTypeFilters
 	ld b, $00
 	ld c, a
@@ -1516,6 +1541,40 @@ PrintTotalCardCount:
 	ld hl, wDefaultText
 	jp ProcessText
 
+; Loads the raw card type represented by the current filter index.
+GetCurrentCardFilterType:
+	ld a, [wCurCardTypeFilter]
+	ld c, a
+	ld b, 0
+	ld hl, CardTypeFilters
+	add hl, bc
+	ld a, [hl]
+	ret
+
+; Rebuild and redraw the deck-builder window after its absolute start moves.
+UpdateDeckBuilderFilteredWindow:
+	push af
+	push bc
+	push hl
+	call GetCurrentCardFilterType
+	call CreateFilteredCardList
+	pop hl
+	pop bc
+	pop af
+	jp PrintDeckBuildingCardList
+
+; Rebuild and redraw the player-card window after its absolute start moves.
+UpdatePlayerCardsFilteredWindow:
+	push af
+	push bc
+	push hl
+	call GetCurrentCardFilterType
+	call CreateFilteredCardList
+	pop hl
+	pop bc
+	pop af
+	jp PrintCardSelectionList
+
 ; prints the name, level and storage count of the cards
 ; that are visible in the list window
 ; in the form:
@@ -1532,7 +1591,9 @@ PrintDeckBuildingCardList:
 	ld c, e
 	dec c
 	ld a, [wCardListVisibleOffset]
-	or a
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	or b
 	jr z, .no_cursor
 	ld a, SYM_CURSOR_U
 	jr .got_cursor_tile
@@ -1543,12 +1604,7 @@ PrintDeckBuildingCardList:
 
 ; iterates by decreasing value in wNumVisibleCardListEntries
 ; by 1 until it reaches 0
-	ld a, [wCardListVisibleOffset]
-	sla a
-	ld c, a
-	ld b, $0
-	ld hl, wFilteredCardList
-	add hl, bc
+	ld hl, wFilteredCardList ; window starts at the absolute offset
 	ld a, [wNumVisibleCardListEntries]
 .loop_filtered_cards
 	push de
@@ -1829,7 +1885,33 @@ HandleDeckCardSelectionList:
 	pop af
 	dec a
 	bit 7, a
-	jr z, .asm_9b8f
+	jp z, .asm_9b8f
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .legacy_up_scroll
+	ld a, [wCardListVisibleOffset]
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	or b
+	jr z, .asm_9b5a
+	ld a, [wCardListVisibleOffset]
+	or a
+	jr z, .windowed_up_borrow
+	dec a
+	ld [wCardListVisibleOffset], a
+	jr .windowed_up_done
+.windowed_up_borrow
+	ld a, $ff
+	ld [wCardListVisibleOffset], a
+	ld a, [wCardListVisibleOffsetHigh]
+	dec a
+	ld [wCardListVisibleOffsetHigh], a
+.windowed_up_done
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
+	xor a
+	jr .asm_9b8f
+.legacy_up_scroll
 	ld a, [wCardListVisibleOffset]
 	or a
 	jr z, .asm_9b5a
@@ -1858,6 +1940,23 @@ HandleDeckCardSelectionList:
 	ld a, [wUnableToScrollDown]
 	or a
 	jr nz, .cannot_scroll_down
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .legacy_down_scroll
+	ld a, [wCardListVisibleOffset]
+	inc a
+	ld [wCardListVisibleOffset], a
+	jr nz, .windowed_down_done
+	ld a, [wCardListVisibleOffsetHigh]
+	inc a
+	ld [wCardListVisibleOffsetHigh], a
+.windowed_down_done
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
+	pop af
+	dec a
+	jr .asm_9b8f
+.legacy_down_scroll
 	ld a, [wCardListVisibleOffset]
 	inc a
 	ld [wCardListVisibleOffset], a
@@ -2002,11 +2101,15 @@ OpenCardPageFromCardList:
 	ld c, a
 	ld b, $0
 	add hl, bc
+	ld a, [wWindowedCardListMode]
+	or a
+	jr nz, .got_card_list_entry
 	ld a, [wCardListVisibleOffset]
 	sla a
 	ld c, a
 	ld b, $0
 	add hl, bc
+.got_card_list_entry
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
@@ -2040,7 +2143,31 @@ OpenCardPageFromCardList:
 	pop af
 	dec a
 	bit 7, a
-	jr z, .reopen_card_page
+	jp z, .reopen_card_page
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .legacy_page_up
+	ld a, [wCardListVisibleOffset]
+	ld c, a
+	ld a, [wCardListVisibleOffsetHigh]
+	or c
+	jp z, .handle_regular_card_page_input
+	ld a, [wCardListVisibleOffset]
+	or a
+	jr z, .windowed_page_up_borrow
+	dec a
+	ld [wCardListVisibleOffset], a
+	xor a
+	jr .reopen_card_page
+.windowed_page_up_borrow
+	ld a, $ff
+	ld [wCardListVisibleOffset], a
+	ld a, [wCardListVisibleOffsetHigh]
+	dec a
+	ld [wCardListVisibleOffsetHigh], a
+	xor a
+	jr .reopen_card_page
+.legacy_page_up
 	ld a, [wCardListVisibleOffset]
 	or a
 	jr z, .handle_regular_card_page_input
@@ -2069,22 +2196,40 @@ OpenCardPageFromCardList:
 	ld c, a
 	ld b, $0
 	add hl, bc
+	ld a, [wWindowedCardListMode]
+	or a
+	jr nz, .check_next_window_entry
 	ld a, [wCardListVisibleOffset]
 	inc a
 	sla a
 	ld c, a
 	ld b, $0
 	add hl, bc
+.check_next_window_entry
 	ld a, [hli]
 	or [hl]
 	jr z, .skip_change_card
 	ld a, [wCardListVisibleOffset]
 	inc a
 	ld [wCardListVisibleOffset], a
+	jr nz, .windowed_page_down_done
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .windowed_page_down_done
+	ld a, [wCardListVisibleOffsetHigh]
+	inc a
+	ld [wCardListVisibleOffsetHigh], a
+.windowed_page_down_done
 	pop af
 	dec a
 .reopen_card_page
 	ld [wCardListCursorPos], a
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .skip_window_page_refresh
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
+.skip_window_page_refresh
 	ld a, [wMenuInputSFX]
 	or a
 	jp z, OpenCardPageFromCardList
@@ -2153,15 +2298,8 @@ TryAddCardToDeck:
 	push de
 	call GetCountOfCardInCurDeck
 	ld b, a
-	ld hl, wOwnedCardsCountList
-	ld d, $0
-	ld a, [wCardListVisibleOffset]
-	ld e, a
-	add hl, de
-	ld a, [wCardListCursorPos]
-	ld e, a
-	add hl, de
-	ld d, [hl]
+	call GetOwnedCardCount
+	ld d, a
 	ld a, b
 	cp d
 	pop de
@@ -2380,6 +2518,8 @@ UpdateConfirmationCardScreen:
 	jp PrintConfirmationCardList
 
 HandleDeckConfirmationMenu:
+	xor a
+	ld [wWindowedCardListMode], a
 ; if deck is empty, just show deck info header with empty card list
 	ld a, [wTotalCardCount]
 	or a
@@ -2391,6 +2531,7 @@ HandleDeckConfirmationMenu:
 
 	xor a
 	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
 .init_params
 	ld hl, .CardSelectionParams
 	call InitCardSelectionParams
@@ -2455,11 +2596,100 @@ HandleDeckConfirmationMenu:
 	db SYM_SPACE ; invisible cursor tile
 	dw NULL ; wCardListHandlerFunction
 
+; Page-scroll helpers for 16-bit filtered-list offsets.
+WindowedCardListPageDown:
+	ld a, [wCardListNumCursorPositions]
+	ld d, a ; page size
+; A list shorter than one page cannot be paged horizontally.
+	ld a, [wNumCardListEntriesHigh]
+	or a
+	jr nz, .has_room
+	ld a, [wNumCardListEntries]
+	cp d
+	jr c, .no_move
+.has_room
+; candidate = current offset + page size (bc = candidate high:low)
+	ld a, [wCardListVisibleOffset]
+	add d
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	adc 0
+	ld c, a
+; maximum legal start = total entries - page size (de = maximum high:low)
+	ld a, [wNumCardListEntries]
+	sub d
+	ld e, a
+	ld a, [wNumCardListEntriesHigh]
+	sbc 0
+	ld d, a
+; choose the smaller of candidate and maximum
+	ld a, c
+	cp d
+	jr c, .use_candidate
+	jr nz, .use_maximum
+	ld a, b
+	cp e
+	jr c, .use_candidate
+.use_maximum
+	ld a, e
+	ld [wCardListVisibleOffset], a
+	ld a, d
+	ld [wCardListVisibleOffsetHigh], a
+	jr .refresh
+.use_candidate
+	ld a, b
+	ld [wCardListVisibleOffset], a
+	ld a, c
+	ld [wCardListVisibleOffsetHigh], a
+	jr .refresh
+.no_move
+	scf
+	ret
+.refresh
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
+	scf
+	ret
+
+WindowedCardListPageUp:
+	ld a, [wCardListNumCursorPositions]
+	ld d, a
+	ld a, [wCardListVisibleOffset]
+	sub d
+	ld c, a ; candidate low
+	ld a, [wCardListVisibleOffsetHigh]
+	sbc 0
+	jr c, .to_start
+	ld [wCardListVisibleOffsetHigh], a
+	ld a, c
+	ld [wCardListVisibleOffset], a
+	jr .refresh
+.to_start
+	xor a
+	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
+.refresh
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
+	scf
+	ret
+
 ; handles pressing left/right in card lists
 ; scrolls up/down a number of wCardListNumCursorPositions
 ; entries respectively
 ; returns carry if scrolling happened
 HandleLeftRightInCardList:
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .legacy_left_right
+	ldh a, [hDPadHeld]
+	cp PAD_RIGHT
+	jp z, WindowedCardListPageDown
+	cp PAD_LEFT
+	jp z, WindowedCardListPageUp
+	or a
+	ret
+.legacy_left_right
 	ld a, [wCardListNumCursorPositions]
 	ld d, a
 	ld a, [wCardListVisibleOffset]
@@ -2509,6 +2739,17 @@ HandleLeftRightInCardList:
 ; by wCardListNumCursorPositions entries respectively
 ; return carry if scrolling happened, otherwise no carry
 HandleSelectUpAndDownInList:
+	ld a, [wWindowedCardListMode]
+	or a
+	jr z, .legacy_select_scroll
+	ldh a, [hDPadHeld]
+	cp PAD_SELECT | PAD_DOWN
+	jp z, WindowedCardListPageDown
+	cp PAD_SELECT | PAD_UP
+	jp z, WindowedCardListPageUp
+	or a
+	ret
+.legacy_select_scroll
 	ld a, [wCardListNumCursorPositions]
 	ld d, a
 	ld a, [wCardListVisibleOffset]
@@ -3036,6 +3277,7 @@ HandlePlayersCardsScreen:
 	call PrintPlayersCardsHeaderInfo
 	xor a
 	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
 	ld [wCurCardTypeFilter], a
 	call PrintFilteredCardSelectionList
 	call EnableLCD
@@ -3050,8 +3292,10 @@ HandlePlayersCardsScreen:
 	cp b
 	jr z, .check_d_down
 	ld [wCurCardTypeFilter], a
-	ld hl, wCardListVisibleOffset
-	ld [hl], $00
+	xor a
+	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
+	ld a, [wCurCardTypeFilter]
 	call PrintFilteredCardSelectionList
 
 	ld hl, hffb0
@@ -3079,7 +3323,9 @@ HandlePlayersCardsScreen:
 
 .jump_to_list
 	ld a, [wNumEntriesInCurFilter]
-	or a
+	ld b, a
+	ld a, [wNumEntriesInCurFilterHigh]
+	or b
 	jr z, .wait_input
 
 	xor a
@@ -3087,12 +3333,17 @@ HandlePlayersCardsScreen:
 	call InitCardSelectionParams
 	ld a, [wNumEntriesInCurFilter]
 	ld [wNumCardListEntries], a
+	ld a, [wNumEntriesInCurFilterHigh]
+	ld [wNumCardListEntriesHigh], a
+	or a
+	jr nz, .asm_a300
+	ld a, [wNumEntriesInCurFilter]
 	ld hl, wNumVisibleCardListEntries
 	cp [hl]
 	jr nc, .asm_a300
 	ld [wCardListNumCursorPositions], a
 .asm_a300
-	ld hl, PrintCardSelectionList
+	ld hl, UpdatePlayerCardsFilteredWindow
 	ld d, h
 	ld a, l
 	ld hl, wCardListUpdateFunction
@@ -3176,6 +3427,10 @@ Data_a396:
 ; a = which card type filter
 PrintFilteredCardSelectionList:
 	push af
+	ld a, TRUE
+	ld [wWindowedCardListMode], a
+	pop af
+	push af
 	ld hl, CardTypeFilters
 	ld b, $00
 	ld c, a
@@ -3250,13 +3505,13 @@ IncrementDeckCardsInTempCollection:
 	ld l, a
 	ld a, [de] ; Card 2 low
 	inc de
-	ld c, a ; c = Card 2 low
-	ld a, [de] ; combined high
+	ld c, a
+	ld a, [de] ; combined high nibble byte
 	inc de
-	push de
-	ld d, a ; d = combined high
+	push de ; preserve the next SRAM pair
+	push af ; preserve both card-ID high nibbles
 
-	; Card 1
+; Card 1 ID = (high nibble of combined byte) : Card 1 low byte.
 	swap a
 	and $0f
 	ld h, a
@@ -3264,14 +3519,14 @@ IncrementDeckCardsInTempCollection:
 	add hl, de
 	inc [hl]
 
-	; Card 2
-	ld a, d
+; Card 2 ID = (low nibble of combined byte) : Card 2 low byte.
+	pop af
 	and $0f
 	ld h, a
 	ld l, c
+	ld de, wTempCardCollection
 	add hl, de
 	inc [hl]
-
 	pop de
 	dec b
 	jr nz, .loop
@@ -3291,7 +3546,9 @@ PrintCardSelectionList:
 	ld b, 19 ; x coord
 	ld c, e
 	ld a, [wCardListVisibleOffset]
-	or a
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	or b
 	jr z, .alternate_cursor_tile
 	ld a, SYM_CURSOR_U
 	jr .got_cursor_tile_1
@@ -3302,12 +3559,7 @@ PrintCardSelectionList:
 
 ; iterates by decreasing value in wNumVisibleCardListEntries
 ; by 1 until it reaches 0
-	ld a, [wCardListVisibleOffset]
-	sla a
-	ld c, a
-	ld b, $0
-	ld hl, wFilteredCardList
-	add hl, bc
+	ld hl, wFilteredCardList ; window starts at the absolute offset
 	ld a, [wNumVisibleCardListEntries]
 .loop_filtered_cards
 	push de

@@ -1,232 +1,369 @@
-; fills wFilteredCardList and wOwnedCardsCountList
-; with cards IDs and counts, respectively,
-; from given Card Set in register a
-; a = CARD_SET_* constant
+; Builds the current Card Album set by scanning every valid card ID.
+; wFilteredCardList and wOwnedCardsCountList hold only the current 80-row window.
+; wNumCardListEntries is a temporary 16-bit total during the scan; at the end it
+; becomes the number of rows visible in the Album (through the last owned card).
+; input: a = CARD_SET_* constant
 CreateCardSetList:
+	ld [wSelectedCardSet], a
 	push af
+	push bc
+	push de
+	push hl
+
+; clear the 80-row ID window and initialize its status sidecar to NOT OWNED
 	ld a, (MAX_NUM_CARDS_PER_TYPE + 1) * 2
 	ld hl, wFilteredCardList
 	call ClearMemory_Bank2
-	ld a, DECK_SIZE
 	ld hl, wOwnedCardsCountList
-	call ClearMemory_Bank2
+	ld b, MAX_NUM_CARDS_PER_TYPE + 1
+	ld a, CARD_NOT_OWNED
+.loop_clear_status
+	ld [hli], a
+	dec b
+	jr nz, .loop_clear_status
+
+; reset 16-bit counters and set the first-owned sentinel to $ffff
 	xor a
+	ld [wNumCardListEntries], a
+	ld [wNumCardListEntriesHigh], a
+	ld [wNumEntriesInCurFilter], a
+	ld [wNumEntriesInCurFilterHigh], a
+	ld [wNumOwnedCardsInSet], a
+	ld [wNumOwnedCardsInSetHigh], a
 	ld [wOwnedPhantomCardFlags], a
+	ld a, $ff
+	ld [wFirstOwnedCardIndex], a
+	ld [wFirstOwnedCardIndexHigh], a
+
+	pop hl
+	pop de
+	pop bc
 	pop af
 
-	ld hl, 0
+; Scan all IDs in ascending order. Card data loading sets carry at NUM_CARDS+1.
 	ld de, 0
-	ld b, a
 .loop_all_cards
 	inc de
 	call LoadCardDataToBuffer1_FromCardID
 	jr c, .done_pkmn_cards
 	ld a, [wLoadedCard1Set]
-	and $f0 ; set 1
+	and $f0
 	swap a
+	ld b, a
+	ld a, [wSelectedCardSet]
 	cp b
-	jr nz, .loop_all_cards
+	jp nz, .loop_all_cards
 
-; it's same set as input
-	cp16 VENUSAUR_LV64
-	jp z, .SetVenusaurLv64OwnedFlag
-	cp16 MEW_LV15
-	jp z, .SetMewLv15OwnedFlag
+; These two phantom cards are appended at the end, as in the original game.
+	ld a, d
+	cp HIGH(VENUSAUR_LV64)
+	jr nz, .check_mew
+	ld a, e
+	cp LOW(VENUSAUR_LV64)
+	jr z, .check_venusaur_owned
+.check_mew
+	ld a, d
+	cp HIGH(MEW_LV15)
+	jr nz, .regular_set_card
+	ld a, e
+	cp LOW(MEW_LV15)
+	jr z, .check_mew_owned
 
-	push bc
-	push hl
-	ld bc, wFilteredCardList
-	add hl, hl
-	add hl, bc
-	ld [hl], e ; card ID
-	inc hl     ;
-	ld [hl], d ;
+.regular_set_card
+	call AppendCardSetEntry
+	jp .loop_all_cards
 
-	ld hl, wTempCardCollection
-	add hl, de
+.check_venusaur_owned
+	push de
+	ld hl, wTempCardCollection + VENUSAUR_LV64
 	ld a, [hl]
-	pop hl
-	push hl
-	ld bc, wOwnedCardsCountList
-	add hl, bc
-	ld [hl], a ; card count in collection
-	pop hl
+	cp CARD_NOT_OWNED
+	jr z, .venusaur_done
+	ld a, [wOwnedPhantomCardFlags]
+	or (1 << VENUSAUR_OWNED_PHANTOM_F)
+	ld [wOwnedPhantomCardFlags], a
+.venusaur_done
+	pop de
+	jp .loop_all_cards
 
-	inc l
-	pop bc
-	jr .loop_all_cards
+.check_mew_owned
+	push de
+	ld hl, wTempCardCollection + MEW_LV15
+	ld a, [hl]
+	cp CARD_NOT_OWNED
+	jr z, .mew_done
+	ld a, [wOwnedPhantomCardFlags]
+	or (1 << MEW_OWNED_PHANTOM_F)
+	ld [wOwnedPhantomCardFlags], a
+.mew_done
+	pop de
+	jp .loop_all_cards
 
 .done_pkmn_cards
-; for the energy cards, put all basic energy cards in Colosseum
-; and Double Colorless energy in Mystery
-	ld a, b
+; Basic Energy cards belong to Colosseum; Double Colorless belongs to Mystery.
+	ld a, [wSelectedCardSet]
 	cp CARD_SET_MYSTERY
-	jr z, .mystery
+	jr z, .mystery_energy
 	or a
-	jr nz, .skip_energy_cards
-
-; colosseum
-; places all basic energy cards in wFilteredCardList
+	jr nz, .append_phantoms
 	ld de, 0
 .loop_basic_energy_cards
 	inc e
-	cp16 DOUBLE_COLORLESS_ENERGY
-	jr z, .skip_energy_cards
-	push bc
-	push hl
-	ld bc, wFilteredCardList
-	add hl, hl
-	add hl, bc
-	ld [hl], e
-	inc hl
-	ld [hl], d
-	ld hl, wTempCardCollection
-	add hl, de
-	ld a, [hl]
-	pop hl
-	push hl
-	ld bc, wOwnedCardsCountList
-	add hl, bc
-	ld [hl], a
-	pop hl
-	inc l
-	pop bc
+	ld a, e
+	cp LOW(DOUBLE_COLORLESS_ENERGY)
+	jr z, .append_phantoms
+	call AppendCardSetEntry
 	jr .loop_basic_energy_cards
 
-.mystery
-; places double colorless energy card in wFilteredCardList
-	ld de, 0
-.loop_find_double_colorless
-	inc e
-	cp16 BULBASAUR
-	jr z, .skip_energy_cards
-	cp16 DOUBLE_COLORLESS_ENERGY
-	jr nz, .loop_find_double_colorless
-	; double colorless energy
-	push bc
-	push hl
-	ld bc, wFilteredCardList
-	add hl, hl
-	add hl, bc
-	ld [hl], e
-	inc hl
-	ld [hl], d
-	ld hl, wTempCardCollection
-	add hl, de
-	ld a, [hl]
-	pop hl
-	push hl
-	ld bc, wOwnedCardsCountList
-	add hl, bc
-	ld [hl], a
-	pop hl
-	inc l
-	pop bc
-	jr .loop_find_double_colorless
+.mystery_energy
+	ld de, DOUBLE_COLORLESS_ENERGY
+	call AppendCardSetEntry
 
-.skip_energy_cards
+.append_phantoms
 	ld a, [wOwnedPhantomCardFlags]
 	bit VENUSAUR_OWNED_PHANTOM_F, a
-	jr z, .check_mew
-	call .PlaceVenusaurLv64InList
-.check_mew
+	jr z, .check_append_mew
+	ld de, VENUSAUR_LV64
+	call AppendCardSetEntry
+.check_append_mew
+	ld a, [wOwnedPhantomCardFlags]
 	bit MEW_OWNED_PHANTOM_F, a
-	jr z, .find_first_owned
-	call .PlaceMewLv15InList
+	jr z, .finish
+	ld de, MEW_LV15
+	call AppendCardSetEntry
 
-.find_first_owned
-	dec l
-	ld c, l
-	ld b, h
-.loop_owned_cards
-	ld hl, wOwnedCardsCountList
-	add hl, bc
-	ld a, [hl]
-	cp CARD_NOT_OWNED
-	jr nz, .found_owned
-	dec c
-	jr .loop_owned_cards
-
-.found_owned
-	inc c
-	ld a, c
-	ld [wNumEntriesInCurFilter], a
-	ld hl, wOwnedCardsCountList
-	add hl, bc
-	ld [hl], $ff ; terminator byte
-
-	xor a
-	ld hl, wFilteredCardList
-	sla c
-	add hl, bc
-	ld [hli], a
-	ld [hl], a
+.finish
+; Save the true set size separately for the X/Y header.
+	ld a, [wNumCardListEntries]
+	ld [wNumCardsInSet], a
+	ld a, [wNumCardListEntriesHigh]
+	ld [wNumCardsInSetHigh], a
+	call TrimCardSetWindow
+; Navigation length is the prefix ending at the last owned card.
+	ld a, [wNumEntriesInCurFilter]
+	ld [wNumCardListEntries], a
+	ld a, [wNumEntriesInCurFilterHigh]
+	ld [wNumCardListEntriesHigh], a
 	ret
 
-.SetMewLv15OwnedFlag
-	ld a, (1 << MEW_OWNED_PHANTOM_F)
-;	fallthrough
-
-.SetPhantomOwnedFlag
-	push hl
+; Appends the card ID in DE to the logical set list. The row goes into WRAM
+; only if its absolute rank is in [offset, offset + 80). Counts every row even
+; when it is outside the current window. wTempCardCollection has raw status/counts.
+AppendCardSetEntry:
+	push af
 	push bc
-	ld b, a
+	push de
+	push hl
 	ld hl, wTempCardCollection
 	add hl, de
 	ld a, [hl]
-	cp CARD_NOT_OWNED
-	jr z, .skip_set_flag
-	ld a, [wOwnedPhantomCardFlags]
-	or b
-	ld [wOwnedPhantomCardFlags], a
-.skip_set_flag
-	pop bc
-	pop hl
-	jp .loop_all_cards
+	push af ; raw owned/count status
 
-.SetVenusaurLv64OwnedFlag
-	ld a, (1 << VENUSAUR_OWNED_PHANTOM_F)
-	jr .SetPhantomOwnedFlag
+; local rank = total rank - window start, using 16-bit subtraction.
+	ld a, [wNumCardListEntries]
+	ld b, a
+	ld a, [wCardListVisibleOffset]
+	ld c, a
+	ld a, b
+	sub c
+	ld l, a
+	ld a, [wNumCardListEntriesHigh]
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	ld c, a
+	ld a, b
+	sbc c
+	ld h, a
+	ld a, h
+	or a
+	jr nz, .count_entry
+	ld a, l
+	cp MAX_NUM_CARDS_PER_TYPE
+	jr nc, .count_entry
 
-.PlaceVenusaurLv64InList
-	push af
-	push hl
-	ld de, VENUSAUR_LV64
-;	fallthrough
-
-; places card in register de directly in the list
-.PlaceCardInList
-	ld bc, wFilteredCardList
-	add hl, hl
+; Store ID and status together at the window-local row.
+	ld a, l
+	push af ; preserve local row
+	add a
+	ld c, a
+	ld b, 0
+	ld hl, wFilteredCardList
 	add hl, bc
 	ld [hl], e
 	inc hl
 	ld [hl], d
-	pop hl
-	push hl
-	ld bc, wOwnedCardsCountList
+	pop af
+	ld c, a
+	ld b, 0
+	ld hl, wOwnedCardsCountList
 	add hl, bc
-	ld [hl], $01
+	push hl ; sidecar cell
+	ld hl, wTempCardCollection
+	add hl, de
+	ld a, [hl]
 	pop hl
-	inc l
+	ld [hl], a
+
+.count_entry
+	pop af ; raw owned/count status
+	push af
+; total entries += 1
+	ld hl, wNumCardListEntries
+	inc [hl]
+	jr nz, .total_incremented
+	inc hl
+	inc [hl]
+.total_incremented
+	pop af
+	cp CARD_NOT_OWNED
+	jr z, .done_entry
+
+; Count this owned card (sets count cards, not duplicate copies).
+	ld hl, wNumOwnedCardsInSet
+	inc [hl]
+	jr nz, .owned_total_incremented
+	inc hl
+	inc [hl]
+.owned_total_incremented
+
+; First owned row is an absolute 16-bit rank. $ffff is the unset sentinel.
+	ld a, [wFirstOwnedCardIndex]
+	cp $ff
+	jr nz, .set_visible_end
+	ld a, [wFirstOwnedCardIndexHigh]
+	cp $ff
+	jr nz, .set_visible_end
+; When this was the first owned card, total was already incremented;
+; its rank is total - 1.
+	ld a, [wNumCardListEntries]
+	or a
+	jr nz, .first_owned_low_nonzero
+	ld a, $ff
+	ld [wFirstOwnedCardIndex], a
+	ld a, [wNumCardListEntriesHigh]
+	dec a
+	ld [wFirstOwnedCardIndexHigh], a
+	jr .set_visible_end
+.first_owned_low_nonzero
+	dec a
+	ld [wFirstOwnedCardIndex], a
+	ld a, [wNumCardListEntriesHigh]
+	ld [wFirstOwnedCardIndexHigh], a
+.set_visible_end
+; the displayable list ends immediately after the last owned row
+	ld a, [wNumCardListEntries]
+	ld [wNumEntriesInCurFilter], a
+	ld a, [wNumCardListEntriesHigh]
+	ld [wNumEntriesInCurFilterHigh], a
+.done_entry
+	pop hl
+	pop de
+	pop bc
 	pop af
 	ret
 
-.PlaceMewLv15InList
+; Clear rows beyond the last owned card, and the whole window if it is past
+; that point. This preserves the original Card Album's trailing-empty behavior.
+TrimCardSetWindow:
 	push af
+	push bc
+	push de
 	push hl
-	ld de, MEW_LV15
-	jr .PlaceCardInList
+; If offset >= visible list length, there are no rows to show in this window.
+	ld a, [wNumEntriesInCurFilterHigh]
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	cp b
+	jr c, .compute_tail
+	jr nz, .clear_all
+	ld a, [wNumEntriesInCurFilter]
+	ld b, a
+	ld a, [wCardListVisibleOffset]
+	cp b
+	jr c, .compute_tail
+	jr .clear_all
+.compute_tail
+; HL = visible length - absolute offset
+	ld a, [wNumEntriesInCurFilter]
+	ld b, a
+	ld a, [wCardListVisibleOffset]
+	ld c, a
+	ld a, b
+	sub c
+	ld l, a
+	ld a, [wNumEntriesInCurFilterHigh]
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	ld c, a
+	ld a, b
+	sbc c
+	ld h, a
+	ld a, h
+	or a
+	jr nz, .done_trim ; at least 256 rows remain; current window is full
+	ld a, l
+	cp MAX_NUM_CARDS_PER_TYPE
+	jr nc, .done_trim
+; Clear IDs starting at local row L through row 80.
+	ld c, l
+	ld a, MAX_NUM_CARDS_PER_TYPE + 1
+	sub c
+	add a ; bytes to clear in ID list (2 bytes per row)
+	push af
+	ld a, c
+	add a
+	ld e, a
+	ld d, 0
+	ld hl, wFilteredCardList
+	add hl, de
+	pop af
+	call ClearMemory_Bank2
+; Mark corresponding sidecar tail as not-owned.
+	ld a, c
+	ld b, 0
+	ld hl, wOwnedCardsCountList
+	add hl, bc
+	ld a, MAX_NUM_CARDS_PER_TYPE + 1
+	sub c
+	ld b, a
+	ld a, CARD_NOT_OWNED
+.loop_clear_tail_status
+	ld [hli], a
+	dec b
+	jr nz, .loop_clear_tail_status
+	jr .done_trim
+.clear_all
+	ld a, (MAX_NUM_CARDS_PER_TYPE + 1) * 2
+	ld hl, wFilteredCardList
+	call ClearMemory_Bank2
+	ld hl, wOwnedCardsCountList
+	ld b, MAX_NUM_CARDS_PER_TYPE + 1
+	ld a, CARD_NOT_OWNED
+.loop_clear_all_status
+	ld [hli], a
+	dec b
+	jr nz, .loop_clear_all_status
+.done_trim
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
 
 ; a = CARD_SET_* constant
 CreateCardSetListAndInitListCoords:
 	push af
 	ld hl, sCardCollection
 	ld de, wTempCardCollection
-	ld bc, CARD_COLLECTION_SIZE - 2
+	ld bc, CARD_COLLECTION_SIZE
 	call EnableSRAM
 	call CopyNBytesFromHLToDE_Long
 	call DisableSRAM
+	pop af
+	push af
+	xor a
+	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
 	pop af
 
 	push af
@@ -291,7 +428,9 @@ PrintCardSetListEntries:
 
 ; draw up cursor on top right
 	ld a, [wCardListVisibleOffset]
-	or a
+	ld b, a
+	ld a, [wCardListVisibleOffsetHigh]
+	or b
 	jr z, .no_up_cursor
 	ld a, SYM_CURSOR_U
 	jr .got_up_cursor_tile
@@ -300,9 +439,7 @@ PrintCardSetListEntries:
 .got_up_cursor_tile
 	call WriteByteToBGMap0
 
-	ld a, [wCardListVisibleOffset]
-	ld l, a
-	ld h, $00
+	ld hl, 0 ; wFilteredCardList starts at absolute offset
 	ld a, [wNumVisibleCardListEntries]
 .loop_visible_cards
 	push de
@@ -412,32 +549,23 @@ PrintCardSetListEntries:
 	jr z, .phantom_card
 
 	ld a, [wNumVisibleCardListEntries]
-	sub b
-	ld hl, wCardListVisibleOffset
-	add [hl]
-	inc a
-	call CalculateOnesAndTensDigits
-	ld hl, wDecimalDigitsSymbols
-	ld a, [hli]
-	ld b, a
-	ld a, [hl]
-	or a
-	jr nz, .got_index
-	ld a, SYM_0
-.got_index
-	ld hl, wCurDeckName + 2 ; skip prefix
-	ld [hl], TX_SYMBOL
-	inc hl
-	ld [hli], a ; tens place
-	ld [hl], TX_SYMBOL
-	inc hl
-	ld a, b
-	ld [hli], a ; ones place
-	ld [hl], TX_SYMBOL
-	inc hl
+	sub b ; zero-based row within this visible page
+	ld c, a
+	ld a, [wCardListVisibleOffset]
+	add c
+	ld l, a
+	ld a, [wCardListVisibleOffsetHigh]
+	adc 0
+	ld h, a
+	inc hl ; display indices are one-based
+	call CalculateOnesAndTensDigits_Long
+	ld hl, wDecimalDigitsSymbols + 1 ; skip ten-thousands digit
+	ld de, wCurDeckName + 2 ; skip prefix
+	call AppendFourDigitSymbols
 	xor a ; SYM_SPACE
-	ld [hli], a
-	ld [hl], a
+	ld [de], a
+	inc de
+	ld [de], a
 	ld hl, wCurDeckName
 	pop de
 	pop bc
@@ -494,9 +622,6 @@ PrintCardSetListEntries:
 ; handles opening card page, and inputs when inside Card Album
 HandleCardAlbumCardPage:
 	ld a, [wCardListCursorPos]
-	ld b, a
-	ld a, [wCardListVisibleOffset]
-	add b
 	ld c, a
 	ld b, $00
 	ld hl, wOwnedCardsCountList
@@ -509,7 +634,10 @@ HandleCardAlbumCardPage:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	sla c
+	ld a, [wCardListCursorPos]
+	sla a
+	ld c, a
+	ld b, $00
 	add hl, bc
 	ld e, [hl]
 	inc hl
@@ -537,12 +665,21 @@ HandleCardAlbumCardPage:
 	push af
 	ld a, SFX_CURSOR
 	ld [wMenuInputSFX], a
+	ld a, [wCardListVisibleOffset]
+	ld b, a
 	ld a, [wCardListCursorPos]
-	ld hl, wCardListVisibleOffset
-	add [hl]
-	ld hl, wFirstOwnedCardIndex
-	cp [hl]
-	jr z, .open_card_page_pop_af_2
+	add b
+	ld l, a ; current absolute position low
+	ld a, [wCardListVisibleOffsetHigh]
+	adc 0
+	ld h, a ; current absolute position high
+	ld a, [wFirstOwnedCardIndex]
+	cp l
+	jr nz, .allow_page_up_check_high
+	ld a, [wFirstOwnedCardIndexHigh]
+	cp h
+	jp z, .open_card_page_pop_af_2
+.allow_page_up_check_high
 	pop af
 
 	dec a
@@ -550,9 +687,23 @@ HandleCardAlbumCardPage:
 	jr z, .got_new_pos
 	ld a, [wCardListVisibleOffset]
 	or a
-	jr z, .open_card_page
+	jr z, .page_up_borrow
 	dec a
 	ld [wCardListVisibleOffset], a
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
+	xor a
+	jr .got_new_pos
+.page_up_borrow
+	ld a, [wCardListVisibleOffsetHigh]
+	or a
+	jr z, .open_card_page
+	dec a
+	ld [wCardListVisibleOffsetHigh], a
+	ld a, $ff
+	ld [wCardListVisibleOffset], a
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
 	xor a
 	jr .got_new_pos
 
@@ -578,18 +729,21 @@ HandleCardAlbumCardPage:
 	ld c, a
 	ld b, $00
 	add hl, bc
-	ld a, [wCardListVisibleOffset]
-	inc a
-	sla a
-	ld c, a
-	ld b, $00
-	add hl, bc
+	inc hl
+	inc hl
 	ld a, [hli]
 	or [hl]
 	jr z, .open_card_page_pop_af_1
 	ld a, [wCardListVisibleOffset]
 	inc a
 	ld [wCardListVisibleOffset], a
+	jr nz, .page_down_offset_ready
+	ld a, [wCardListVisibleOffsetHigh]
+	inc a
+	ld [wCardListVisibleOffsetHigh], a
+.page_down_offset_ready
+	ld hl, wCardListUpdateFunction
+	call CallIndirect
 	pop af
 	dec a
 .got_new_pos
@@ -633,20 +787,46 @@ HandleCardAlbumCardPage:
 	ret
 
 GetFirstOwnedCardIndex:
-	ld hl, wOwnedCardsCountList
-	ld b, 0
-.loop_cards
+; wFirstOwnedCardIndex is filled during the full 16-bit set scan.
+	ret
+
+; Appends four already-converted decimal digit symbols from HL to DE,
+; writing TX_SYMBOL before each digit. DE is returned at the next output byte.
+AppendFourDigitSymbols:
+	push bc
+	ld b, 4
+.loop
+	ld a, TX_SYMBOL
+	ld [de], a
+	inc de
 	ld a, [hli]
-	cp CARD_NOT_OWNED
-	jr nz, .owned
-	inc b
-	jr .loop_cards
-.owned
-	ld a, b
-	ld [wFirstOwnedCardIndex], a
+	ld [de], a
+	inc de
+	dec b
+	jr nz, .loop
+	pop bc
+	ret
+
+; Rebuild the current Card Album window when the user scrolls.
+UpdateCardAlbumListWindow:
+	push af
+	push bc
+	push de
+	push hl
+	ld a, [wSelectedCardSet]
+	call CreateCardSetList
+	call PrintCardSetListEntries
+	pop hl
+	pop de
+	pop bc
+	pop af
 	ret
 
 CardAlbum:
+	xor a
+	ld [wWindowedCardListMode], a
+	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
 	ld a, $01
 	ldh [hffb4], a
 
@@ -675,13 +855,18 @@ CardAlbum:
 	ld a, c
 	ld [wSelectedCardSet], a
 	call CreateCardSetListAndInitListCoords
+	ld a, TRUE
+	ld [wWindowedCardListMode], a
 	call .PrintCardCount
 	xor a
 	ld [wCardListVisibleOffset], a
+	ld [wCardListVisibleOffsetHigh], a
 	call PrintCardSetListEntries
 	call EnableLCD
 	ld a, [wNumEntriesInCurFilter]
-	or a
+	ld b, a
+	ld a, [wNumEntriesInCurFilterHigh]
+	or b
 	jr nz, .asm_a968
 
 .loop_input_2
@@ -699,13 +884,16 @@ CardAlbum:
 	xor a
 	ld hl, .BoosterPackCardsMenuParams
 	call InitCardSelectionParams
+	ld a, [wNumEntriesInCurFilterHigh]
+	or a
+	jr nz, .asm_a97e
 	ld a, [wNumEntriesInCurFilter]
 	ld hl, wNumVisibleCardListEntries
 	cp [hl]
 	jr nc, .asm_a97e
 	ld [wCardListNumCursorPositions], a
 .asm_a97e
-	ld hl, PrintCardSetListEntries
+	ld hl, UpdateCardAlbumListWindow
 	ld d, h
 	ld a, l
 	ld hl, wCardListUpdateFunction
@@ -790,18 +978,10 @@ CardAlbum:
 	dw NULL ; wCardListHandlerFunction
 
 .GetNumCardEntries
-	ld hl, wFilteredCardList
-	ld b, 0
-.loop_card_ids
-	ld a, [hli]
-	or [hl]
-	inc hl
-	jr z, .asm_aa1f
-	inc b
-	jr .loop_card_ids
-.asm_aa1f
-	ld a, b
+	ld a, [wNumEntriesInCurFilter]
 	ld [wNumCardListEntries], a
+	ld a, [wNumEntriesInCurFilterHigh]
+	ld [wNumCardListEntriesHigh], a
 	ret
 
 ; prints "X/Y" where X is number of cards owned in the set
@@ -862,25 +1042,41 @@ CardAlbum:
 	ld e, NUM_CARDS_COLOSSEUM
 
 .has_card_set_count
-	push de
+	push de ; legacy fixed set count, no longer used for the denominator
 	call ProcessTextFromID
 	call .CountOwnedCardsInSet
-	lb de, 14, 1
+	pop de
+	lb de, 10, 1
 	call InitTextPrinting
 
+; numerator: all owned cards in this set (16-bit)
 	ld a, [wNumOwnedCardsInSet]
-	ld hl, wDefaultText
-	call ConvertToNumericalDigits
-	call CalculateOnesAndTensDigits
-	ld [hl], TX_SYMBOL
-	inc hl
-	ld [hl], SYM_SLASH
-	inc hl
-	pop de
+	ld l, a
+	ld a, [wNumOwnedCardsInSetHigh]
+	ld h, a
+	call CalculateOnesAndTensDigits_Long
+	ld hl, wDecimalDigitsSymbols + 1
+	ld de, wDefaultText
+	call AppendFourDigitSymbols
+	ld a, TX_SYMBOL
+	ld [de], a
+	inc de
+	ld a, SYM_SLASH
+	ld [de], a
+	inc de
 
-	ld a, e
-	call ConvertToNumericalDigits
-	ld [hl], TX_END
+; denominator: all card IDs assigned to this set (16-bit)
+	push de ; preserve the current destination in wDefaultText
+	ld a, [wNumCardsInSet]
+	ld l, a
+	ld a, [wNumCardsInSetHigh]
+	ld h, a
+	call CalculateOnesAndTensDigits_Long
+	ld hl, wDecimalDigitsSymbols + 1
+	pop de
+	call AppendFourDigitSymbols
+	ld a, TX_END
+	ld [de], a
 	ld hl, wDefaultText
 	call ProcessText
 	lb de, 0, 2
@@ -891,19 +1087,7 @@ CardAlbum:
 ; counts number of cards in wOwnedCardsCountList
 ; that is not set as CARD_NOT_OWNED
 .CountOwnedCardsInSet
-	ld hl, wOwnedCardsCountList
-	ld b, 0
-.loop_card_count
-	ld a, [hli]
-	cp $ff
-	jr z, .got_num_owned_cards
-	cp CARD_NOT_OWNED
-	jr z, .loop_card_count
-	inc b
-	jr .loop_card_count
-.got_num_owned_cards
-	ld a, b
-	ld [wNumOwnedCardsInSet], a
+; wNumOwnedCardsInSet was counted across the full set by AppendCardSetEntry.
 	ret
 
 .ShowBoosterPackMenu:

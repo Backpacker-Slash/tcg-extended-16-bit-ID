@@ -113,6 +113,23 @@ InitSaveData:
 	or c
 	jr nz, .loop_collection
 
+
+; TEMP TEST CHEAT — own 99 copies of every card ID
+; Covers IDs $001 through $3FF (1 through 1023).
+; Remove this block after testing.
+
+	ld hl, sCardCollection + 1
+	ld bc, CARD_COLLECTION_SIZE - 1
+
+.max_all_cards
+	ld a, 4;MAX_AMOUNT_OF_CARD
+	ld [hli], a
+	dec bc
+	ld a, b
+	or c
+	jr nz, .max_all_cards
+
+
 	ld hl, sCurrentDuel
 	xor a
 	ld [hli], a

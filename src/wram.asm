@@ -1404,7 +1404,9 @@ wDamageAnimCardID:: ; ce84
 ; first index in the current card list that is visible
 ; used to calculate which element to get based
 ; on the cursor position
-wCardListVisibleOffset:: ; cea1
+wCardListVisibleOffset:: ; low byte of absolute filtered-list offset
+	ds $1
+wCardListVisibleOffsetHigh:: ; high byte (used by windowed filtered lists)
 	ds $1
 
 ; it's used when the player enters check menu, and its sub-menus.
@@ -1454,7 +1456,11 @@ wCardListHandlerFunction:: ; ceac
 
 ; number of cards that are listed
 ; in the current filtered list
-wNumEntriesInCurFilter:: ; ceae
+wNumEntriesInCurFilter:: ; low byte of filtered-list total
+	ds $1
+wNumEntriesInCurFilterHigh:: ; high byte of filtered-list total
+	ds $1
+wWindowedCardListMode:: ; TRUE while wFilteredCardList is a moving window
 	ds $1
 
 wCheckMenuCursorXPosition:: ; ceaf
@@ -1550,7 +1556,9 @@ wced6:: ; ced6
 wced7:: ; ced7
 	ds $1
 
-wCardListVisibleOffsetBackup:: ; ced8
+wCardListVisibleOffsetBackup:: ; low byte
+	ds $1
+wCardListVisibleOffsetBackupHigh:: ; high byte
 	ds $1
 
 ; stores how many different cards there are in a deck
@@ -1567,16 +1575,20 @@ wCurDeckCards:: ; cf17
 
 wCurDeckCardsEnd::
 
-; stores the count number of cards owned
-; can be 0 in the case that a card is not available
-; i.e. already inside a built deck
+UNION
+
+; Card Album ownership/status sidecar for the current 80-row window.
+; Values are counts or CARD_NOT_OWNED; the terminator is at row 80.
 wOwnedCardsCountList:: ; cf68
+	ds MAX_NUM_CARDS_PER_TYPE + 1
+
+NEXTU
 
 ; used by _AIProcessHandTrainerCards, AI related
 wTempHandCardList:: ; cf68
 	ds DECK_SIZE
 
-	ds $15
+ENDU
 
 ; name of the selected deck
 wCurDeckName:: ; cfb9
@@ -1637,13 +1649,18 @@ wTempCardListNumCursorPositions:: ; cfdf
 wSelectedCardSet:: ; cfe0
 	ds $1
 
-; number of cards the player owns from the given Card Set
-wNumOwnedCardsInSet:: ; cfe1
+wNumOwnedCardsInSet:: ; low byte of owned-card total for selected set
 	ds $1
-
+wNumOwnedCardsInSetHigh:: ; high byte
+	ds $1
 ; flags that corresponds to each Phantom Card owned by the player
 ; see src/constants/menu_constants.asm
-wOwnedPhantomCardFlags:: ; cfe2
+wOwnedPhantomCardFlags:: ;
+	ds $1
+; total cards enumerated for the current Card Album set (16-bit)
+wNumCardsInSet:: ; low byte
+	ds $1
+wNumCardsInSetHigh:: ; high byte
 	ds $1
 
 ; value containing a SFX to play
@@ -1652,10 +1669,14 @@ wMenuInputSFX:: ; cfe3
 	ds $1
 
 ; collection index of the first owned card
-wFirstOwnedCardIndex:: ; cfe5
+wFirstOwnedCardIndex:: ; low byte of absolute Card Album list index
+	ds $1
+wFirstOwnedCardIndexHigh:: ; high byte
 	ds $1
 
-wNumCardListEntries:: ; cfe6
+wNumCardListEntries:: ; low byte of current list total
+	ds $1
+wNumCardListEntriesHigh:: ; high byte for windowed lists
 	ds $1
 
 ; a name buffer in the naming screen.

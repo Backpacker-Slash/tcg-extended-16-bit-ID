@@ -4,6 +4,9 @@
 ; hl = deck name
 ; expects wCurDeckCards to be filled with all card IDs
 HandleDeckMissingCardsList:
+	xor a
+	ld [wWindowedCardListMode], a
+	ld [wCardListVisibleOffsetHigh], a
 ; read deck name from hl
 	ld de, wCurDeckName
 	call CopyListFromHLToDEInSRAM

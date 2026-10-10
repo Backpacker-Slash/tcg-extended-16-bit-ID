@@ -19,7 +19,7 @@ DEF DECK_COMPRESSED_STRUCT_SIZE EQU DECK_NAME_SIZE + DECK_COMPRESSED_SIZE
 DEF DECK_CONFIG_BUFFER_SIZE  EQU 80
 DEF MAX_NUM_SAME_NAME_CARDS  EQU 4
 DEF MAX_UNNAMED_DECK_NUM     EQU 999
-DEF MAX_NUM_CARDS_PER_TYPE   EQU 80
+DEF MAX_NUM_CARDS_PER_TYPE   EQU 80 ; size of the filtered-list window, not total card capacity
 
 ; card data offsets (data/cards.asm and card_data_struct)
 
