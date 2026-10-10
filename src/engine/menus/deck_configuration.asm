@@ -1600,6 +1600,7 @@ PrintDeckBuildingCardList:
 .no_cursor
 	ld a, SYM_SPACE
 .got_cursor_tile
+	ld b, 19 ; restore rightmost X coordinate
 	call WriteByteToBGMap0
 
 ; iterates by decreasing value in wNumVisibleCardListEntries
