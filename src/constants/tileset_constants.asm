@@ -1,0 +1,33 @@
+	const_def
+	const TILESET_OVERWORLD_MAP               ; $00
+	const TILESET_MASON_LABORATORY            ; $01
+	const TILESET_ISHIHARA                    ; $02
+	const TILESET_CLUB_ENTRANCE               ; $03
+	const TILESET_CLUB_LOBBY                  ; $04
+	const TILESET_FIGHTING_CLUB               ; $05
+	const TILESET_ROCK_CLUB                   ; $06
+	const TILESET_WATER_CLUB                  ; $07
+	const TILESET_LIGHTNING_CLUB              ; $08
+	const TILESET_GRASS_CLUB                  ; $09
+	const TILESET_PSYCHIC_CLUB                ; $0a
+	const TILESET_SCIENCE_CLUB                ; $0b
+	const TILESET_FIRE_CLUB                   ; $0c
+	const TILESET_CHALLENGE_HALL              ; $0d
+	const TILESET_POKEMON_DOME_ENTRANCE       ; $0e
+	const TILESET_POKEMON_DOME                ; $0f
+	const TILESET_HALL_OF_HONOR               ; $10
+	const TILESET_MEDAL                       ; $11
+	const TILESET_COLOSSEUM                   ; $12
+	const TILESET_EVOLUTION                   ; $13
+	const TILESET_MYSTERY                     ; $14
+	const TILESET_LABORATORY                  ; $15
+	const TILESET_CHARIZARD_INTRO             ; $16
+	const TILESET_SCYTHER_INTRO               ; $17
+	const TILESET_AERODACTYL_INTRO            ; $18
+	const TILESET_SOLID_TILES_1               ; $19
+	const TILESET_SOLID_TILES_2               ; $1a
+	const TILESET_TITLE_SCREEN                ; $1d
+	const TILESET_COPYRIGHT                   ; $1e
+	const TILESET_NINTENDO                    ; $1f
+	const TILESET_COMPANIES                   ; $20
+DEF NUM_TILESETS EQU const_value

@@ -1,0 +1,280 @@
+EnableAndClearSpriteAnimations::
+	xor a
+	ld [wAllSpriteAnimationsDisabled], a
+	; fallthrough
+ClearSpriteAnimations::
+	ldh a, [hBankROM]
+	push af
+	ld a, BANK(_ClearSpriteAnimations)
+	call BankswitchROM
+	call _ClearSpriteAnimations
+	pop af
+	jp BankswitchROM
+
+HandleAllSpriteAnimations::
+	ldh a, [hBankROM]
+	push af
+	ld a, BANK(_HandleAllSpriteAnimations)
+	call BankswitchROM
+	call _HandleAllSpriteAnimations
+	pop af
+	jp BankswitchROM
+
+; hl - pointer to animation frame
+; wCurrSpriteFrameBank - bank of animation frame
+DrawSpriteAnimationFrame::
+	ldh a, [hBankROM]
+	push af
+	ld a, [wCurrSpriteFrameBank]
+	call BankswitchROM
+	ld a, [wCurrSpriteXPos]
+	cp $f0
+	ld a, 0
+	jr c, .notNearRight
+	dec a
+.notNearRight
+	ld [wCurrSpriteRightEdgeCheck], a
+	ld a, [wCurrSpriteYPos]
+	cp $f0
+	ld a, 0
+	jr c, .setBottomEdgeCheck
+	dec a
+.setBottomEdgeCheck
+	ld [wCurrSpriteBottomEdgeCheck], a
+	ld a, [hli]
+	or a
+	jp z, .done
+	ld c, a
+.loop
+	push bc
+	push hl
+	ld b, 0
+	bit 7, [hl]
+	jr z, .beginY
+	dec b
+.beginY
+	ld a, [wCurrSpriteAttributes]
+	bit B_OAM_YFLIP, a
+	jr z, .unflippedY
+	ld a, [hl]
+	add 8 ; size of a tile
+	ld c, a
+	ld a, 0
+	adc b
+	ld b, a
+	ld a, [wCurrSpriteYPos]
+	sub c
+	ld e, a
+	ld a, [wCurrSpriteBottomEdgeCheck]
+	sbc b
+	jr .finishYPosition
+.unflippedY
+	ld a, [wCurrSpriteYPos]
+	add [hl]
+	ld e, a
+	ld a, [wCurrSpriteBottomEdgeCheck]
+	adc b
+.finishYPosition
+	or a
+	jr nz, .endCurrentIteration
+	inc hl
+	ld b, 0
+	bit 7, [hl]
+	jr z, .beginX
+	dec b
+.beginX
+	ld a, [wCurrSpriteAttributes]
+	bit B_OAM_XFLIP, a
+	jr z, .unflippedX
+	ld a, [hl]
+	add 8 ; size of a tile
+	ld c, a
+	ld a, 0
+	adc b
+	ld b, a
+	ld a, [wCurrSpriteXPos]
+	sub c
+	ld d, a
+	ld a, [wCurrSpriteRightEdgeCheck]
+	sbc b
+	jr .finishXPosition
+.unflippedX
+	ld a, [wCurrSpriteXPos]
+	add [hl]
+	ld d, a
+	ld a, [wCurrSpriteRightEdgeCheck]
+	adc b
+.finishXPosition
+	or a
+	jr nz, .endCurrentIteration
+	inc hl
+	ld a, [wCurrSpriteTileID]
+	add [hl]
+	ld c, a
+	inc hl
+	ld a, [wCurrSpriteAttributes]
+	add [hl]
+	and OAM_PALETTE | OAM_PAL1
+	ld b, a
+	ld a, [wCurrSpriteAttributes]
+	xor [hl]
+	and OAM_XFLIP | OAM_YFLIP | OAM_PRIO
+	or b
+	ld b, a
+	inc hl ; unnecessary
+	call SetOneObjectAttributes
+.endCurrentIteration
+	pop hl
+	ld bc, 4 ; size of info for one sub tile
+	add hl, bc
+	pop bc
+	dec c
+	jr nz, .loop
+.done
+	pop af
+	jp BankswitchROM
+
+; Loads a pointer to the current animation frame into SPRITE_ANIM_FRAME_DATA_POINTER using
+; the current frame's offset
+; [wWhichAnimationFrame] - current frame in the animation
+; wTempPointer* - Pointer to current Animation
+GetAnimationFramePointer::
+	ldh a, [hBankROM]
+	push af
+	push hl
+	push hl
+	ld a, [wWhichAnimationFrame]
+	cp $ff
+	jr nz, .useLoadedOffset
+	ld de, SpriteNullAnimationPointer
+	xor a
+	jr .loadPointer
+.useLoadedOffset
+	ld a, [wTempPointer]
+	ld l, a
+	ld a, [wTempPointer + 1]
+	ld h, a
+	ld a, [wTempPointerBank]
+	call BankswitchROM
+	ld a, [hli]
+
+	push af
+	ld a, [wWhichAnimationFrame]
+	rlca
+	ld e, [hl]
+	add e
+	ld e, a
+	inc hl
+	ld a, [hl]
+	adc 0
+	ld d, a
+	pop af
+
+.loadPointer
+	add BANK(SpriteNullAnimationPointer)
+	pop hl
+	ld bc, SPRITE_ANIM_FRAME_BANK
+	add hl, bc
+	ld [hli], a
+	call BankswitchROM
+	ld a, [de]
+	ld [hli], a
+	inc de
+	ld a, [de]
+	ld [hl], a
+	pop hl
+	pop af
+	jp BankswitchROM
+
+; return hl pointing to the start of a sprite in wSpriteAnimBuffer.
+; the sprite is identified by its index in wWhichSprite.
+GetFirstSpriteAnimBufferProperty::
+	push bc
+	ld c, SPRITE_ANIM_ENABLED
+	call GetSpriteAnimBufferProperty
+	pop bc
+	ret
+
+; return hl pointing to the property (byte) c of a sprite in wSpriteAnimBuffer.
+; the sprite is identified by its index in wWhichSprite.
+GetSpriteAnimBufferProperty::
+	ld a, [wWhichSprite]
+;	fallthrough
+
+GetSpriteAnimBufferProperty_SpriteInA::
+	cp SPRITE_ANIM_BUFFER_CAPACITY
+	jr c, .got_sprite
+	debug_nop
+	ld a, SPRITE_ANIM_BUFFER_CAPACITY - 1 ; default to last sprite
+.got_sprite
+	push bc
+	swap a ; a *= SPRITE_ANIM_LENGTH
+	push af
+	and $f
+	ld b, a
+	pop af
+	and $f0
+	or c ; add the property offset
+	ld c, a
+	ld hl, wSpriteAnimBuffer
+	add hl, bc
+	pop bc
+	ret
+
+LoadScene::
+	push af
+	ldh a, [hBankROM]
+	push af
+	push hl
+	ld a, BANK(_LoadScene)
+	call BankswitchROM
+	ld hl, sp+$5
+	ld a, [hl]
+	call _LoadScene
+	call FlushAllPalettes
+	pop hl
+	pop af
+	call BankswitchROM
+	pop af
+	ld a, [wSceneSpriteIndex]
+	ret
+
+; draws player's portrait at b,c
+DrawPlayerPortrait::
+	ld a, PORTRAIT_PLAYER
+	ld [wCurPortrait], a
+	ld a, PORTRAIT_SLOT_1
+	ld [wPortraitSlot], a
+	ld a, EMOTION_NEUTRAL ; Player is always neutral
+;	fallthrough
+
+; input:
+; a = EMOTION_* constant
+DrawPortrait::
+	ld [wPortraitEmotion], a
+	ldh a, [hBankROM]
+	push af
+	ld a, BANK(_DrawPortrait)
+	call BankswitchROM
+	call _DrawPortrait
+	pop af
+	jp BankswitchROM
+
+; draws opponent's portrait given in a at b,c
+; with emotion given in e
+DrawOpponentPortrait::
+	ld [wCurPortrait], a
+	ld a, PORTRAIT_SLOT_2
+	ld [wPortraitSlot], a
+	ld a, e
+	jr DrawPortrait
+
+Func_3e31::
+	ldh a, [hBankROM]
+	push af
+	call HandleAllSpriteAnimations
+	ld a, BANK(DoLoadedFramesetSubgroupsFrame)
+	call BankswitchROM
+	call DoLoadedFramesetSubgroupsFrame
+	pop af
+	jp BankswitchROM
