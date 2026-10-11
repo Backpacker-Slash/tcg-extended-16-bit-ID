@@ -1,3 +1,20 @@
+; SetNextNPCAndScript:
+; 	push bc
+; 	call FindLoadedNPC
+; 	ld a, [wLoadedNPCTempIndex]
+; 	ld [wScriptNPC], a
+; 	farcall SetNewScriptNPC
+; 	pop bc
+; 	push hl
+; 	ld hl, wNextScript
+; 	ld [hl], c
+; 	inc hl
+; 	ld [hl], b
+; 	ld a, OWMODE_SCRIPT
+; 	ld [wOverworldMode], a
+; 	pop hl
+; 	ret
+
 SetNextNPCAndScript:
 	push bc
 	call FindLoadedNPC
@@ -10,6 +27,8 @@ SetNextNPCAndScript:
 	ld [hl], c
 	inc hl
 	ld [hl], b
+	inc hl
+	ld [hl], a ; or: ld [wNextScriptBank], a
 	ld a, OWMODE_SCRIPT
 	ld [wOverworldMode], a
 	pop hl

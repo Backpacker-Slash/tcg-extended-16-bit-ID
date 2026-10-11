@@ -64,10 +64,62 @@ GetCurrentRarityAmount:
 	pop bc
 	ret
 
+; ; loop through all existing cards to see which ones belong to the current set and rarity,
+; ; and add them to wBoosterViableCardList. Also fill wBoosterAmountOfCardTypeTable with
+; ; the amount of available cards of each type, for the current set and rarity.
+; ; Skip any card already drawn in the current pack.
+; FindCardsInSetAndRarity:
+; 	ld c, NUM_BOOSTER_CARD_TYPES
+; 	ld hl, wBoosterAmountOfCardTypeTable
+; 	xor a
+; .delete_type_table_loop
+; 	ld [hli], a
+; 	dec c
+; 	jr nz, .delete_type_table_loop
+; 	xor a
+; 	ld hl, wBoosterViableCardList
+; 	ld [hli], a
+; 	ld [hld], a
+; 	ld de, 1 ; GRASS_ENERGY
+; .check_card_viable_loop
+; 	push de
+; 	ld a, e
+; 	ld [wBoosterCurrentCard + 0], a
+; 	ld a, d
+; 	ld [wBoosterCurrentCard + 1], a
+; 	call CheckCardAlreadyDrawn
+; 	jr c, .finished_with_current_card
+; 	call CheckCardInSetAndRarity
+; 	jr c, .finished_with_current_card
+; 	ld a, [wBoosterCurrentCardType]
+; 	call GetBoosterCardType
+; 	push af
+; 	push hl
+; 	ld c, a
+; 	ld b, $00
+; 	ld hl, wBoosterAmountOfCardTypeTable
+; 	add hl, bc
+; 	inc [hl]
+; 	pop hl
+; 	ld a, [wBoosterCurrentCard + 0]
+; 	ld [hli], a
+; 	ld a, [wBoosterCurrentCard + 1]
+; 	ld [hli], a
+; 	pop af
+; 	ld [hli], a
+; 	xor a
+; 	ld [hli], a
+; 	ld [hld], a
+; .finished_with_current_card
+; 	pop de
+; 	inc de
+; 	cp16 NUM_CARDS + 1
+; 	jr c, .check_card_viable_loop
+; 	ret
+
 ; loop through all existing cards to see which ones belong to the current set and rarity,
-; and add them to wBoosterViableCardList. Also fill wBoosterAmountOfCardTypeTable with
-; the amount of available cards of each type, for the current set and rarity.
-; Skip any card already drawn in the current pack.
+; and fill wBoosterAmountOfCardTypeTable with the amount of available cards of each type,
+; for the current set and rarity. Skip any card already drawn in the current pack.
 FindCardsInSetAndRarity:
 	ld c, NUM_BOOSTER_CARD_TYPES
 	ld hl, wBoosterAmountOfCardTypeTable
@@ -76,10 +128,7 @@ FindCardsInSetAndRarity:
 	ld [hli], a
 	dec c
 	jr nz, .delete_type_table_loop
-	xor a
-	ld hl, wBoosterViableCardList
-	ld [hli], a
-	ld [hld], a
+
 	ld de, 1 ; GRASS_ENERGY
 .check_card_viable_loop
 	push de
@@ -93,23 +142,13 @@ FindCardsInSetAndRarity:
 	jr c, .finished_with_current_card
 	ld a, [wBoosterCurrentCardType]
 	call GetBoosterCardType
-	push af
-	push hl
 	ld c, a
 	ld b, $00
 	ld hl, wBoosterAmountOfCardTypeTable
 	add hl, bc
 	inc [hl]
-	pop hl
-	ld a, [wBoosterCurrentCard + 0]
-	ld [hli], a
-	ld a, [wBoosterCurrentCard + 1]
-	ld [hli], a
-	pop af
-	ld [hli], a
-	xor a
-	ld [hli], a
-	ld [hld], a
+	jr nz, .finished_with_current_card
+	dec [hl] ; cap at 255 to prevent 8-bit wrap-around
 .finished_with_current_card
 	pop de
 	inc de
@@ -254,8 +293,48 @@ DetermineBoosterCardType:
 	ld [wBoosterJustDrawnCardType], a
 	ret
 
+; ; generate a random number between 0 and the amount of cards matching the current type.
+; ; use that number to determine the card to draw from the booster pack.
+; DetermineBoosterCard:
+; 	ld a, [wBoosterJustDrawnCardType]
+; 	ld c, a
+; 	ld b, $00
+; 	ld hl, wBoosterAmountOfCardTypeTable
+; 	add hl, bc
+; 	ld a, [hl]
+; 	call Random
+; 	ld [wTempBoosterChances], a
+; 	ld hl, wBoosterViableCardList
+; .find_matching_card_loop
+; 	ld a, [hli]
+; 	or [hl]
+; 	jr z, .no_valid_card_found
+; 	dec hl
+; 	ld a, [hli]
+; 	ld [wBoosterCurrentCard + 0], a
+; 	ld a, [hli]
+; 	ld [wBoosterCurrentCard + 1], a
+; 	ld a, [wBoosterJustDrawnCardType]
+; 	cp [hl]
+; 	jr nz, .card_incorrect_type
+; 	ld a, [wTempBoosterChances]
+; 	or a
+; 	jr z, .got_valid_card
+; 	dec a
+; 	ld [wTempBoosterChances], a
+; .card_incorrect_type
+; 	inc hl
+; 	jr .find_matching_card_loop
+; .got_valid_card
+; 	or a
+; 	ret
+; .no_valid_card_found
+; 	debug_nop
+; 	scf
+; 	ret
+
 ; generate a random number between 0 and the amount of cards matching the current type.
-; use that number to determine the card to draw from the booster pack.
+; scan cards in ROM to select the target card to draw from the booster pack.
 DetermineBoosterCard:
 	ld a, [wBoosterJustDrawnCardType]
 	ld c, a
@@ -263,35 +342,54 @@ DetermineBoosterCard:
 	ld hl, wBoosterAmountOfCardTypeTable
 	add hl, bc
 	ld a, [hl]
+	or a
+	jr z, .no_valid_card_found
 	call Random
 	ld [wTempBoosterChances], a
-	ld hl, wBoosterViableCardList
-.find_matching_card_loop
-	ld a, [hli]
-	or [hl]
-	jr z, .no_valid_card_found
-	dec hl
-	ld a, [hli]
+
+	ld de, 1 ; GRASS_ENERGY
+.check_card_loop
+	push de
+	ld a, e
 	ld [wBoosterCurrentCard + 0], a
-	ld a, [hli]
+	ld a, d
 	ld [wBoosterCurrentCard + 1], a
+	call CheckCardAlreadyDrawn
+	jr c, .next_card
+	call CheckCardInSetAndRarity
+	jr c, .next_card
+	ld a, [wBoosterCurrentCardType]
+	call GetBoosterCardType
+	ld b, a
 	ld a, [wBoosterJustDrawnCardType]
-	cp [hl]
-	jr nz, .card_incorrect_type
+	cp b
+	jr nz, .next_card
+
+	; Found a matching card of the target type
 	ld a, [wTempBoosterChances]
 	or a
-	jr z, .got_valid_card
+	jr z, .found_target_card
 	dec a
 	ld [wTempBoosterChances], a
-.card_incorrect_type
-	inc hl
-	jr .find_matching_card_loop
-.got_valid_card
-	or a
-	ret
+
+.next_card
+	pop de
+	inc de
+	cp16 NUM_CARDS + 1
+	jr c, .check_card_loop
+
 .no_valid_card_found
 	debug_nop
 	scf
+	ret
+
+.found_target_card
+	pop de
+	ld a, e
+	ld [wBoosterCurrentCard + 0], a
+	ld a, d
+	ld [wBoosterCurrentCard + 1], a
+	or a
 	ret
 
 ; lowers the chance of getting the same type of card multiple times.

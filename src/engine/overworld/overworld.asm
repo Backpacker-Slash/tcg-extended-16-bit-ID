@@ -115,11 +115,11 @@ SetScriptData:
 	ld a, b
 	ld [wNextScript + 1], a
 
-	;test__________________________
-    ld a, BANK(SetNextNPCAndScript)
-    ld [wNextScriptBank], a
-	;test__________________________
-	
+	; ;test__________________________
+    ; ld a, BANK(SetNextNPCAndScript)
+    ; ld [wNextScriptBank], a
+	; ;test__________________________
+
 	ld a, OWMODE_SCRIPT
 	ld [wOverworldMode], a
 	jp EnterFarScript
