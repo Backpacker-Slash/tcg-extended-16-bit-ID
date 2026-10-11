@@ -71,39 +71,16 @@ ROMX $07
 ROMX $08
 	"AI Logic 2"
 ROMX $09
-	"Cards 1"	
+	"Text offsets"
 ROMX $0a
 	"Card Pointers"
 ROMX $0b
 	"Effect Functions"
 ROMX $0c
 	"Decks"
-ROMX $0d
-	"Text 1"
-ROMX $0e
-	"Text 2"
-ROMX $0f
-	"Text 3"
-ROMX $10
-	"Text 4"
-ROMX $11
-	"Text 5"
-ROMX $12
-	"Text 6"
-ROMX $13
-	"Text 7"
-ROMX $14
-	"Text 8"
-ROMX $15
-	"Text 9"
-ROMX $16
-	"Text 10"
-ROMX $17
-	"Text 11"
-ROMX $18
-	"Text 12"
+
 ROMX $19
-	"Text 13"
+	"Cards 1"
 ROMX $1a
 	"Cards 2"
 ROMX $1b
@@ -193,6 +170,162 @@ ROMX $44
 	"Sfx 2"
 ROMX $45
 	"Sfx 3"
+
+ROMX $46
+	"Text 1"
+ROMX $47
+	"Text 2"
+ROMX $48
+	"Text 3"
+ROMX $49
+	"Text 4"
+ROMX $4a
+	"Text 5"
+ROMX $4b
+	"Text 6"
+ROMX $4c
+	"Text 7"
+ROMX $4d
+	"Text 8"
+ROMX $4e
+	"Text 9"
+ROMX $4f
+	"Text 10"
+ROMX $50
+	"Text 11"
+ROMX $51
+	"Text 12"
+ROMX $52
+	"Text 13"
+ROMX $53
+	"Text 14"
+ROMX $54
+	"Card Gfx 13"
+
+ROMX $55
+	"Card Gfx 14"
+
+ROMX $56
+	"Card Gfx 15"
+
+ROMX $57
+	"Card Gfx 16"
+
+ROMX $58
+	"Card Gfx 17"
+
+ROMX $59
+	"Card Gfx 18"
+
+ROMX $5a
+	"Card Gfx 19"
+
+ROMX $5b
+	"Card Gfx 20"
+
+ROMX $5c
+	"Card Gfx 21"
+
+ROMX $5d
+	"Card Gfx 22"
+
+ROMX $5e
+	"Card Gfx 23"
+
+ROMX $5f
+	"Card Gfx 24"
+
+ROMX $60
+	"Card Gfx 25"
+
+ROMX $61
+	"Card Gfx 26"
+
+ROMX $62
+	"Card Gfx 27"
+
+ROMX $63
+	"Card Gfx 28"
+
+ROMX $64
+	"Card Gfx 29"
+
+ROMX $65
+	"Card Gfx 30"
+
+ROMX $66
+	"Card Gfx 31"
+
+ROMX $67
+	"Card Gfx 32"
+
+ROMX $68
+	"Card Gfx 33"
+
+ROMX $69
+	"Card Gfx 34"
+
+ROMX $6a
+	"Card Gfx 35"
+
+ROMX $6b
+	"Card Gfx 36"
+
+ROMX $6c
+	"Card Gfx 37"
+
+ROMX $6d
+	"Card Gfx 38"
+
+ROMX $6e
+	"Card Gfx 39"
+
+ROMX $6f
+	"Card Gfx 40"
+
+ROMX $70
+	"Card Gfx 41"
+
+ROMX $71
+	"Card Gfx 42"
+
+ROMX $72
+	"Card Gfx 43"
+
+ROMX $73
+	"Card Gfx 44"
+
+ROMX $74
+	"Card Gfx 45"
+
+ROMX $75
+	"Card Gfx 46"
+
+ROMX $76
+	"Card Gfx 47"
+
+ROMX $77
+	"Card Gfx 48"
+
+ROMX $78
+	"Card Gfx 49"
+
+ROMX $79
+	"Card Gfx 50"
+
+ROMX $7a
+	"Card Gfx 51"
+
+ROMX $7b
+	"Card Gfx 52"
+
+ROMX $7c
+	"Card Gfx 53"
+
+ROMX $7d
+	"Card Gfx 54"
+
+
 WRAM0
 	"WRAM"
 	"WRAM Duels 1"

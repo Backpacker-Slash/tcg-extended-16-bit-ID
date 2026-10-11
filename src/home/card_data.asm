@@ -186,32 +186,30 @@ GetCardPointer::
 ; input:
 ; wLoadedCard1 = card with gfx to load
 ; de = where to load the card gfx to
-; bc are supposed to be $30 (number of tiles of a card gfx) and TILE_SIZE respectively
-; card_gfx_index = (<Name>CardGfx - CardGraphics) / 8  (using absolute ROM addresses)
 ; also copies the card's palette to wCardPalette
+;
+; wLoadedCard1Gfx contains:
+;   dw <Name>CardGfx
+;   db BANK(<Name>CardGfx)
+;
 LoadLoaded1CardGfx::
+	; Load the absolute graphics address from the first two bytes.
 	ld hl, wLoadedCard1Gfx
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
+
+	; Preserve the current ROM bank so we can restore it afterwards.
 	ldh a, [hBankROM]
 	push af
 	push hl
-	; first, get the bank with the card gfx is at
-	srl h
-	srl h
-	srl h
-	ld a, BANK(CardGraphics)
-	add h
+
+	; The third byte contains the actual graphics ROM bank.
+	ld a, [wLoadedCard1Gfx + 2]
 	call BankswitchROM
 	pop hl
-	; once we have the bank, get the pointer: multiply by 8 and discard the bank offset
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	res 7, h
-	set 6, h ; $4000 ≤ hl ≤ $7fff
 
+	; Copy the card's palette.
 	push de
 	ld de, wCardPalette
 	ld b, 3 palettes
@@ -222,7 +220,8 @@ LoadLoaded1CardGfx::
 	dec b
 	jr nz, .copy_card_palette
 
-	; de = wCardAttrMap
+	; Copy the card's attribute map.
+	; de now points immediately after the palette in wCardPalette.
 	ld b, $30
 .copy_card_attrmap
 	ld a, [hli]
@@ -231,8 +230,65 @@ LoadLoaded1CardGfx::
 	dec b
 	jr nz, .copy_card_attrmap
 
+	; Copy the 48 tiles (48 * TILE_SIZE bytes).
 	pop de
 	lb bc, $30, TILE_SIZE
 	call CopyGfxData
+
+	; Restore the ROM bank that was active on entry.
 	pop af
 	jp BankswitchROM
+
+; ; input:
+; ; wLoadedCard1 = card with gfx to load
+; ; de = where to load the card gfx to
+; ; bc are supposed to be $30 (number of tiles of a card gfx) and TILE_SIZE respectively
+; ; card_gfx_index = (<Name>CardGfx - CardGraphics) / 8  (using absolute ROM addresses)
+; ; also copies the card's palette to wCardPalette
+; LoadLoaded1CardGfx::
+; 	ld hl, wLoadedCard1Gfx
+; 	ld a, [hli]
+; 	ld h, [hl]
+; 	ld l, a
+; 	ldh a, [hBankROM]
+; 	push af
+; 	push hl
+; 	; first, get the bank with the card gfx is at
+; 	srl h
+; 	srl h
+; 	srl h
+; 	ld a, BANK(CardGraphics)
+; 	add h
+; 	call BankswitchROM
+; 	pop hl
+; 	; once we have the bank, get the pointer: multiply by 8 and discard the bank offset
+; 	add hl, hl
+; 	add hl, hl
+; 	add hl, hl
+; 	res 7, h
+; 	set 6, h ; $4000 ≤ hl ≤ $7fff
+
+; 	push de
+; 	ld de, wCardPalette
+; 	ld b, 3 palettes
+; .copy_card_palette
+; 	ld a, [hli]
+; 	ld [de], a
+; 	inc de
+; 	dec b
+; 	jr nz, .copy_card_palette
+
+; 	; de = wCardAttrMap
+; 	ld b, $30
+; .copy_card_attrmap
+; 	ld a, [hli]
+; 	ld [de], a
+; 	inc de
+; 	dec b
+; 	jr nz, .copy_card_attrmap
+
+; 	pop de
+; 	lb bc, $30, TILE_SIZE
+; 	call CopyGfxData
+; 	pop af
+; 	jp BankswitchROM

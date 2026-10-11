@@ -2144,7 +2144,7 @@ OpenCardPageFromCardList:
 	pop af
 	dec a
 	bit 7, a
-	jp z, .reopen_card_page
+	jp z, .reopen_card_page_no_refresh ;jp z, .reopen_card_page
 	ld a, [wWindowedCardListMode]
 	or a
 	jr z, .legacy_page_up
@@ -2186,7 +2186,7 @@ OpenCardPageFromCardList:
 	pop af
 	inc a
 	cp c
-	jr c, .reopen_card_page
+	jr c, .reopen_card_page_no_refresh ;jr c, .reopen_card_page
 	push af
 	ld hl, wCurCardListPtr
 	ld a, [hli]
@@ -2197,19 +2197,44 @@ OpenCardPageFromCardList:
 	ld c, a
 	ld b, $0
 	add hl, bc
+; 	ld a, [wWindowedCardListMode]
+; 	or a
+; 	jr nz, .check_next_window_entry
+; 	ld a, [wCardListVisibleOffset]
+; 	inc a
+; 	sla a
+; 	ld c, a
+; 	ld b, $0
+; 	add hl, bc
+; .check_next_window_entry
+; 	ld a, [hli]
+; 	or [hl]
+; 	jr z, .skip_change_card
+
 	ld a, [wWindowedCardListMode]
 	or a
-	jr nz, .check_next_window_entry
+	jr z, .check_next_legacy_entry
+
+	; The windowed list already starts at the visible offset.
+	; HL currently points to the selected entry.
+	; Advance to the NEXT entry before checking for the terminator.
+	inc hl
+	inc hl
+	jr .check_next_window_entry
+
+.check_next_legacy_entry
 	ld a, [wCardListVisibleOffset]
 	inc a
 	sla a
 	ld c, a
 	ld b, $0
 	add hl, bc
+
 .check_next_window_entry
 	ld a, [hli]
 	or [hl]
 	jr z, .skip_change_card
+
 	ld a, [wCardListVisibleOffset]
 	inc a
 	ld [wCardListVisibleOffset], a
@@ -2223,19 +2248,43 @@ OpenCardPageFromCardList:
 .windowed_page_down_done
 	pop af
 	dec a
+; .reopen_card_page
+; 	ld [wCardListCursorPos], a
+; 	ld a, [wWindowedCardListMode]
+; 	or a
+; 	jr z, .skip_window_page_refresh
+; 	ld hl, wCardListUpdateFunction
+; 	call CallIndirect
+; .skip_window_page_refresh
+; 	ld a, [wMenuInputSFX]
+; 	or a
+; 	jp z, OpenCardPageFromCardList
+; 	call PlaySFX
+; 	jp OpenCardPageFromCardList
+
 .reopen_card_page
 	ld [wCardListCursorPos], a
 	ld a, [wWindowedCardListMode]
 	or a
 	jr z, .skip_window_page_refresh
+
+	; The visible offset changed. Refresh the list while the LCD is off,
+	; so its text cannot flash while the card-page graphics are replaced.
+	call DisableLCD
 	ld hl, wCardListUpdateFunction
 	call CallIndirect
+
 .skip_window_page_refresh
 	ld a, [wMenuInputSFX]
 	or a
 	jp z, OpenCardPageFromCardList
 	call PlaySFX
 	jp OpenCardPageFromCardList
+
+; Cursor moved within the existing window: do not rebuild the list.
+.reopen_card_page_no_refresh
+	ld [wCardListCursorPos], a
+	jr .skip_window_page_refresh
 
 .skip_change_card
 	pop af

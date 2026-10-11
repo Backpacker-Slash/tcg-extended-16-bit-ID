@@ -26,8 +26,8 @@ DEF MAX_NUM_CARDS_PER_TYPE   EQU 80 ; size of the filtered-list window, not tota
 ; all card types
 RSRESET
 DEF CARD_DATA_TYPE                  rb
-DEF CARD_DATA_GFX                   rw
-; DEF CARD_DATA_GFX 					rb 3
+; DEF CARD_DATA_GFX                   rw
+DEF CARD_DATA_GFX 					rb 3
 DEF CARD_DATA_NAME                  rw
 DEF CARD_DATA_RARITY                rb
 DEF CARD_DATA_SET                   rb

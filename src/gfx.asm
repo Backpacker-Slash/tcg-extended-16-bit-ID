@@ -2311,3 +2311,5 @@ RecycleCardGfx::
 	INCBIN "gfx/cards/recycle.attrmap"
 	INCBIN "gfx/cards/recycle.2bpp"
 
+; Generated indexed graphics for EmptySlot test cards.
+INCLUDE "empty_slot_card_gfx.asm"

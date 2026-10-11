@@ -1,8 +1,13 @@
 INCLUDE "macros.asm"
 INCLUDE "constants.asm"
 
-SECTION "Text 1", ROMX
+; SECTION "text offsets", ROMX
+; INCLUDE "text/text_offsets.asm"
+; SECTION "Text offsets", ROMX[$4000], BANK[1]
+SECTION "Text offsets", ROMX
 INCLUDE "text/text_offsets.asm"
+
+SECTION "Text 1", ROMX
 INCLUDE "text/text1.asm"
 
 SECTION "Text 2", ROMX
@@ -40,3 +45,10 @@ INCLUDE "text/text12.asm"
 
 SECTION "Text 13", ROMX
 INCLUDE "text/text13.asm"
+
+; BEGIN GENERATED EMPTY SLOT TEXT BANKS
+
+SECTION "Text 14", ROMX
+INCLUDE "text/text14.asm"
+
+; END GENERATED EMPTY SLOT TEXT BANKS

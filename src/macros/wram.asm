@@ -1,6 +1,6 @@
 MACRO card_data_struct
 \1Type::          ds 1
-\1Gfx::           ds 2 ; //should be 3 later
+\1Gfx::           ds 3;2 ; //should be 3 later
 \1Name::          ds 2
 \1Rarity::        ds 1
 \1Set::           ds 1

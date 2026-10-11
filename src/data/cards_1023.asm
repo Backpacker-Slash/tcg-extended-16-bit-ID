@@ -9802,8 +9802,8 @@ RecycleCard:
 
 EmptySlot1Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot1CardGfx ; gfx
+	tx EmptySlotName1 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT1
@@ -9852,8 +9852,8 @@ EmptySlot1Card:
 
 EmptySlot2Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot2CardGfx ; gfx
+	tx EmptySlotName2 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT2
@@ -9902,8 +9902,8 @@ EmptySlot2Card:
 
 EmptySlot3Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot3CardGfx ; gfx
+	tx EmptySlotName3 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT3
@@ -9952,8 +9952,8 @@ EmptySlot3Card:
 
 EmptySlot4Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot4CardGfx ; gfx
+	tx EmptySlotName4 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT4
@@ -10002,8 +10002,8 @@ EmptySlot4Card:
 
 EmptySlot5Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot5CardGfx ; gfx
+	tx EmptySlotName5 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT5
@@ -10052,8 +10052,8 @@ EmptySlot5Card:
 
 EmptySlot6Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot6CardGfx ; gfx
+	tx EmptySlotName6 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT6
@@ -10102,8 +10102,8 @@ EmptySlot6Card:
 
 EmptySlot7Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot7CardGfx ; gfx
+	tx EmptySlotName7 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT7
@@ -10152,8 +10152,8 @@ EmptySlot7Card:
 
 EmptySlot8Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot8CardGfx ; gfx
+	tx EmptySlotName8 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT8
@@ -10202,8 +10202,8 @@ EmptySlot8Card:
 
 EmptySlot9Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot9CardGfx ; gfx
+	tx EmptySlotName9 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT9
@@ -10252,8 +10252,8 @@ EmptySlot9Card:
 
 EmptySlot10Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot10CardGfx ; gfx
+	tx EmptySlotName10 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT10
@@ -10302,8 +10302,8 @@ EmptySlot10Card:
 
 EmptySlot11Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot11CardGfx ; gfx
+	tx EmptySlotName11 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT11
@@ -10352,8 +10352,8 @@ EmptySlot11Card:
 
 EmptySlot12Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot12CardGfx ; gfx
+	tx EmptySlotName12 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT12
@@ -10402,8 +10402,8 @@ EmptySlot12Card:
 
 EmptySlot13Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot13CardGfx ; gfx
+	tx EmptySlotName13 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT13
@@ -10452,8 +10452,8 @@ EmptySlot13Card:
 
 EmptySlot14Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot14CardGfx ; gfx
+	tx EmptySlotName14 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT14
@@ -10502,8 +10502,8 @@ EmptySlot14Card:
 
 EmptySlot15Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot15CardGfx ; gfx
+	tx EmptySlotName15 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT15
@@ -10552,8 +10552,8 @@ EmptySlot15Card:
 
 EmptySlot16Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot16CardGfx ; gfx
+	tx EmptySlotName16 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT16
@@ -10602,8 +10602,8 @@ EmptySlot16Card:
 
 EmptySlot17Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot17CardGfx ; gfx
+	tx EmptySlotName17 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT17
@@ -10652,8 +10652,8 @@ EmptySlot17Card:
 
 EmptySlot18Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot18CardGfx ; gfx
+	tx EmptySlotName18 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT18
@@ -10702,8 +10702,8 @@ EmptySlot18Card:
 
 EmptySlot19Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot19CardGfx ; gfx
+	tx EmptySlotName19 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT19
@@ -10752,8 +10752,8 @@ EmptySlot19Card:
 
 EmptySlot20Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot20CardGfx ; gfx
+	tx EmptySlotName20 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT20
@@ -10802,8 +10802,8 @@ EmptySlot20Card:
 
 EmptySlot21Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot21CardGfx ; gfx
+	tx EmptySlotName21 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT21
@@ -10852,8 +10852,8 @@ EmptySlot21Card:
 
 EmptySlot22Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot22CardGfx ; gfx
+	tx EmptySlotName22 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT22
@@ -10902,8 +10902,8 @@ EmptySlot22Card:
 
 EmptySlot23Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot23CardGfx ; gfx
+	tx EmptySlotName23 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT23
@@ -10952,8 +10952,8 @@ EmptySlot23Card:
 
 EmptySlot24Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot24CardGfx ; gfx
+	tx EmptySlotName24 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT24
@@ -11002,8 +11002,8 @@ EmptySlot24Card:
 
 EmptySlot25Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot25CardGfx ; gfx
+	tx EmptySlotName25 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT25
@@ -11052,8 +11052,8 @@ EmptySlot25Card:
 
 EmptySlot26Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot26CardGfx ; gfx
+	tx EmptySlotName26 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT26
@@ -11102,8 +11102,8 @@ EmptySlot26Card:
 
 EmptySlot27Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot27CardGfx ; gfx
+	tx EmptySlotName27 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT27
@@ -11152,8 +11152,8 @@ EmptySlot27Card:
 
 EmptySlot28Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot28CardGfx ; gfx
+	tx EmptySlotName28 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT28
@@ -11202,8 +11202,8 @@ EmptySlot28Card:
 
 EmptySlot29Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot29CardGfx ; gfx
+	tx EmptySlotName29 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT29
@@ -11252,8 +11252,8 @@ EmptySlot29Card:
 
 EmptySlot30Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot30CardGfx ; gfx
+	tx EmptySlotName30 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT30
@@ -11302,8 +11302,8 @@ EmptySlot30Card:
 
 EmptySlot31Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot31CardGfx ; gfx
+	tx EmptySlotName31 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT31
@@ -11352,8 +11352,8 @@ EmptySlot31Card:
 
 EmptySlot32Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot32CardGfx ; gfx
+	tx EmptySlotName32 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT32
@@ -11402,8 +11402,8 @@ EmptySlot32Card:
 
 EmptySlot33Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot33CardGfx ; gfx
+	tx EmptySlotName33 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT33
@@ -11452,8 +11452,8 @@ EmptySlot33Card:
 
 EmptySlot34Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot34CardGfx ; gfx
+	tx EmptySlotName34 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT34
@@ -11502,8 +11502,8 @@ EmptySlot34Card:
 
 EmptySlot35Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot35CardGfx ; gfx
+	tx EmptySlotName35 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT35
@@ -11552,8 +11552,8 @@ EmptySlot35Card:
 
 EmptySlot36Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot36CardGfx ; gfx
+	tx EmptySlotName36 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT36
@@ -11602,8 +11602,8 @@ EmptySlot36Card:
 
 EmptySlot37Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot37CardGfx ; gfx
+	tx EmptySlotName37 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT37
@@ -11652,8 +11652,8 @@ EmptySlot37Card:
 
 EmptySlot38Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot38CardGfx ; gfx
+	tx EmptySlotName38 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT38
@@ -11702,8 +11702,8 @@ EmptySlot38Card:
 
 EmptySlot39Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot39CardGfx ; gfx
+	tx EmptySlotName39 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT39
@@ -11752,8 +11752,8 @@ EmptySlot39Card:
 
 EmptySlot40Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot40CardGfx ; gfx
+	tx EmptySlotName40 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT40
@@ -11802,8 +11802,8 @@ EmptySlot40Card:
 
 EmptySlot41Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot41CardGfx ; gfx
+	tx EmptySlotName41 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT41
@@ -11852,8 +11852,8 @@ EmptySlot41Card:
 
 EmptySlot42Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot42CardGfx ; gfx
+	tx EmptySlotName42 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT42
@@ -11902,8 +11902,8 @@ EmptySlot42Card:
 
 EmptySlot43Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot43CardGfx ; gfx
+	tx EmptySlotName43 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT43
@@ -11952,8 +11952,8 @@ EmptySlot43Card:
 
 EmptySlot44Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot44CardGfx ; gfx
+	tx EmptySlotName44 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT44
@@ -12002,8 +12002,8 @@ EmptySlot44Card:
 
 EmptySlot45Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot45CardGfx ; gfx
+	tx EmptySlotName45 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT45
@@ -12052,8 +12052,8 @@ EmptySlot45Card:
 
 EmptySlot46Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot46CardGfx ; gfx
+	tx EmptySlotName46 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT46
@@ -12102,8 +12102,8 @@ EmptySlot46Card:
 
 EmptySlot47Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot47CardGfx ; gfx
+	tx EmptySlotName47 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT47
@@ -12152,8 +12152,8 @@ EmptySlot47Card:
 
 EmptySlot48Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot48CardGfx ; gfx
+	tx EmptySlotName48 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT48
@@ -12202,8 +12202,8 @@ EmptySlot48Card:
 
 EmptySlot49Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot49CardGfx ; gfx
+	tx EmptySlotName49 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT49
@@ -12252,8 +12252,8 @@ EmptySlot49Card:
 
 EmptySlot50Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot50CardGfx ; gfx
+	tx EmptySlotName50 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT50
@@ -12302,8 +12302,8 @@ EmptySlot50Card:
 
 EmptySlot51Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot51CardGfx ; gfx
+	tx EmptySlotName51 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT51
@@ -12353,8 +12353,8 @@ EmptySlot51Card:
 SECTION "Cards 2", ROMX		
 EmptySlot52Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot52CardGfx ; gfx
+	tx EmptySlotName52 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT52
@@ -12403,8 +12403,8 @@ EmptySlot52Card:
 
 EmptySlot53Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot53CardGfx ; gfx
+	tx EmptySlotName53 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT53
@@ -12453,8 +12453,8 @@ EmptySlot53Card:
 
 EmptySlot54Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot54CardGfx ; gfx
+	tx EmptySlotName54 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT54
@@ -12503,8 +12503,8 @@ EmptySlot54Card:
 
 EmptySlot55Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot55CardGfx ; gfx
+	tx EmptySlotName55 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT55
@@ -12553,8 +12553,8 @@ EmptySlot55Card:
 
 EmptySlot56Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot56CardGfx ; gfx
+	tx EmptySlotName56 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT56
@@ -12603,8 +12603,8 @@ EmptySlot56Card:
 
 EmptySlot57Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot57CardGfx ; gfx
+	tx EmptySlotName57 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT57
@@ -12653,8 +12653,8 @@ EmptySlot57Card:
 
 EmptySlot58Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot58CardGfx ; gfx
+	tx EmptySlotName58 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT58
@@ -12703,8 +12703,8 @@ EmptySlot58Card:
 
 EmptySlot59Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot59CardGfx ; gfx
+	tx EmptySlotName59 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT59
@@ -12753,8 +12753,8 @@ EmptySlot59Card:
 
 EmptySlot60Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot60CardGfx ; gfx
+	tx EmptySlotName60 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT60
@@ -12803,8 +12803,8 @@ EmptySlot60Card:
 
 EmptySlot61Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot61CardGfx ; gfx
+	tx EmptySlotName61 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT61
@@ -12853,8 +12853,8 @@ EmptySlot61Card:
 
 EmptySlot62Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot62CardGfx ; gfx
+	tx EmptySlotName62 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT62
@@ -12903,8 +12903,8 @@ EmptySlot62Card:
 
 EmptySlot63Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot63CardGfx ; gfx
+	tx EmptySlotName63 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT63
@@ -12953,8 +12953,8 @@ EmptySlot63Card:
 
 EmptySlot64Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot64CardGfx ; gfx
+	tx EmptySlotName64 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT64
@@ -13003,8 +13003,8 @@ EmptySlot64Card:
 
 EmptySlot65Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot65CardGfx ; gfx
+	tx EmptySlotName65 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT65
@@ -13053,8 +13053,8 @@ EmptySlot65Card:
 
 EmptySlot66Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot66CardGfx ; gfx
+	tx EmptySlotName66 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT66
@@ -13103,8 +13103,8 @@ EmptySlot66Card:
 
 EmptySlot67Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot67CardGfx ; gfx
+	tx EmptySlotName67 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT67
@@ -13153,8 +13153,8 @@ EmptySlot67Card:
 
 EmptySlot68Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot68CardGfx ; gfx
+	tx EmptySlotName68 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT68
@@ -13203,8 +13203,8 @@ EmptySlot68Card:
 
 EmptySlot69Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot69CardGfx ; gfx
+	tx EmptySlotName69 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT69
@@ -13253,8 +13253,8 @@ EmptySlot69Card:
 
 EmptySlot70Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot70CardGfx ; gfx
+	tx EmptySlotName70 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT70
@@ -13303,8 +13303,8 @@ EmptySlot70Card:
 
 EmptySlot71Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot71CardGfx ; gfx
+	tx EmptySlotName71 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT71
@@ -13353,8 +13353,8 @@ EmptySlot71Card:
 
 EmptySlot72Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot72CardGfx ; gfx
+	tx EmptySlotName72 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT72
@@ -13403,8 +13403,8 @@ EmptySlot72Card:
 
 EmptySlot73Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot73CardGfx ; gfx
+	tx EmptySlotName73 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT73
@@ -13453,8 +13453,8 @@ EmptySlot73Card:
 
 EmptySlot74Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot74CardGfx ; gfx
+	tx EmptySlotName74 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT74
@@ -13503,8 +13503,8 @@ EmptySlot74Card:
 
 EmptySlot75Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot75CardGfx ; gfx
+	tx EmptySlotName75 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT75
@@ -13553,8 +13553,8 @@ EmptySlot75Card:
 
 EmptySlot76Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot76CardGfx ; gfx
+	tx EmptySlotName76 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT76
@@ -13603,8 +13603,8 @@ EmptySlot76Card:
 
 EmptySlot77Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot77CardGfx ; gfx
+	tx EmptySlotName77 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT77
@@ -13653,8 +13653,8 @@ EmptySlot77Card:
 
 EmptySlot78Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot78CardGfx ; gfx
+	tx EmptySlotName78 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT78
@@ -13703,8 +13703,8 @@ EmptySlot78Card:
 
 EmptySlot79Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot79CardGfx ; gfx
+	tx EmptySlotName79 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT79
@@ -13753,8 +13753,8 @@ EmptySlot79Card:
 
 EmptySlot80Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot80CardGfx ; gfx
+	tx EmptySlotName80 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT80
@@ -13803,8 +13803,8 @@ EmptySlot80Card:
 
 EmptySlot81Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot81CardGfx ; gfx
+	tx EmptySlotName81 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT81
@@ -13853,8 +13853,8 @@ EmptySlot81Card:
 
 EmptySlot82Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot82CardGfx ; gfx
+	tx EmptySlotName82 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT82
@@ -13903,8 +13903,8 @@ EmptySlot82Card:
 
 EmptySlot83Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot83CardGfx ; gfx
+	tx EmptySlotName83 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT83
@@ -13953,8 +13953,8 @@ EmptySlot83Card:
 
 EmptySlot84Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot84CardGfx ; gfx
+	tx EmptySlotName84 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT84
@@ -14003,8 +14003,8 @@ EmptySlot84Card:
 
 EmptySlot85Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot85CardGfx ; gfx
+	tx EmptySlotName85 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT85
@@ -14053,8 +14053,8 @@ EmptySlot85Card:
 
 EmptySlot86Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot86CardGfx ; gfx
+	tx EmptySlotName86 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT86
@@ -14103,8 +14103,8 @@ EmptySlot86Card:
 
 EmptySlot87Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot87CardGfx ; gfx
+	tx EmptySlotName87 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT87
@@ -14153,8 +14153,8 @@ EmptySlot87Card:
 
 EmptySlot88Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot88CardGfx ; gfx
+	tx EmptySlotName88 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT88
@@ -14203,8 +14203,8 @@ EmptySlot88Card:
 
 EmptySlot89Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot89CardGfx ; gfx
+	tx EmptySlotName89 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT89
@@ -14253,8 +14253,8 @@ EmptySlot89Card:
 
 EmptySlot90Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot90CardGfx ; gfx
+	tx EmptySlotName90 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT90
@@ -14303,8 +14303,8 @@ EmptySlot90Card:
 
 EmptySlot91Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot91CardGfx ; gfx
+	tx EmptySlotName91 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT91
@@ -14353,8 +14353,8 @@ EmptySlot91Card:
 
 EmptySlot92Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot92CardGfx ; gfx
+	tx EmptySlotName92 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT92
@@ -14403,8 +14403,8 @@ EmptySlot92Card:
 
 EmptySlot93Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot93CardGfx ; gfx
+	tx EmptySlotName93 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT93
@@ -14453,8 +14453,8 @@ EmptySlot93Card:
 
 EmptySlot94Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot94CardGfx ; gfx
+	tx EmptySlotName94 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT94
@@ -14503,8 +14503,8 @@ EmptySlot94Card:
 
 EmptySlot95Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot95CardGfx ; gfx
+	tx EmptySlotName95 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT95
@@ -14553,8 +14553,8 @@ EmptySlot95Card:
 
 EmptySlot96Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot96CardGfx ; gfx
+	tx EmptySlotName96 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT96
@@ -14603,8 +14603,8 @@ EmptySlot96Card:
 
 EmptySlot97Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot97CardGfx ; gfx
+	tx EmptySlotName97 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT97
@@ -14653,8 +14653,8 @@ EmptySlot97Card:
 
 EmptySlot98Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot98CardGfx ; gfx
+	tx EmptySlotName98 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT98
@@ -14703,8 +14703,8 @@ EmptySlot98Card:
 
 EmptySlot99Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot99CardGfx ; gfx
+	tx EmptySlotName99 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT99
@@ -14753,8 +14753,8 @@ EmptySlot99Card:
 
 EmptySlot100Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot100CardGfx ; gfx
+	tx EmptySlotName100 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT100
@@ -14803,8 +14803,8 @@ EmptySlot100Card:
 
 EmptySlot101Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot101CardGfx ; gfx
+	tx EmptySlotName101 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT101
@@ -14853,8 +14853,8 @@ EmptySlot101Card:
 
 EmptySlot102Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot102CardGfx ; gfx
+	tx EmptySlotName102 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT102
@@ -14903,8 +14903,8 @@ EmptySlot102Card:
 
 EmptySlot103Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot103CardGfx ; gfx
+	tx EmptySlotName103 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT103
@@ -14953,8 +14953,8 @@ EmptySlot103Card:
 
 EmptySlot104Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot104CardGfx ; gfx
+	tx EmptySlotName104 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT104
@@ -15003,8 +15003,8 @@ EmptySlot104Card:
 
 EmptySlot105Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot105CardGfx ; gfx
+	tx EmptySlotName105 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT105
@@ -15053,8 +15053,8 @@ EmptySlot105Card:
 
 EmptySlot106Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot106CardGfx ; gfx
+	tx EmptySlotName106 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT106
@@ -15103,8 +15103,8 @@ EmptySlot106Card:
 
 EmptySlot107Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot107CardGfx ; gfx
+	tx EmptySlotName107 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT107
@@ -15153,8 +15153,8 @@ EmptySlot107Card:
 
 EmptySlot108Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot108CardGfx ; gfx
+	tx EmptySlotName108 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT108
@@ -15203,8 +15203,8 @@ EmptySlot108Card:
 
 EmptySlot109Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot109CardGfx ; gfx
+	tx EmptySlotName109 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT109
@@ -15253,8 +15253,8 @@ EmptySlot109Card:
 
 EmptySlot110Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot110CardGfx ; gfx
+	tx EmptySlotName110 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT110
@@ -15303,8 +15303,8 @@ EmptySlot110Card:
 
 EmptySlot111Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot111CardGfx ; gfx
+	tx EmptySlotName111 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT111
@@ -15353,8 +15353,8 @@ EmptySlot111Card:
 
 EmptySlot112Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot112CardGfx ; gfx
+	tx EmptySlotName112 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT112
@@ -15403,8 +15403,8 @@ EmptySlot112Card:
 
 EmptySlot113Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot113CardGfx ; gfx
+	tx EmptySlotName113 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT113
@@ -15453,8 +15453,8 @@ EmptySlot113Card:
 
 EmptySlot114Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot114CardGfx ; gfx
+	tx EmptySlotName114 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT114
@@ -15503,8 +15503,8 @@ EmptySlot114Card:
 
 EmptySlot115Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot115CardGfx ; gfx
+	tx EmptySlotName115 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT115
@@ -15553,8 +15553,8 @@ EmptySlot115Card:
 
 EmptySlot116Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot116CardGfx ; gfx
+	tx EmptySlotName116 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT116
@@ -15603,8 +15603,8 @@ EmptySlot116Card:
 
 EmptySlot117Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot117CardGfx ; gfx
+	tx EmptySlotName117 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT117
@@ -15653,8 +15653,8 @@ EmptySlot117Card:
 
 EmptySlot118Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot118CardGfx ; gfx
+	tx EmptySlotName118 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT118
@@ -15703,8 +15703,8 @@ EmptySlot118Card:
 
 EmptySlot119Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot119CardGfx ; gfx
+	tx EmptySlotName119 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT119
@@ -15753,8 +15753,8 @@ EmptySlot119Card:
 
 EmptySlot120Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot120CardGfx ; gfx
+	tx EmptySlotName120 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT120
@@ -15803,8 +15803,8 @@ EmptySlot120Card:
 
 EmptySlot121Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot121CardGfx ; gfx
+	tx EmptySlotName121 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT121
@@ -15853,8 +15853,8 @@ EmptySlot121Card:
 
 EmptySlot122Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot122CardGfx ; gfx
+	tx EmptySlotName122 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT122
@@ -15903,8 +15903,8 @@ EmptySlot122Card:
 
 EmptySlot123Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot123CardGfx ; gfx
+	tx EmptySlotName123 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT123
@@ -15953,8 +15953,8 @@ EmptySlot123Card:
 
 EmptySlot124Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot124CardGfx ; gfx
+	tx EmptySlotName124 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT124
@@ -16003,8 +16003,8 @@ EmptySlot124Card:
 
 EmptySlot125Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot125CardGfx ; gfx
+	tx EmptySlotName125 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT125
@@ -16053,8 +16053,8 @@ EmptySlot125Card:
 
 EmptySlot126Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot126CardGfx ; gfx
+	tx EmptySlotName126 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT126
@@ -16103,8 +16103,8 @@ EmptySlot126Card:
 
 EmptySlot127Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot127CardGfx ; gfx
+	tx EmptySlotName127 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT127
@@ -16153,8 +16153,8 @@ EmptySlot127Card:
 
 EmptySlot128Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot128CardGfx ; gfx
+	tx EmptySlotName128 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT128
@@ -16203,8 +16203,8 @@ EmptySlot128Card:
 
 EmptySlot129Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot129CardGfx ; gfx
+	tx EmptySlotName129 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT129
@@ -16253,8 +16253,8 @@ EmptySlot129Card:
 
 EmptySlot130Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot130CardGfx ; gfx
+	tx EmptySlotName130 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT130
@@ -16303,8 +16303,8 @@ EmptySlot130Card:
 
 EmptySlot131Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot131CardGfx ; gfx
+	tx EmptySlotName131 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT131
@@ -16353,8 +16353,8 @@ EmptySlot131Card:
 
 EmptySlot132Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot132CardGfx ; gfx
+	tx EmptySlotName132 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT132
@@ -16403,8 +16403,8 @@ EmptySlot132Card:
 
 EmptySlot133Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot133CardGfx ; gfx
+	tx EmptySlotName133 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT133
@@ -16453,8 +16453,8 @@ EmptySlot133Card:
 
 EmptySlot134Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot134CardGfx ; gfx
+	tx EmptySlotName134 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT134
@@ -16503,8 +16503,8 @@ EmptySlot134Card:
 
 EmptySlot135Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot135CardGfx ; gfx
+	tx EmptySlotName135 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT135
@@ -16553,8 +16553,8 @@ EmptySlot135Card:
 
 EmptySlot136Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot136CardGfx ; gfx
+	tx EmptySlotName136 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT136
@@ -16603,8 +16603,8 @@ EmptySlot136Card:
 
 EmptySlot137Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot137CardGfx ; gfx
+	tx EmptySlotName137 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT137
@@ -16653,8 +16653,8 @@ EmptySlot137Card:
 
 EmptySlot138Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot138CardGfx ; gfx
+	tx EmptySlotName138 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT138
@@ -16703,8 +16703,8 @@ EmptySlot138Card:
 
 EmptySlot139Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot139CardGfx ; gfx
+	tx EmptySlotName139 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT139
@@ -16753,8 +16753,8 @@ EmptySlot139Card:
 
 EmptySlot140Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot140CardGfx ; gfx
+	tx EmptySlotName140 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT140
@@ -16803,8 +16803,8 @@ EmptySlot140Card:
 
 EmptySlot141Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot141CardGfx ; gfx
+	tx EmptySlotName141 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT141
@@ -16853,8 +16853,8 @@ EmptySlot141Card:
 
 EmptySlot142Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot142CardGfx ; gfx
+	tx EmptySlotName142 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT142
@@ -16903,8 +16903,8 @@ EmptySlot142Card:
 
 EmptySlot143Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot143CardGfx ; gfx
+	tx EmptySlotName143 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT143
@@ -16953,8 +16953,8 @@ EmptySlot143Card:
 
 EmptySlot144Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot144CardGfx ; gfx
+	tx EmptySlotName144 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT144
@@ -17003,8 +17003,8 @@ EmptySlot144Card:
 
 EmptySlot145Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot145CardGfx ; gfx
+	tx EmptySlotName145 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT145
@@ -17053,8 +17053,8 @@ EmptySlot145Card:
 
 EmptySlot146Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot146CardGfx ; gfx
+	tx EmptySlotName146 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT146
@@ -17103,8 +17103,8 @@ EmptySlot146Card:
 
 EmptySlot147Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot147CardGfx ; gfx
+	tx EmptySlotName147 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT147
@@ -17153,8 +17153,8 @@ EmptySlot147Card:
 
 EmptySlot148Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot148CardGfx ; gfx
+	tx EmptySlotName148 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT148
@@ -17203,8 +17203,8 @@ EmptySlot148Card:
 
 EmptySlot149Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot149CardGfx ; gfx
+	tx EmptySlotName149 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT149
@@ -17253,8 +17253,8 @@ EmptySlot149Card:
 
 EmptySlot150Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot150CardGfx ; gfx
+	tx EmptySlotName150 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT150
@@ -17303,8 +17303,8 @@ EmptySlot150Card:
 
 EmptySlot151Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot151CardGfx ; gfx
+	tx EmptySlotName151 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT151
@@ -17353,8 +17353,8 @@ EmptySlot151Card:
 
 EmptySlot152Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot152CardGfx ; gfx
+	tx EmptySlotName152 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT152
@@ -17403,8 +17403,8 @@ EmptySlot152Card:
 
 EmptySlot153Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot153CardGfx ; gfx
+	tx EmptySlotName153 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT153
@@ -17453,8 +17453,8 @@ EmptySlot153Card:
 
 EmptySlot154Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot154CardGfx ; gfx
+	tx EmptySlotName154 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT154
@@ -17503,8 +17503,8 @@ EmptySlot154Card:
 
 EmptySlot155Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot155CardGfx ; gfx
+	tx EmptySlotName155 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT155
@@ -17553,8 +17553,8 @@ EmptySlot155Card:
 
 EmptySlot156Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot156CardGfx ; gfx
+	tx EmptySlotName156 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT156
@@ -17603,8 +17603,8 @@ EmptySlot156Card:
 
 EmptySlot157Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot157CardGfx ; gfx
+	tx EmptySlotName157 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT157
@@ -17653,8 +17653,8 @@ EmptySlot157Card:
 
 EmptySlot158Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot158CardGfx ; gfx
+	tx EmptySlotName158 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT158
@@ -17703,8 +17703,8 @@ EmptySlot158Card:
 
 EmptySlot159Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot159CardGfx ; gfx
+	tx EmptySlotName159 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT159
@@ -17753,8 +17753,8 @@ EmptySlot159Card:
 
 EmptySlot160Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot160CardGfx ; gfx
+	tx EmptySlotName160 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT160
@@ -17803,8 +17803,8 @@ EmptySlot160Card:
 
 EmptySlot161Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot161CardGfx ; gfx
+	tx EmptySlotName161 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT161
@@ -17853,8 +17853,8 @@ EmptySlot161Card:
 
 EmptySlot162Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot162CardGfx ; gfx
+	tx EmptySlotName162 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT162
@@ -17903,8 +17903,8 @@ EmptySlot162Card:
 
 EmptySlot163Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot163CardGfx ; gfx
+	tx EmptySlotName163 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT163
@@ -17953,8 +17953,8 @@ EmptySlot163Card:
 
 EmptySlot164Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot164CardGfx ; gfx
+	tx EmptySlotName164 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT164
@@ -18003,8 +18003,8 @@ EmptySlot164Card:
 
 EmptySlot165Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot165CardGfx ; gfx
+	tx EmptySlotName165 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT165
@@ -18053,8 +18053,8 @@ EmptySlot165Card:
 
 EmptySlot166Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot166CardGfx ; gfx
+	tx EmptySlotName166 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT166
@@ -18103,8 +18103,8 @@ EmptySlot166Card:
 
 EmptySlot167Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot167CardGfx ; gfx
+	tx EmptySlotName167 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT167
@@ -18153,8 +18153,8 @@ EmptySlot167Card:
 
 EmptySlot168Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot168CardGfx ; gfx
+	tx EmptySlotName168 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT168
@@ -18203,8 +18203,8 @@ EmptySlot168Card:
 
 EmptySlot169Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot169CardGfx ; gfx
+	tx EmptySlotName169 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT169
@@ -18253,8 +18253,8 @@ EmptySlot169Card:
 
 EmptySlot170Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot170CardGfx ; gfx
+	tx EmptySlotName170 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT170
@@ -18303,8 +18303,8 @@ EmptySlot170Card:
 
 EmptySlot171Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot171CardGfx ; gfx
+	tx EmptySlotName171 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT171
@@ -18353,8 +18353,8 @@ EmptySlot171Card:
 
 EmptySlot172Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot172CardGfx ; gfx
+	tx EmptySlotName172 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT172
@@ -18403,8 +18403,8 @@ EmptySlot172Card:
 
 EmptySlot173Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot173CardGfx ; gfx
+	tx EmptySlotName173 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT173
@@ -18453,8 +18453,8 @@ EmptySlot173Card:
 
 EmptySlot174Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot174CardGfx ; gfx
+	tx EmptySlotName174 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT174
@@ -18503,8 +18503,8 @@ EmptySlot174Card:
 
 EmptySlot175Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot175CardGfx ; gfx
+	tx EmptySlotName175 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT175
@@ -18553,8 +18553,8 @@ EmptySlot175Card:
 
 EmptySlot176Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot176CardGfx ; gfx
+	tx EmptySlotName176 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT176
@@ -18603,8 +18603,8 @@ EmptySlot176Card:
 
 EmptySlot177Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot177CardGfx ; gfx
+	tx EmptySlotName177 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT177
@@ -18653,8 +18653,8 @@ EmptySlot177Card:
 
 EmptySlot178Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot178CardGfx ; gfx
+	tx EmptySlotName178 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT178
@@ -18703,8 +18703,8 @@ EmptySlot178Card:
 
 EmptySlot179Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot179CardGfx ; gfx
+	tx EmptySlotName179 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT179
@@ -18753,8 +18753,8 @@ EmptySlot179Card:
 
 EmptySlot180Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot180CardGfx ; gfx
+	tx EmptySlotName180 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT180
@@ -18803,8 +18803,8 @@ EmptySlot180Card:
 
 EmptySlot181Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot181CardGfx ; gfx
+	tx EmptySlotName181 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT181
@@ -18853,8 +18853,8 @@ EmptySlot181Card:
 
 EmptySlot182Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot182CardGfx ; gfx
+	tx EmptySlotName182 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT182
@@ -18903,8 +18903,8 @@ EmptySlot182Card:
 
 EmptySlot183Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot183CardGfx ; gfx
+	tx EmptySlotName183 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT183
@@ -18953,8 +18953,8 @@ EmptySlot183Card:
 
 EmptySlot184Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot184CardGfx ; gfx
+	tx EmptySlotName184 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT184
@@ -19003,8 +19003,8 @@ EmptySlot184Card:
 
 EmptySlot185Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot185CardGfx ; gfx
+	tx EmptySlotName185 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT185
@@ -19053,8 +19053,8 @@ EmptySlot185Card:
 
 EmptySlot186Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot186CardGfx ; gfx
+	tx EmptySlotName186 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT186
@@ -19103,8 +19103,8 @@ EmptySlot186Card:
 
 EmptySlot187Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot187CardGfx ; gfx
+	tx EmptySlotName187 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT187
@@ -19153,8 +19153,8 @@ EmptySlot187Card:
 
 EmptySlot188Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot188CardGfx ; gfx
+	tx EmptySlotName188 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT188
@@ -19203,8 +19203,8 @@ EmptySlot188Card:
 
 EmptySlot189Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot189CardGfx ; gfx
+	tx EmptySlotName189 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT189
@@ -19253,8 +19253,8 @@ EmptySlot189Card:
 
 EmptySlot190Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot190CardGfx ; gfx
+	tx EmptySlotName190 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT190
@@ -19303,8 +19303,8 @@ EmptySlot190Card:
 
 EmptySlot191Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot191CardGfx ; gfx
+	tx EmptySlotName191 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT191
@@ -19353,8 +19353,8 @@ EmptySlot191Card:
 
 EmptySlot192Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot192CardGfx ; gfx
+	tx EmptySlotName192 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT192
@@ -19403,8 +19403,8 @@ EmptySlot192Card:
 
 EmptySlot193Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot193CardGfx ; gfx
+	tx EmptySlotName193 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT193
@@ -19453,8 +19453,8 @@ EmptySlot193Card:
 
 EmptySlot194Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot194CardGfx ; gfx
+	tx EmptySlotName194 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT194
@@ -19503,8 +19503,8 @@ EmptySlot194Card:
 
 EmptySlot195Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot195CardGfx ; gfx
+	tx EmptySlotName195 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT195
@@ -19553,8 +19553,8 @@ EmptySlot195Card:
 
 EmptySlot196Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot196CardGfx ; gfx
+	tx EmptySlotName196 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT196
@@ -19603,8 +19603,8 @@ EmptySlot196Card:
 
 EmptySlot197Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot197CardGfx ; gfx
+	tx EmptySlotName197 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT197
@@ -19653,8 +19653,8 @@ EmptySlot197Card:
 
 EmptySlot198Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot198CardGfx ; gfx
+	tx EmptySlotName198 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT198
@@ -19703,8 +19703,8 @@ EmptySlot198Card:
 
 EmptySlot199Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot199CardGfx ; gfx
+	tx EmptySlotName199 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT199
@@ -19753,8 +19753,8 @@ EmptySlot199Card:
 
 EmptySlot200Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot200CardGfx ; gfx
+	tx EmptySlotName200 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT200
@@ -19803,8 +19803,8 @@ EmptySlot200Card:
 
 EmptySlot201Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot201CardGfx ; gfx
+	tx EmptySlotName201 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT201
@@ -19853,8 +19853,8 @@ EmptySlot201Card:
 
 EmptySlot202Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot202CardGfx ; gfx
+	tx EmptySlotName202 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT202
@@ -19903,8 +19903,8 @@ EmptySlot202Card:
 
 EmptySlot203Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot203CardGfx ; gfx
+	tx EmptySlotName203 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT203
@@ -19953,8 +19953,8 @@ EmptySlot203Card:
 
 EmptySlot204Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot204CardGfx ; gfx
+	tx EmptySlotName204 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT204
@@ -20003,8 +20003,8 @@ EmptySlot204Card:
 
 EmptySlot205Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot205CardGfx ; gfx
+	tx EmptySlotName205 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT205
@@ -20053,8 +20053,8 @@ EmptySlot205Card:
 
 EmptySlot206Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot206CardGfx ; gfx
+	tx EmptySlotName206 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT206
@@ -20103,8 +20103,8 @@ EmptySlot206Card:
 
 EmptySlot207Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot207CardGfx ; gfx
+	tx EmptySlotName207 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT207
@@ -20153,8 +20153,8 @@ EmptySlot207Card:
 
 EmptySlot208Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot208CardGfx ; gfx
+	tx EmptySlotName208 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT208
@@ -20203,8 +20203,8 @@ EmptySlot208Card:
 
 EmptySlot209Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot209CardGfx ; gfx
+	tx EmptySlotName209 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT209
@@ -20253,8 +20253,8 @@ EmptySlot209Card:
 
 EmptySlot210Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot210CardGfx ; gfx
+	tx EmptySlotName210 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT210
@@ -20303,8 +20303,8 @@ EmptySlot210Card:
 
 EmptySlot211Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot211CardGfx ; gfx
+	tx EmptySlotName211 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT211
@@ -20353,8 +20353,8 @@ EmptySlot211Card:
 
 EmptySlot212Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot212CardGfx ; gfx
+	tx EmptySlotName212 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT212
@@ -20403,8 +20403,8 @@ EmptySlot212Card:
 
 EmptySlot213Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot213CardGfx ; gfx
+	tx EmptySlotName213 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT213
@@ -20453,8 +20453,8 @@ EmptySlot213Card:
 
 EmptySlot214Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot214CardGfx ; gfx
+	tx EmptySlotName214 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT214
@@ -20503,8 +20503,8 @@ EmptySlot214Card:
 
 EmptySlot215Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot215CardGfx ; gfx
+	tx EmptySlotName215 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT215
@@ -20553,8 +20553,8 @@ EmptySlot215Card:
 
 EmptySlot216Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot216CardGfx ; gfx
+	tx EmptySlotName216 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT216
@@ -20603,8 +20603,8 @@ EmptySlot216Card:
 
 EmptySlot217Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot217CardGfx ; gfx
+	tx EmptySlotName217 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT217
@@ -20653,8 +20653,8 @@ EmptySlot217Card:
 
 EmptySlot218Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot218CardGfx ; gfx
+	tx EmptySlotName218 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT218
@@ -20703,8 +20703,8 @@ EmptySlot218Card:
 
 EmptySlot219Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot219CardGfx ; gfx
+	tx EmptySlotName219 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT219
@@ -20753,8 +20753,8 @@ EmptySlot219Card:
 
 EmptySlot220Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot220CardGfx ; gfx
+	tx EmptySlotName220 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT220
@@ -20803,8 +20803,8 @@ EmptySlot220Card:
 
 EmptySlot221Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot221CardGfx ; gfx
+	tx EmptySlotName221 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT221
@@ -20853,8 +20853,8 @@ EmptySlot221Card:
 
 EmptySlot222Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot222CardGfx ; gfx
+	tx EmptySlotName222 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT222
@@ -20903,8 +20903,8 @@ EmptySlot222Card:
 
 EmptySlot223Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot223CardGfx ; gfx
+	tx EmptySlotName223 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT223
@@ -20953,8 +20953,8 @@ EmptySlot223Card:
 
 EmptySlot224Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot224CardGfx ; gfx
+	tx EmptySlotName224 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT224
@@ -21003,8 +21003,8 @@ EmptySlot224Card:
 
 EmptySlot225Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot225CardGfx ; gfx
+	tx EmptySlotName225 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT225
@@ -21053,8 +21053,8 @@ EmptySlot225Card:
 
 EmptySlot226Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot226CardGfx ; gfx
+	tx EmptySlotName226 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT226
@@ -21103,8 +21103,8 @@ EmptySlot226Card:
 
 EmptySlot227Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot227CardGfx ; gfx
+	tx EmptySlotName227 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT227
@@ -21153,8 +21153,8 @@ EmptySlot227Card:
 
 EmptySlot228Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot228CardGfx ; gfx
+	tx EmptySlotName228 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT228
@@ -21203,8 +21203,8 @@ EmptySlot228Card:
 
 EmptySlot229Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot229CardGfx ; gfx
+	tx EmptySlotName229 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT229
@@ -21253,8 +21253,8 @@ EmptySlot229Card:
 
 EmptySlot230Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot230CardGfx ; gfx
+	tx EmptySlotName230 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT230
@@ -21303,8 +21303,8 @@ EmptySlot230Card:
 
 EmptySlot231Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot231CardGfx ; gfx
+	tx EmptySlotName231 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT231
@@ -21353,8 +21353,8 @@ EmptySlot231Card:
 
 EmptySlot232Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot232CardGfx ; gfx
+	tx EmptySlotName232 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT232
@@ -21403,8 +21403,8 @@ EmptySlot232Card:
 
 EmptySlot233Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot233CardGfx ; gfx
+	tx EmptySlotName233 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT233
@@ -21453,8 +21453,8 @@ EmptySlot233Card:
 
 EmptySlot234Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot234CardGfx ; gfx
+	tx EmptySlotName234 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT234
@@ -21503,8 +21503,8 @@ EmptySlot234Card:
 
 EmptySlot235Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot235CardGfx ; gfx
+	tx EmptySlotName235 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT235
@@ -21553,8 +21553,8 @@ EmptySlot235Card:
 
 EmptySlot236Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot236CardGfx ; gfx
+	tx EmptySlotName236 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT236
@@ -21603,8 +21603,8 @@ EmptySlot236Card:
 
 EmptySlot237Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot237CardGfx ; gfx
+	tx EmptySlotName237 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT237
@@ -21653,8 +21653,8 @@ EmptySlot237Card:
 
 EmptySlot238Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot238CardGfx ; gfx
+	tx EmptySlotName238 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT238
@@ -21703,8 +21703,8 @@ EmptySlot238Card:
 
 EmptySlot239Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot239CardGfx ; gfx
+	tx EmptySlotName239 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT239
@@ -21753,8 +21753,8 @@ EmptySlot239Card:
 
 EmptySlot240Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot240CardGfx ; gfx
+	tx EmptySlotName240 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT240
@@ -21803,8 +21803,8 @@ EmptySlot240Card:
 
 EmptySlot241Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot241CardGfx ; gfx
+	tx EmptySlotName241 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT241
@@ -21853,8 +21853,8 @@ EmptySlot241Card:
 
 EmptySlot242Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot242CardGfx ; gfx
+	tx EmptySlotName242 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT242
@@ -21903,8 +21903,8 @@ EmptySlot242Card:
 
 EmptySlot243Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot243CardGfx ; gfx
+	tx EmptySlotName243 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT243
@@ -21953,8 +21953,8 @@ EmptySlot243Card:
 
 EmptySlot244Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot244CardGfx ; gfx
+	tx EmptySlotName244 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT244
@@ -22003,8 +22003,8 @@ EmptySlot244Card:
 
 EmptySlot245Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot245CardGfx ; gfx
+	tx EmptySlotName245 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT245
@@ -22053,8 +22053,8 @@ EmptySlot245Card:
 
 EmptySlot246Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot246CardGfx ; gfx
+	tx EmptySlotName246 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT246
@@ -22103,8 +22103,8 @@ EmptySlot246Card:
 
 EmptySlot247Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot247CardGfx ; gfx
+	tx EmptySlotName247 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT247
@@ -22153,8 +22153,8 @@ EmptySlot247Card:
 
 EmptySlot248Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot248CardGfx ; gfx
+	tx EmptySlotName248 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT248
@@ -22203,8 +22203,8 @@ EmptySlot248Card:
 
 EmptySlot249Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot249CardGfx ; gfx
+	tx EmptySlotName249 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT249
@@ -22253,8 +22253,8 @@ EmptySlot249Card:
 
 EmptySlot250Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot250CardGfx ; gfx
+	tx EmptySlotName250 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT250
@@ -22303,8 +22303,8 @@ EmptySlot250Card:
 
 EmptySlot251Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot251CardGfx ; gfx
+	tx EmptySlotName251 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT251
@@ -22353,8 +22353,8 @@ EmptySlot251Card:
 
 EmptySlot252Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot252CardGfx ; gfx
+	tx EmptySlotName252 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT252
@@ -22403,8 +22403,8 @@ EmptySlot252Card:
 
 EmptySlot253Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot253CardGfx ; gfx
+	tx EmptySlotName253 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT253
@@ -22453,8 +22453,8 @@ EmptySlot253Card:
 
 EmptySlot254Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot254CardGfx ; gfx
+	tx EmptySlotName254 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT254
@@ -22503,8 +22503,8 @@ EmptySlot254Card:
 
 EmptySlot255Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot255CardGfx ; gfx
+	tx EmptySlotName255 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT255
@@ -22553,8 +22553,8 @@ EmptySlot255Card:
 
 EmptySlot256Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot256CardGfx ; gfx
+	tx EmptySlotName256 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT256
@@ -22603,8 +22603,8 @@ EmptySlot256Card:
 
 EmptySlot257Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot257CardGfx ; gfx
+	tx EmptySlotName257 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT257
@@ -22653,8 +22653,8 @@ EmptySlot257Card:
 
 EmptySlot258Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot258CardGfx ; gfx
+	tx EmptySlotName258 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT258
@@ -22703,8 +22703,8 @@ EmptySlot258Card:
 
 EmptySlot259Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot259CardGfx ; gfx
+	tx EmptySlotName259 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT259
@@ -22753,8 +22753,8 @@ EmptySlot259Card:
 
 EmptySlot260Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot260CardGfx ; gfx
+	tx EmptySlotName260 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT260
@@ -22803,8 +22803,8 @@ EmptySlot260Card:
 
 EmptySlot261Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot261CardGfx ; gfx
+	tx EmptySlotName261 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT261
@@ -22853,8 +22853,8 @@ EmptySlot261Card:
 
 EmptySlot262Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot262CardGfx ; gfx
+	tx EmptySlotName262 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT262
@@ -22903,8 +22903,8 @@ EmptySlot262Card:
 
 EmptySlot263Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot263CardGfx ; gfx
+	tx EmptySlotName263 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT263
@@ -22953,8 +22953,8 @@ EmptySlot263Card:
 
 EmptySlot264Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot264CardGfx ; gfx
+	tx EmptySlotName264 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT264
@@ -23003,8 +23003,8 @@ EmptySlot264Card:
 
 EmptySlot265Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot265CardGfx ; gfx
+	tx EmptySlotName265 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT265
@@ -23053,8 +23053,8 @@ EmptySlot265Card:
 
 EmptySlot266Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot266CardGfx ; gfx
+	tx EmptySlotName266 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT266
@@ -23103,8 +23103,8 @@ EmptySlot266Card:
 
 EmptySlot267Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot267CardGfx ; gfx
+	tx EmptySlotName267 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT267
@@ -23153,8 +23153,8 @@ EmptySlot267Card:
 
 EmptySlot268Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot268CardGfx ; gfx
+	tx EmptySlotName268 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT268
@@ -23203,8 +23203,8 @@ EmptySlot268Card:
 
 EmptySlot269Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot269CardGfx ; gfx
+	tx EmptySlotName269 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT269
@@ -23253,8 +23253,8 @@ EmptySlot269Card:
 
 EmptySlot270Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot270CardGfx ; gfx
+	tx EmptySlotName270 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT270
@@ -23303,8 +23303,8 @@ EmptySlot270Card:
 
 EmptySlot271Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot271CardGfx ; gfx
+	tx EmptySlotName271 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT271
@@ -23353,8 +23353,8 @@ EmptySlot271Card:
 
 EmptySlot272Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot272CardGfx ; gfx
+	tx EmptySlotName272 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT272
@@ -23403,8 +23403,8 @@ EmptySlot272Card:
 
 EmptySlot273Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot273CardGfx ; gfx
+	tx EmptySlotName273 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT273
@@ -23453,8 +23453,8 @@ EmptySlot273Card:
 
 EmptySlot274Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot274CardGfx ; gfx
+	tx EmptySlotName274 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT274
@@ -23503,8 +23503,8 @@ EmptySlot274Card:
 
 EmptySlot275Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot275CardGfx ; gfx
+	tx EmptySlotName275 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT275
@@ -23553,8 +23553,8 @@ EmptySlot275Card:
 
 EmptySlot276Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot276CardGfx ; gfx
+	tx EmptySlotName276 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT276
@@ -23603,8 +23603,8 @@ EmptySlot276Card:
 
 EmptySlot277Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot277CardGfx ; gfx
+	tx EmptySlotName277 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT277
@@ -23653,8 +23653,8 @@ EmptySlot277Card:
 
 EmptySlot278Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot278CardGfx ; gfx
+	tx EmptySlotName278 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT278
@@ -23703,8 +23703,8 @@ EmptySlot278Card:
 
 EmptySlot279Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot279CardGfx ; gfx
+	tx EmptySlotName279 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT279
@@ -23753,8 +23753,8 @@ EmptySlot279Card:
 
 EmptySlot280Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot280CardGfx ; gfx
+	tx EmptySlotName280 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT280
@@ -23803,8 +23803,8 @@ EmptySlot280Card:
 
 EmptySlot281Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot281CardGfx ; gfx
+	tx EmptySlotName281 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT281
@@ -23853,8 +23853,8 @@ EmptySlot281Card:
 
 EmptySlot282Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot282CardGfx ; gfx
+	tx EmptySlotName282 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT282
@@ -23903,8 +23903,8 @@ EmptySlot282Card:
 
 EmptySlot283Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot283CardGfx ; gfx
+	tx EmptySlotName283 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT283
@@ -23953,8 +23953,8 @@ EmptySlot283Card:
 
 EmptySlot284Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot284CardGfx ; gfx
+	tx EmptySlotName284 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT284
@@ -24003,8 +24003,8 @@ EmptySlot284Card:
 
 EmptySlot285Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot285CardGfx ; gfx
+	tx EmptySlotName285 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT285
@@ -24053,8 +24053,8 @@ EmptySlot285Card:
 
 EmptySlot286Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot286CardGfx ; gfx
+	tx EmptySlotName286 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT286
@@ -24103,8 +24103,8 @@ EmptySlot286Card:
 
 EmptySlot287Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot287CardGfx ; gfx
+	tx EmptySlotName287 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT287
@@ -24153,8 +24153,8 @@ EmptySlot287Card:
 
 EmptySlot288Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot288CardGfx ; gfx
+	tx EmptySlotName288 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT288
@@ -24203,8 +24203,8 @@ EmptySlot288Card:
 
 EmptySlot289Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot289CardGfx ; gfx
+	tx EmptySlotName289 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT289
@@ -24253,8 +24253,8 @@ EmptySlot289Card:
 
 EmptySlot290Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot290CardGfx ; gfx
+	tx EmptySlotName290 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT290
@@ -24303,8 +24303,8 @@ EmptySlot290Card:
 
 EmptySlot291Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot291CardGfx ; gfx
+	tx EmptySlotName291 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT291
@@ -24353,8 +24353,8 @@ EmptySlot291Card:
 
 EmptySlot292Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot292CardGfx ; gfx
+	tx EmptySlotName292 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT292
@@ -24403,8 +24403,8 @@ EmptySlot292Card:
 
 EmptySlot293Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot293CardGfx ; gfx
+	tx EmptySlotName293 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT293
@@ -24453,8 +24453,8 @@ EmptySlot293Card:
 
 EmptySlot294Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot294CardGfx ; gfx
+	tx EmptySlotName294 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT294
@@ -24503,8 +24503,8 @@ EmptySlot294Card:
 
 EmptySlot295Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot295CardGfx ; gfx
+	tx EmptySlotName295 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT295
@@ -24553,8 +24553,8 @@ EmptySlot295Card:
 
 EmptySlot296Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot296CardGfx ; gfx
+	tx EmptySlotName296 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT296
@@ -24603,8 +24603,8 @@ EmptySlot296Card:
 
 EmptySlot297Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot297CardGfx ; gfx
+	tx EmptySlotName297 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT297
@@ -24653,8 +24653,8 @@ EmptySlot297Card:
 
 EmptySlot298Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot298CardGfx ; gfx
+	tx EmptySlotName298 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT298
@@ -24703,8 +24703,8 @@ EmptySlot298Card:
 
 EmptySlot299Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot299CardGfx ; gfx
+	tx EmptySlotName299 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT299
@@ -24754,8 +24754,8 @@ EmptySlot299Card:
 SECTION "Cards 3", ROMX			
 EmptySlot300Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot300CardGfx ; gfx
+	tx EmptySlotName300 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT300
@@ -24804,8 +24804,8 @@ EmptySlot300Card:
 
 EmptySlot301Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot301CardGfx ; gfx
+	tx EmptySlotName301 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT301
@@ -24854,8 +24854,8 @@ EmptySlot301Card:
 
 EmptySlot302Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot302CardGfx ; gfx
+	tx EmptySlotName302 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT302
@@ -24904,8 +24904,8 @@ EmptySlot302Card:
 
 EmptySlot303Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot303CardGfx ; gfx
+	tx EmptySlotName303 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT303
@@ -24954,8 +24954,8 @@ EmptySlot303Card:
 
 EmptySlot304Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot304CardGfx ; gfx
+	tx EmptySlotName304 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT304
@@ -25004,8 +25004,8 @@ EmptySlot304Card:
 
 EmptySlot305Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot305CardGfx ; gfx
+	tx EmptySlotName305 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT305
@@ -25054,8 +25054,8 @@ EmptySlot305Card:
 
 EmptySlot306Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot306CardGfx ; gfx
+	tx EmptySlotName306 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT306
@@ -25104,8 +25104,8 @@ EmptySlot306Card:
 
 EmptySlot307Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot307CardGfx ; gfx
+	tx EmptySlotName307 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT307
@@ -25154,8 +25154,8 @@ EmptySlot307Card:
 
 EmptySlot308Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot308CardGfx ; gfx
+	tx EmptySlotName308 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT308
@@ -25204,8 +25204,8 @@ EmptySlot308Card:
 
 EmptySlot309Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot309CardGfx ; gfx
+	tx EmptySlotName309 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT309
@@ -25254,8 +25254,8 @@ EmptySlot309Card:
 
 EmptySlot310Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot310CardGfx ; gfx
+	tx EmptySlotName310 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT310
@@ -25304,8 +25304,8 @@ EmptySlot310Card:
 
 EmptySlot311Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot311CardGfx ; gfx
+	tx EmptySlotName311 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT311
@@ -25354,8 +25354,8 @@ EmptySlot311Card:
 
 EmptySlot312Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot312CardGfx ; gfx
+	tx EmptySlotName312 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT312
@@ -25404,8 +25404,8 @@ EmptySlot312Card:
 
 EmptySlot313Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot313CardGfx ; gfx
+	tx EmptySlotName313 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT313
@@ -25454,8 +25454,8 @@ EmptySlot313Card:
 
 EmptySlot314Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot314CardGfx ; gfx
+	tx EmptySlotName314 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT314
@@ -25504,8 +25504,8 @@ EmptySlot314Card:
 
 EmptySlot315Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot315CardGfx ; gfx
+	tx EmptySlotName315 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT315
@@ -25554,8 +25554,8 @@ EmptySlot315Card:
 
 EmptySlot316Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot316CardGfx ; gfx
+	tx EmptySlotName316 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT316
@@ -25604,8 +25604,8 @@ EmptySlot316Card:
 
 EmptySlot317Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot317CardGfx ; gfx
+	tx EmptySlotName317 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT317
@@ -25654,8 +25654,8 @@ EmptySlot317Card:
 
 EmptySlot318Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot318CardGfx ; gfx
+	tx EmptySlotName318 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT318
@@ -25704,8 +25704,8 @@ EmptySlot318Card:
 
 EmptySlot319Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot319CardGfx ; gfx
+	tx EmptySlotName319 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT319
@@ -25754,8 +25754,8 @@ EmptySlot319Card:
 
 EmptySlot320Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot320CardGfx ; gfx
+	tx EmptySlotName320 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT320
@@ -25804,8 +25804,8 @@ EmptySlot320Card:
 
 EmptySlot321Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot321CardGfx ; gfx
+	tx EmptySlotName321 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT321
@@ -25854,8 +25854,8 @@ EmptySlot321Card:
 
 EmptySlot322Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot322CardGfx ; gfx
+	tx EmptySlotName322 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT322
@@ -25904,8 +25904,8 @@ EmptySlot322Card:
 
 EmptySlot323Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot323CardGfx ; gfx
+	tx EmptySlotName323 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT323
@@ -25954,8 +25954,8 @@ EmptySlot323Card:
 
 EmptySlot324Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot324CardGfx ; gfx
+	tx EmptySlotName324 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT324
@@ -26004,8 +26004,8 @@ EmptySlot324Card:
 
 EmptySlot325Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot325CardGfx ; gfx
+	tx EmptySlotName325 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT325
@@ -26054,8 +26054,8 @@ EmptySlot325Card:
 
 EmptySlot326Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot326CardGfx ; gfx
+	tx EmptySlotName326 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT326
@@ -26104,8 +26104,8 @@ EmptySlot326Card:
 
 EmptySlot327Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot327CardGfx ; gfx
+	tx EmptySlotName327 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT327
@@ -26154,8 +26154,8 @@ EmptySlot327Card:
 
 EmptySlot328Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot328CardGfx ; gfx
+	tx EmptySlotName328 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT328
@@ -26204,8 +26204,8 @@ EmptySlot328Card:
 
 EmptySlot329Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot329CardGfx ; gfx
+	tx EmptySlotName329 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT329
@@ -26254,8 +26254,8 @@ EmptySlot329Card:
 
 EmptySlot330Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot330CardGfx ; gfx
+	tx EmptySlotName330 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT330
@@ -26304,8 +26304,8 @@ EmptySlot330Card:
 
 EmptySlot331Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot331CardGfx ; gfx
+	tx EmptySlotName331 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT331
@@ -26354,8 +26354,8 @@ EmptySlot331Card:
 
 EmptySlot332Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot332CardGfx ; gfx
+	tx EmptySlotName332 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT332
@@ -26404,8 +26404,8 @@ EmptySlot332Card:
 
 EmptySlot333Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot333CardGfx ; gfx
+	tx EmptySlotName333 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT333
@@ -26454,8 +26454,8 @@ EmptySlot333Card:
 
 EmptySlot334Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot334CardGfx ; gfx
+	tx EmptySlotName334 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT334
@@ -26504,8 +26504,8 @@ EmptySlot334Card:
 
 EmptySlot335Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot335CardGfx ; gfx
+	tx EmptySlotName335 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT335
@@ -26554,8 +26554,8 @@ EmptySlot335Card:
 
 EmptySlot336Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot336CardGfx ; gfx
+	tx EmptySlotName336 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT336
@@ -26604,8 +26604,8 @@ EmptySlot336Card:
 
 EmptySlot337Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot337CardGfx ; gfx
+	tx EmptySlotName337 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT337
@@ -26654,8 +26654,8 @@ EmptySlot337Card:
 
 EmptySlot338Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot338CardGfx ; gfx
+	tx EmptySlotName338 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT338
@@ -26704,8 +26704,8 @@ EmptySlot338Card:
 
 EmptySlot339Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot339CardGfx ; gfx
+	tx EmptySlotName339 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT339
@@ -26754,8 +26754,8 @@ EmptySlot339Card:
 
 EmptySlot340Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot340CardGfx ; gfx
+	tx EmptySlotName340 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT340
@@ -26804,8 +26804,8 @@ EmptySlot340Card:
 
 EmptySlot341Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot341CardGfx ; gfx
+	tx EmptySlotName341 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT341
@@ -26854,8 +26854,8 @@ EmptySlot341Card:
 
 EmptySlot342Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot342CardGfx ; gfx
+	tx EmptySlotName342 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT342
@@ -26904,8 +26904,8 @@ EmptySlot342Card:
 
 EmptySlot343Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot343CardGfx ; gfx
+	tx EmptySlotName343 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT343
@@ -26954,8 +26954,8 @@ EmptySlot343Card:
 
 EmptySlot344Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot344CardGfx ; gfx
+	tx EmptySlotName344 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT344
@@ -27004,8 +27004,8 @@ EmptySlot344Card:
 
 EmptySlot345Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot345CardGfx ; gfx
+	tx EmptySlotName345 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT345
@@ -27054,8 +27054,8 @@ EmptySlot345Card:
 
 EmptySlot346Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot346CardGfx ; gfx
+	tx EmptySlotName346 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT346
@@ -27104,8 +27104,8 @@ EmptySlot346Card:
 
 EmptySlot347Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot347CardGfx ; gfx
+	tx EmptySlotName347 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT347
@@ -27154,8 +27154,8 @@ EmptySlot347Card:
 
 EmptySlot348Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot348CardGfx ; gfx
+	tx EmptySlotName348 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT348
@@ -27204,8 +27204,8 @@ EmptySlot348Card:
 
 EmptySlot349Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot349CardGfx ; gfx
+	tx EmptySlotName349 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT349
@@ -27254,8 +27254,8 @@ EmptySlot349Card:
 
 EmptySlot350Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot350CardGfx ; gfx
+	tx EmptySlotName350 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT350
@@ -27304,8 +27304,8 @@ EmptySlot350Card:
 
 EmptySlot351Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot351CardGfx ; gfx
+	tx EmptySlotName351 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT351
@@ -27354,8 +27354,8 @@ EmptySlot351Card:
 
 EmptySlot352Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot352CardGfx ; gfx
+	tx EmptySlotName352 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT352
@@ -27404,8 +27404,8 @@ EmptySlot352Card:
 
 EmptySlot353Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot353CardGfx ; gfx
+	tx EmptySlotName353 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT353
@@ -27454,8 +27454,8 @@ EmptySlot353Card:
 
 EmptySlot354Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot354CardGfx ; gfx
+	tx EmptySlotName354 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT354
@@ -27504,8 +27504,8 @@ EmptySlot354Card:
 
 EmptySlot355Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot355CardGfx ; gfx
+	tx EmptySlotName355 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT355
@@ -27554,8 +27554,8 @@ EmptySlot355Card:
 
 EmptySlot356Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot356CardGfx ; gfx
+	tx EmptySlotName356 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT356
@@ -27604,8 +27604,8 @@ EmptySlot356Card:
 
 EmptySlot357Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot357CardGfx ; gfx
+	tx EmptySlotName357 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT357
@@ -27654,8 +27654,8 @@ EmptySlot357Card:
 
 EmptySlot358Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot358CardGfx ; gfx
+	tx EmptySlotName358 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT358
@@ -27704,8 +27704,8 @@ EmptySlot358Card:
 
 EmptySlot359Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot359CardGfx ; gfx
+	tx EmptySlotName359 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT359
@@ -27754,8 +27754,8 @@ EmptySlot359Card:
 
 EmptySlot360Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot360CardGfx ; gfx
+	tx EmptySlotName360 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT360
@@ -27804,8 +27804,8 @@ EmptySlot360Card:
 
 EmptySlot361Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot361CardGfx ; gfx
+	tx EmptySlotName361 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT361
@@ -27854,8 +27854,8 @@ EmptySlot361Card:
 
 EmptySlot362Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot362CardGfx ; gfx
+	tx EmptySlotName362 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT362
@@ -27904,8 +27904,8 @@ EmptySlot362Card:
 
 EmptySlot363Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot363CardGfx ; gfx
+	tx EmptySlotName363 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT363
@@ -27954,8 +27954,8 @@ EmptySlot363Card:
 
 EmptySlot364Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot364CardGfx ; gfx
+	tx EmptySlotName364 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT364
@@ -28004,8 +28004,8 @@ EmptySlot364Card:
 
 EmptySlot365Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot365CardGfx ; gfx
+	tx EmptySlotName365 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT365
@@ -28054,8 +28054,8 @@ EmptySlot365Card:
 
 EmptySlot366Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot366CardGfx ; gfx
+	tx EmptySlotName366 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT366
@@ -28104,8 +28104,8 @@ EmptySlot366Card:
 
 EmptySlot367Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot367CardGfx ; gfx
+	tx EmptySlotName367 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT367
@@ -28154,8 +28154,8 @@ EmptySlot367Card:
 
 EmptySlot368Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot368CardGfx ; gfx
+	tx EmptySlotName368 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT368
@@ -28204,8 +28204,8 @@ EmptySlot368Card:
 
 EmptySlot369Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot369CardGfx ; gfx
+	tx EmptySlotName369 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT369
@@ -28254,8 +28254,8 @@ EmptySlot369Card:
 
 EmptySlot370Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot370CardGfx ; gfx
+	tx EmptySlotName370 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT370
@@ -28304,8 +28304,8 @@ EmptySlot370Card:
 
 EmptySlot371Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot371CardGfx ; gfx
+	tx EmptySlotName371 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT371
@@ -28354,8 +28354,8 @@ EmptySlot371Card:
 
 EmptySlot372Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot372CardGfx ; gfx
+	tx EmptySlotName372 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT372
@@ -28404,8 +28404,8 @@ EmptySlot372Card:
 
 EmptySlot373Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot373CardGfx ; gfx
+	tx EmptySlotName373 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT373
@@ -28454,8 +28454,8 @@ EmptySlot373Card:
 
 EmptySlot374Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot374CardGfx ; gfx
+	tx EmptySlotName374 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT374
@@ -28504,8 +28504,8 @@ EmptySlot374Card:
 
 EmptySlot375Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot375CardGfx ; gfx
+	tx EmptySlotName375 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT375
@@ -28554,8 +28554,8 @@ EmptySlot375Card:
 
 EmptySlot376Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot376CardGfx ; gfx
+	tx EmptySlotName376 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT376
@@ -28604,8 +28604,8 @@ EmptySlot376Card:
 
 EmptySlot377Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot377CardGfx ; gfx
+	tx EmptySlotName377 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT377
@@ -28654,8 +28654,8 @@ EmptySlot377Card:
 
 EmptySlot378Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot378CardGfx ; gfx
+	tx EmptySlotName378 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT378
@@ -28704,8 +28704,8 @@ EmptySlot378Card:
 
 EmptySlot379Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot379CardGfx ; gfx
+	tx EmptySlotName379 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT379
@@ -28754,8 +28754,8 @@ EmptySlot379Card:
 
 EmptySlot380Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot380CardGfx ; gfx
+	tx EmptySlotName380 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT380
@@ -28804,8 +28804,8 @@ EmptySlot380Card:
 
 EmptySlot381Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot381CardGfx ; gfx
+	tx EmptySlotName381 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT381
@@ -28854,8 +28854,8 @@ EmptySlot381Card:
 
 EmptySlot382Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot382CardGfx ; gfx
+	tx EmptySlotName382 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT382
@@ -28904,8 +28904,8 @@ EmptySlot382Card:
 
 EmptySlot383Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot383CardGfx ; gfx
+	tx EmptySlotName383 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT383
@@ -28954,8 +28954,8 @@ EmptySlot383Card:
 
 EmptySlot384Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot384CardGfx ; gfx
+	tx EmptySlotName384 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT384
@@ -29004,8 +29004,8 @@ EmptySlot384Card:
 
 EmptySlot385Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot385CardGfx ; gfx
+	tx EmptySlotName385 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT385
@@ -29054,8 +29054,8 @@ EmptySlot385Card:
 
 EmptySlot386Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot386CardGfx ; gfx
+	tx EmptySlotName386 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT386
@@ -29104,8 +29104,8 @@ EmptySlot386Card:
 
 EmptySlot387Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot387CardGfx ; gfx
+	tx EmptySlotName387 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT387
@@ -29154,8 +29154,8 @@ EmptySlot387Card:
 
 EmptySlot388Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot388CardGfx ; gfx
+	tx EmptySlotName388 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT388
@@ -29204,8 +29204,8 @@ EmptySlot388Card:
 
 EmptySlot389Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot389CardGfx ; gfx
+	tx EmptySlotName389 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT389
@@ -29254,8 +29254,8 @@ EmptySlot389Card:
 
 EmptySlot390Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot390CardGfx ; gfx
+	tx EmptySlotName390 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT390
@@ -29304,8 +29304,8 @@ EmptySlot390Card:
 
 EmptySlot391Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot391CardGfx ; gfx
+	tx EmptySlotName391 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT391
@@ -29354,8 +29354,8 @@ EmptySlot391Card:
 
 EmptySlot392Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot392CardGfx ; gfx
+	tx EmptySlotName392 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT392
@@ -29404,8 +29404,8 @@ EmptySlot392Card:
 
 EmptySlot393Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot393CardGfx ; gfx
+	tx EmptySlotName393 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT393
@@ -29454,8 +29454,8 @@ EmptySlot393Card:
 
 EmptySlot394Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot394CardGfx ; gfx
+	tx EmptySlotName394 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT394
@@ -29504,8 +29504,8 @@ EmptySlot394Card:
 
 EmptySlot395Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot395CardGfx ; gfx
+	tx EmptySlotName395 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT395
@@ -29554,8 +29554,8 @@ EmptySlot395Card:
 
 EmptySlot396Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot396CardGfx ; gfx
+	tx EmptySlotName396 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT396
@@ -29604,8 +29604,8 @@ EmptySlot396Card:
 
 EmptySlot397Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot397CardGfx ; gfx
+	tx EmptySlotName397 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT397
@@ -29654,8 +29654,8 @@ EmptySlot397Card:
 
 EmptySlot398Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot398CardGfx ; gfx
+	tx EmptySlotName398 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT398
@@ -29704,8 +29704,8 @@ EmptySlot398Card:
 
 EmptySlot399Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot399CardGfx ; gfx
+	tx EmptySlotName399 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT399
@@ -29754,8 +29754,8 @@ EmptySlot399Card:
 
 EmptySlot400Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot400CardGfx ; gfx
+	tx EmptySlotName400 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT400
@@ -29804,8 +29804,8 @@ EmptySlot400Card:
 
 EmptySlot401Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot401CardGfx ; gfx
+	tx EmptySlotName401 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT401
@@ -29854,8 +29854,8 @@ EmptySlot401Card:
 
 EmptySlot402Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot402CardGfx ; gfx
+	tx EmptySlotName402 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT402
@@ -29904,8 +29904,8 @@ EmptySlot402Card:
 
 EmptySlot403Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot403CardGfx ; gfx
+	tx EmptySlotName403 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT403
@@ -29954,8 +29954,8 @@ EmptySlot403Card:
 
 EmptySlot404Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot404CardGfx ; gfx
+	tx EmptySlotName404 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT404
@@ -30004,8 +30004,8 @@ EmptySlot404Card:
 
 EmptySlot405Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot405CardGfx ; gfx
+	tx EmptySlotName405 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT405
@@ -30054,8 +30054,8 @@ EmptySlot405Card:
 
 EmptySlot406Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot406CardGfx ; gfx
+	tx EmptySlotName406 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT406
@@ -30104,8 +30104,8 @@ EmptySlot406Card:
 
 EmptySlot407Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot407CardGfx ; gfx
+	tx EmptySlotName407 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT407
@@ -30154,8 +30154,8 @@ EmptySlot407Card:
 
 EmptySlot408Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot408CardGfx ; gfx
+	tx EmptySlotName408 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT408
@@ -30204,8 +30204,8 @@ EmptySlot408Card:
 
 EmptySlot409Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot409CardGfx ; gfx
+	tx EmptySlotName409 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT409
@@ -30254,8 +30254,8 @@ EmptySlot409Card:
 
 EmptySlot410Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot410CardGfx ; gfx
+	tx EmptySlotName410 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT410
@@ -30304,8 +30304,8 @@ EmptySlot410Card:
 
 EmptySlot411Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot411CardGfx ; gfx
+	tx EmptySlotName411 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT411
@@ -30354,8 +30354,8 @@ EmptySlot411Card:
 
 EmptySlot412Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot412CardGfx ; gfx
+	tx EmptySlotName412 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT412
@@ -30404,8 +30404,8 @@ EmptySlot412Card:
 
 EmptySlot413Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot413CardGfx ; gfx
+	tx EmptySlotName413 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT413
@@ -30454,8 +30454,8 @@ EmptySlot413Card:
 
 EmptySlot414Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot414CardGfx ; gfx
+	tx EmptySlotName414 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT414
@@ -30504,8 +30504,8 @@ EmptySlot414Card:
 
 EmptySlot415Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot415CardGfx ; gfx
+	tx EmptySlotName415 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT415
@@ -30554,8 +30554,8 @@ EmptySlot415Card:
 
 EmptySlot416Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot416CardGfx ; gfx
+	tx EmptySlotName416 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT416
@@ -30604,8 +30604,8 @@ EmptySlot416Card:
 
 EmptySlot417Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot417CardGfx ; gfx
+	tx EmptySlotName417 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT417
@@ -30654,8 +30654,8 @@ EmptySlot417Card:
 
 EmptySlot418Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot418CardGfx ; gfx
+	tx EmptySlotName418 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT418
@@ -30704,8 +30704,8 @@ EmptySlot418Card:
 
 EmptySlot419Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot419CardGfx ; gfx
+	tx EmptySlotName419 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT419
@@ -30754,8 +30754,8 @@ EmptySlot419Card:
 
 EmptySlot420Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot420CardGfx ; gfx
+	tx EmptySlotName420 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT420
@@ -30804,8 +30804,8 @@ EmptySlot420Card:
 
 EmptySlot421Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot421CardGfx ; gfx
+	tx EmptySlotName421 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT421
@@ -30854,8 +30854,8 @@ EmptySlot421Card:
 
 EmptySlot422Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot422CardGfx ; gfx
+	tx EmptySlotName422 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT422
@@ -30904,8 +30904,8 @@ EmptySlot422Card:
 
 EmptySlot423Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot423CardGfx ; gfx
+	tx EmptySlotName423 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT423
@@ -30954,8 +30954,8 @@ EmptySlot423Card:
 
 EmptySlot424Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot424CardGfx ; gfx
+	tx EmptySlotName424 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT424
@@ -31004,8 +31004,8 @@ EmptySlot424Card:
 
 EmptySlot425Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot425CardGfx ; gfx
+	tx EmptySlotName425 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT425
@@ -31054,8 +31054,8 @@ EmptySlot425Card:
 
 EmptySlot426Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot426CardGfx ; gfx
+	tx EmptySlotName426 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT426
@@ -31104,8 +31104,8 @@ EmptySlot426Card:
 
 EmptySlot427Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot427CardGfx ; gfx
+	tx EmptySlotName427 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT427
@@ -31154,8 +31154,8 @@ EmptySlot427Card:
 
 EmptySlot428Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot428CardGfx ; gfx
+	tx EmptySlotName428 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT428
@@ -31204,8 +31204,8 @@ EmptySlot428Card:
 
 EmptySlot429Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot429CardGfx ; gfx
+	tx EmptySlotName429 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT429
@@ -31254,8 +31254,8 @@ EmptySlot429Card:
 
 EmptySlot430Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot430CardGfx ; gfx
+	tx EmptySlotName430 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT430
@@ -31304,8 +31304,8 @@ EmptySlot430Card:
 
 EmptySlot431Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot431CardGfx ; gfx
+	tx EmptySlotName431 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT431
@@ -31354,8 +31354,8 @@ EmptySlot431Card:
 
 EmptySlot432Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot432CardGfx ; gfx
+	tx EmptySlotName432 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT432
@@ -31404,8 +31404,8 @@ EmptySlot432Card:
 
 EmptySlot433Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot433CardGfx ; gfx
+	tx EmptySlotName433 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT433
@@ -31454,8 +31454,8 @@ EmptySlot433Card:
 
 EmptySlot434Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot434CardGfx ; gfx
+	tx EmptySlotName434 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT434
@@ -31504,8 +31504,8 @@ EmptySlot434Card:
 
 EmptySlot435Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot435CardGfx ; gfx
+	tx EmptySlotName435 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT435
@@ -31554,8 +31554,8 @@ EmptySlot435Card:
 
 EmptySlot436Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot436CardGfx ; gfx
+	tx EmptySlotName436 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT436
@@ -31604,8 +31604,8 @@ EmptySlot436Card:
 
 EmptySlot437Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot437CardGfx ; gfx
+	tx EmptySlotName437 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT437
@@ -31654,8 +31654,8 @@ EmptySlot437Card:
 
 EmptySlot438Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot438CardGfx ; gfx
+	tx EmptySlotName438 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT438
@@ -31704,8 +31704,8 @@ EmptySlot438Card:
 
 EmptySlot439Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot439CardGfx ; gfx
+	tx EmptySlotName439 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT439
@@ -31754,8 +31754,8 @@ EmptySlot439Card:
 
 EmptySlot440Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot440CardGfx ; gfx
+	tx EmptySlotName440 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT440
@@ -31804,8 +31804,8 @@ EmptySlot440Card:
 
 EmptySlot441Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot441CardGfx ; gfx
+	tx EmptySlotName441 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT441
@@ -31854,8 +31854,8 @@ EmptySlot441Card:
 
 EmptySlot442Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot442CardGfx ; gfx
+	tx EmptySlotName442 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT442
@@ -31904,8 +31904,8 @@ EmptySlot442Card:
 
 EmptySlot443Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot443CardGfx ; gfx
+	tx EmptySlotName443 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT443
@@ -31954,8 +31954,8 @@ EmptySlot443Card:
 
 EmptySlot444Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot444CardGfx ; gfx
+	tx EmptySlotName444 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT444
@@ -32004,8 +32004,8 @@ EmptySlot444Card:
 
 EmptySlot445Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot445CardGfx ; gfx
+	tx EmptySlotName445 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT445
@@ -32054,8 +32054,8 @@ EmptySlot445Card:
 
 EmptySlot446Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot446CardGfx ; gfx
+	tx EmptySlotName446 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT446
@@ -32104,8 +32104,8 @@ EmptySlot446Card:
 
 EmptySlot447Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot447CardGfx ; gfx
+	tx EmptySlotName447 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT447
@@ -32154,8 +32154,8 @@ EmptySlot447Card:
 
 EmptySlot448Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot448CardGfx ; gfx
+	tx EmptySlotName448 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT448
@@ -32204,8 +32204,8 @@ EmptySlot448Card:
 
 EmptySlot449Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot449CardGfx ; gfx
+	tx EmptySlotName449 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT449
@@ -32254,8 +32254,8 @@ EmptySlot449Card:
 
 EmptySlot450Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot450CardGfx ; gfx
+	tx EmptySlotName450 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT450
@@ -32304,8 +32304,8 @@ EmptySlot450Card:
 
 EmptySlot451Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot451CardGfx ; gfx
+	tx EmptySlotName451 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT451
@@ -32354,8 +32354,8 @@ EmptySlot451Card:
 
 EmptySlot452Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot452CardGfx ; gfx
+	tx EmptySlotName452 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT452
@@ -32404,8 +32404,8 @@ EmptySlot452Card:
 
 EmptySlot453Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot453CardGfx ; gfx
+	tx EmptySlotName453 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT453
@@ -32454,8 +32454,8 @@ EmptySlot453Card:
 
 EmptySlot454Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot454CardGfx ; gfx
+	tx EmptySlotName454 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT454
@@ -32504,8 +32504,8 @@ EmptySlot454Card:
 
 EmptySlot455Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot455CardGfx ; gfx
+	tx EmptySlotName455 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT455
@@ -32554,8 +32554,8 @@ EmptySlot455Card:
 
 EmptySlot456Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot456CardGfx ; gfx
+	tx EmptySlotName456 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT456
@@ -32604,8 +32604,8 @@ EmptySlot456Card:
 
 EmptySlot457Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot457CardGfx ; gfx
+	tx EmptySlotName457 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT457
@@ -32654,8 +32654,8 @@ EmptySlot457Card:
 
 EmptySlot458Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot458CardGfx ; gfx
+	tx EmptySlotName458 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT458
@@ -32704,8 +32704,8 @@ EmptySlot458Card:
 
 EmptySlot459Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot459CardGfx ; gfx
+	tx EmptySlotName459 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT459
@@ -32754,8 +32754,8 @@ EmptySlot459Card:
 
 EmptySlot460Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot460CardGfx ; gfx
+	tx EmptySlotName460 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT460
@@ -32804,8 +32804,8 @@ EmptySlot460Card:
 
 EmptySlot461Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot461CardGfx ; gfx
+	tx EmptySlotName461 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT461
@@ -32854,8 +32854,8 @@ EmptySlot461Card:
 
 EmptySlot462Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot462CardGfx ; gfx
+	tx EmptySlotName462 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT462
@@ -32904,8 +32904,8 @@ EmptySlot462Card:
 
 EmptySlot463Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot463CardGfx ; gfx
+	tx EmptySlotName463 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT463
@@ -32954,8 +32954,8 @@ EmptySlot463Card:
 
 EmptySlot464Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot464CardGfx ; gfx
+	tx EmptySlotName464 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT464
@@ -33004,8 +33004,8 @@ EmptySlot464Card:
 
 EmptySlot465Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot465CardGfx ; gfx
+	tx EmptySlotName465 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT465
@@ -33054,8 +33054,8 @@ EmptySlot465Card:
 
 EmptySlot466Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot466CardGfx ; gfx
+	tx EmptySlotName466 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT466
@@ -33104,8 +33104,8 @@ EmptySlot466Card:
 
 EmptySlot467Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot467CardGfx ; gfx
+	tx EmptySlotName467 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT467
@@ -33154,8 +33154,8 @@ EmptySlot467Card:
 
 EmptySlot468Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot468CardGfx ; gfx
+	tx EmptySlotName468 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT468
@@ -33204,8 +33204,8 @@ EmptySlot468Card:
 
 EmptySlot469Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot469CardGfx ; gfx
+	tx EmptySlotName469 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT469
@@ -33254,8 +33254,8 @@ EmptySlot469Card:
 
 EmptySlot470Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot470CardGfx ; gfx
+	tx EmptySlotName470 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT470
@@ -33304,8 +33304,8 @@ EmptySlot470Card:
 
 EmptySlot471Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot471CardGfx ; gfx
+	tx EmptySlotName471 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT471
@@ -33354,8 +33354,8 @@ EmptySlot471Card:
 
 EmptySlot472Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot472CardGfx ; gfx
+	tx EmptySlotName472 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT472
@@ -33404,8 +33404,8 @@ EmptySlot472Card:
 
 EmptySlot473Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot473CardGfx ; gfx
+	tx EmptySlotName473 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT473
@@ -33454,8 +33454,8 @@ EmptySlot473Card:
 
 EmptySlot474Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot474CardGfx ; gfx
+	tx EmptySlotName474 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT474
@@ -33504,8 +33504,8 @@ EmptySlot474Card:
 
 EmptySlot475Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot475CardGfx ; gfx
+	tx EmptySlotName475 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT475
@@ -33554,8 +33554,8 @@ EmptySlot475Card:
 
 EmptySlot476Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot476CardGfx ; gfx
+	tx EmptySlotName476 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT476
@@ -33604,8 +33604,8 @@ EmptySlot476Card:
 
 EmptySlot477Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot477CardGfx ; gfx
+	tx EmptySlotName477 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT477
@@ -33654,8 +33654,8 @@ EmptySlot477Card:
 
 EmptySlot478Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot478CardGfx ; gfx
+	tx EmptySlotName478 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT478
@@ -33704,8 +33704,8 @@ EmptySlot478Card:
 
 EmptySlot479Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot479CardGfx ; gfx
+	tx EmptySlotName479 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT479
@@ -33754,8 +33754,8 @@ EmptySlot479Card:
 
 EmptySlot480Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot480CardGfx ; gfx
+	tx EmptySlotName480 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT480
@@ -33804,8 +33804,8 @@ EmptySlot480Card:
 
 EmptySlot481Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot481CardGfx ; gfx
+	tx EmptySlotName481 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT481
@@ -33854,8 +33854,8 @@ EmptySlot481Card:
 
 EmptySlot482Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot482CardGfx ; gfx
+	tx EmptySlotName482 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT482
@@ -33904,8 +33904,8 @@ EmptySlot482Card:
 
 EmptySlot483Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot483CardGfx ; gfx
+	tx EmptySlotName483 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT483
@@ -33954,8 +33954,8 @@ EmptySlot483Card:
 
 EmptySlot484Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot484CardGfx ; gfx
+	tx EmptySlotName484 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT484
@@ -34004,8 +34004,8 @@ EmptySlot484Card:
 
 EmptySlot485Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot485CardGfx ; gfx
+	tx EmptySlotName485 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT485
@@ -34054,8 +34054,8 @@ EmptySlot485Card:
 
 EmptySlot486Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot486CardGfx ; gfx
+	tx EmptySlotName486 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT486
@@ -34104,8 +34104,8 @@ EmptySlot486Card:
 
 EmptySlot487Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot487CardGfx ; gfx
+	tx EmptySlotName487 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT487
@@ -34154,8 +34154,8 @@ EmptySlot487Card:
 
 EmptySlot488Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot488CardGfx ; gfx
+	tx EmptySlotName488 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT488
@@ -34204,8 +34204,8 @@ EmptySlot488Card:
 
 EmptySlot489Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot489CardGfx ; gfx
+	tx EmptySlotName489 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT489
@@ -34254,8 +34254,8 @@ EmptySlot489Card:
 
 EmptySlot490Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot490CardGfx ; gfx
+	tx EmptySlotName490 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT490
@@ -34304,8 +34304,8 @@ EmptySlot490Card:
 
 EmptySlot491Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot491CardGfx ; gfx
+	tx EmptySlotName491 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT491
@@ -34354,8 +34354,8 @@ EmptySlot491Card:
 
 EmptySlot492Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot492CardGfx ; gfx
+	tx EmptySlotName492 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT492
@@ -34404,8 +34404,8 @@ EmptySlot492Card:
 
 EmptySlot493Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot493CardGfx ; gfx
+	tx EmptySlotName493 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT493
@@ -34454,8 +34454,8 @@ EmptySlot493Card:
 
 EmptySlot494Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot494CardGfx ; gfx
+	tx EmptySlotName494 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT494
@@ -34504,8 +34504,8 @@ EmptySlot494Card:
 
 EmptySlot495Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot495CardGfx ; gfx
+	tx EmptySlotName495 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT495
@@ -34554,8 +34554,8 @@ EmptySlot495Card:
 
 EmptySlot496Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot496CardGfx ; gfx
+	tx EmptySlotName496 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT496
@@ -34604,8 +34604,8 @@ EmptySlot496Card:
 
 EmptySlot497Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot497CardGfx ; gfx
+	tx EmptySlotName497 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT497
@@ -34654,8 +34654,8 @@ EmptySlot497Card:
 
 EmptySlot498Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot498CardGfx ; gfx
+	tx EmptySlotName498 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT498
@@ -34704,8 +34704,8 @@ EmptySlot498Card:
 
 EmptySlot499Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot499CardGfx ; gfx
+	tx EmptySlotName499 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT499
@@ -34754,8 +34754,8 @@ EmptySlot499Card:
 
 EmptySlot500Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot500CardGfx ; gfx
+	tx EmptySlotName500 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT500
@@ -34804,8 +34804,8 @@ EmptySlot500Card:
 
 EmptySlot501Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot501CardGfx ; gfx
+	tx EmptySlotName501 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT501
@@ -34854,8 +34854,8 @@ EmptySlot501Card:
 
 EmptySlot502Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot502CardGfx ; gfx
+	tx EmptySlotName502 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT502
@@ -34904,8 +34904,8 @@ EmptySlot502Card:
 
 EmptySlot503Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot503CardGfx ; gfx
+	tx EmptySlotName503 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT503
@@ -34954,8 +34954,8 @@ EmptySlot503Card:
 
 EmptySlot504Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot504CardGfx ; gfx
+	tx EmptySlotName504 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT504
@@ -35004,8 +35004,8 @@ EmptySlot504Card:
 
 EmptySlot505Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot505CardGfx ; gfx
+	tx EmptySlotName505 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT505
@@ -35054,8 +35054,8 @@ EmptySlot505Card:
 
 EmptySlot506Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot506CardGfx ; gfx
+	tx EmptySlotName506 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT506
@@ -35104,8 +35104,8 @@ EmptySlot506Card:
 
 EmptySlot507Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot507CardGfx ; gfx
+	tx EmptySlotName507 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT507
@@ -35154,8 +35154,8 @@ EmptySlot507Card:
 
 EmptySlot508Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot508CardGfx ; gfx
+	tx EmptySlotName508 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT508
@@ -35204,8 +35204,8 @@ EmptySlot508Card:
 
 EmptySlot509Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot509CardGfx ; gfx
+	tx EmptySlotName509 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT509
@@ -35254,8 +35254,8 @@ EmptySlot509Card:
 
 EmptySlot510Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot510CardGfx ; gfx
+	tx EmptySlotName510 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT510
@@ -35304,8 +35304,8 @@ EmptySlot510Card:
 
 EmptySlot511Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot511CardGfx ; gfx
+	tx EmptySlotName511 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT511
@@ -35354,8 +35354,8 @@ EmptySlot511Card:
 
 EmptySlot512Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot512CardGfx ; gfx
+	tx EmptySlotName512 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT512
@@ -35404,8 +35404,8 @@ EmptySlot512Card:
 
 EmptySlot513Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot513CardGfx ; gfx
+	tx EmptySlotName513 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT513
@@ -35454,8 +35454,8 @@ EmptySlot513Card:
 
 EmptySlot514Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot514CardGfx ; gfx
+	tx EmptySlotName514 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT514
@@ -35504,8 +35504,8 @@ EmptySlot514Card:
 
 EmptySlot515Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot515CardGfx ; gfx
+	tx EmptySlotName515 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT515
@@ -35554,8 +35554,8 @@ EmptySlot515Card:
 
 EmptySlot516Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot516CardGfx ; gfx
+	tx EmptySlotName516 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT516
@@ -35604,8 +35604,8 @@ EmptySlot516Card:
 
 EmptySlot517Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot517CardGfx ; gfx
+	tx EmptySlotName517 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT517
@@ -35654,8 +35654,8 @@ EmptySlot517Card:
 
 EmptySlot518Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot518CardGfx ; gfx
+	tx EmptySlotName518 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT518
@@ -35704,8 +35704,8 @@ EmptySlot518Card:
 
 EmptySlot519Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot519CardGfx ; gfx
+	tx EmptySlotName519 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT519
@@ -35754,8 +35754,8 @@ EmptySlot519Card:
 
 EmptySlot520Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot520CardGfx ; gfx
+	tx EmptySlotName520 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT520
@@ -35804,8 +35804,8 @@ EmptySlot520Card:
 
 EmptySlot521Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot521CardGfx ; gfx
+	tx EmptySlotName521 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT521
@@ -35854,8 +35854,8 @@ EmptySlot521Card:
 
 EmptySlot522Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot522CardGfx ; gfx
+	tx EmptySlotName522 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT522
@@ -35904,8 +35904,8 @@ EmptySlot522Card:
 
 EmptySlot523Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot523CardGfx ; gfx
+	tx EmptySlotName523 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT523
@@ -35954,8 +35954,8 @@ EmptySlot523Card:
 
 EmptySlot524Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot524CardGfx ; gfx
+	tx EmptySlotName524 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT524
@@ -36004,8 +36004,8 @@ EmptySlot524Card:
 
 EmptySlot525Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot525CardGfx ; gfx
+	tx EmptySlotName525 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT525
@@ -36054,8 +36054,8 @@ EmptySlot525Card:
 
 EmptySlot526Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot526CardGfx ; gfx
+	tx EmptySlotName526 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT526
@@ -36104,8 +36104,8 @@ EmptySlot526Card:
 
 EmptySlot527Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot527CardGfx ; gfx
+	tx EmptySlotName527 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT527
@@ -36154,8 +36154,8 @@ EmptySlot527Card:
 
 EmptySlot528Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot528CardGfx ; gfx
+	tx EmptySlotName528 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT528
@@ -36204,8 +36204,8 @@ EmptySlot528Card:
 
 EmptySlot529Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot529CardGfx ; gfx
+	tx EmptySlotName529 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT529
@@ -36254,8 +36254,8 @@ EmptySlot529Card:
 
 EmptySlot530Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot530CardGfx ; gfx
+	tx EmptySlotName530 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT530
@@ -36304,8 +36304,8 @@ EmptySlot530Card:
 
 EmptySlot531Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot531CardGfx ; gfx
+	tx EmptySlotName531 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT531
@@ -36354,8 +36354,8 @@ EmptySlot531Card:
 
 EmptySlot532Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot532CardGfx ; gfx
+	tx EmptySlotName532 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT532
@@ -36404,8 +36404,8 @@ EmptySlot532Card:
 
 EmptySlot533Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot533CardGfx ; gfx
+	tx EmptySlotName533 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT533
@@ -36454,8 +36454,8 @@ EmptySlot533Card:
 
 EmptySlot534Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot534CardGfx ; gfx
+	tx EmptySlotName534 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT534
@@ -36504,8 +36504,8 @@ EmptySlot534Card:
 
 EmptySlot535Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot535CardGfx ; gfx
+	tx EmptySlotName535 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT535
@@ -36554,8 +36554,8 @@ EmptySlot535Card:
 
 EmptySlot536Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot536CardGfx ; gfx
+	tx EmptySlotName536 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT536
@@ -36604,8 +36604,8 @@ EmptySlot536Card:
 
 EmptySlot537Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot537CardGfx ; gfx
+	tx EmptySlotName537 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT537
@@ -36654,8 +36654,8 @@ EmptySlot537Card:
 
 EmptySlot538Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot538CardGfx ; gfx
+	tx EmptySlotName538 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT538
@@ -36704,8 +36704,8 @@ EmptySlot538Card:
 
 EmptySlot539Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot539CardGfx ; gfx
+	tx EmptySlotName539 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT539
@@ -36754,8 +36754,8 @@ EmptySlot539Card:
 
 EmptySlot540Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot540CardGfx ; gfx
+	tx EmptySlotName540 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT540
@@ -36804,8 +36804,8 @@ EmptySlot540Card:
 
 EmptySlot541Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot541CardGfx ; gfx
+	tx EmptySlotName541 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT541
@@ -36854,8 +36854,8 @@ EmptySlot541Card:
 
 EmptySlot542Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot542CardGfx ; gfx
+	tx EmptySlotName542 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT542
@@ -36904,8 +36904,8 @@ EmptySlot542Card:
 
 EmptySlot543Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot543CardGfx ; gfx
+	tx EmptySlotName543 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT543
@@ -36954,8 +36954,8 @@ EmptySlot543Card:
 
 EmptySlot544Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot544CardGfx ; gfx
+	tx EmptySlotName544 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT544
@@ -37004,8 +37004,8 @@ EmptySlot544Card:
 
 EmptySlot545Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot545CardGfx ; gfx
+	tx EmptySlotName545 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT545
@@ -37054,8 +37054,8 @@ EmptySlot545Card:
 
 EmptySlot546Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot546CardGfx ; gfx
+	tx EmptySlotName546 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT546
@@ -37104,8 +37104,8 @@ EmptySlot546Card:
 
 EmptySlot547Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot547CardGfx ; gfx
+	tx EmptySlotName547 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT547
@@ -37155,8 +37155,8 @@ EmptySlot547Card:
 SECTION "Cards 4", ROMX	
 EmptySlot548Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot548CardGfx ; gfx
+	tx EmptySlotName548 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT548
@@ -37205,8 +37205,8 @@ EmptySlot548Card:
 
 EmptySlot549Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot549CardGfx ; gfx
+	tx EmptySlotName549 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT549
@@ -37255,8 +37255,8 @@ EmptySlot549Card:
 
 EmptySlot550Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot550CardGfx ; gfx
+	tx EmptySlotName550 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT550
@@ -37305,8 +37305,8 @@ EmptySlot550Card:
 
 EmptySlot551Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot551CardGfx ; gfx
+	tx EmptySlotName551 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT551
@@ -37355,8 +37355,8 @@ EmptySlot551Card:
 
 EmptySlot552Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot552CardGfx ; gfx
+	tx EmptySlotName552 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT552
@@ -37405,8 +37405,8 @@ EmptySlot552Card:
 
 EmptySlot553Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot553CardGfx ; gfx
+	tx EmptySlotName553 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT553
@@ -37455,8 +37455,8 @@ EmptySlot553Card:
 
 EmptySlot554Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot554CardGfx ; gfx
+	tx EmptySlotName554 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT554
@@ -37505,8 +37505,8 @@ EmptySlot554Card:
 
 EmptySlot555Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot555CardGfx ; gfx
+	tx EmptySlotName555 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT555
@@ -37555,8 +37555,8 @@ EmptySlot555Card:
 
 EmptySlot556Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot556CardGfx ; gfx
+	tx EmptySlotName556 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT556
@@ -37605,8 +37605,8 @@ EmptySlot556Card:
 
 EmptySlot557Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot557CardGfx ; gfx
+	tx EmptySlotName557 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT557
@@ -37655,8 +37655,8 @@ EmptySlot557Card:
 
 EmptySlot558Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot558CardGfx ; gfx
+	tx EmptySlotName558 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT558
@@ -37705,8 +37705,8 @@ EmptySlot558Card:
 
 EmptySlot559Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot559CardGfx ; gfx
+	tx EmptySlotName559 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT559
@@ -37755,8 +37755,8 @@ EmptySlot559Card:
 
 EmptySlot560Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot560CardGfx ; gfx
+	tx EmptySlotName560 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT560
@@ -37805,8 +37805,8 @@ EmptySlot560Card:
 
 EmptySlot561Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot561CardGfx ; gfx
+	tx EmptySlotName561 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT561
@@ -37855,8 +37855,8 @@ EmptySlot561Card:
 
 EmptySlot562Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot562CardGfx ; gfx
+	tx EmptySlotName562 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT562
@@ -37905,8 +37905,8 @@ EmptySlot562Card:
 
 EmptySlot563Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot563CardGfx ; gfx
+	tx EmptySlotName563 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT563
@@ -37955,8 +37955,8 @@ EmptySlot563Card:
 
 EmptySlot564Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot564CardGfx ; gfx
+	tx EmptySlotName564 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT564
@@ -38005,8 +38005,8 @@ EmptySlot564Card:
 
 EmptySlot565Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot565CardGfx ; gfx
+	tx EmptySlotName565 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT565
@@ -38055,8 +38055,8 @@ EmptySlot565Card:
 
 EmptySlot566Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot566CardGfx ; gfx
+	tx EmptySlotName566 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT566
@@ -38105,8 +38105,8 @@ EmptySlot566Card:
 
 EmptySlot567Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot567CardGfx ; gfx
+	tx EmptySlotName567 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT567
@@ -38155,8 +38155,8 @@ EmptySlot567Card:
 
 EmptySlot568Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot568CardGfx ; gfx
+	tx EmptySlotName568 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT568
@@ -38205,8 +38205,8 @@ EmptySlot568Card:
 
 EmptySlot569Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot569CardGfx ; gfx
+	tx EmptySlotName569 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT569
@@ -38255,8 +38255,8 @@ EmptySlot569Card:
 
 EmptySlot570Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot570CardGfx ; gfx
+	tx EmptySlotName570 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT570
@@ -38305,8 +38305,8 @@ EmptySlot570Card:
 
 EmptySlot571Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot571CardGfx ; gfx
+	tx EmptySlotName571 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT571
@@ -38355,8 +38355,8 @@ EmptySlot571Card:
 
 EmptySlot572Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot572CardGfx ; gfx
+	tx EmptySlotName572 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT572
@@ -38405,8 +38405,8 @@ EmptySlot572Card:
 
 EmptySlot573Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot573CardGfx ; gfx
+	tx EmptySlotName573 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT573
@@ -38455,8 +38455,8 @@ EmptySlot573Card:
 
 EmptySlot574Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot574CardGfx ; gfx
+	tx EmptySlotName574 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT574
@@ -38505,8 +38505,8 @@ EmptySlot574Card:
 
 EmptySlot575Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot575CardGfx ; gfx
+	tx EmptySlotName575 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT575
@@ -38555,8 +38555,8 @@ EmptySlot575Card:
 
 EmptySlot576Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot576CardGfx ; gfx
+	tx EmptySlotName576 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT576
@@ -38605,8 +38605,8 @@ EmptySlot576Card:
 
 EmptySlot577Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot577CardGfx ; gfx
+	tx EmptySlotName577 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT577
@@ -38655,8 +38655,8 @@ EmptySlot577Card:
 
 EmptySlot578Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot578CardGfx ; gfx
+	tx EmptySlotName578 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT578
@@ -38705,8 +38705,8 @@ EmptySlot578Card:
 
 EmptySlot579Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot579CardGfx ; gfx
+	tx EmptySlotName579 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT579
@@ -38755,8 +38755,8 @@ EmptySlot579Card:
 
 EmptySlot580Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot580CardGfx ; gfx
+	tx EmptySlotName580 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT580
@@ -38805,8 +38805,8 @@ EmptySlot580Card:
 
 EmptySlot581Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot581CardGfx ; gfx
+	tx EmptySlotName581 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT581
@@ -38855,8 +38855,8 @@ EmptySlot581Card:
 
 EmptySlot582Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot582CardGfx ; gfx
+	tx EmptySlotName582 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT582
@@ -38905,8 +38905,8 @@ EmptySlot582Card:
 
 EmptySlot583Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot583CardGfx ; gfx
+	tx EmptySlotName583 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT583
@@ -38955,8 +38955,8 @@ EmptySlot583Card:
 
 EmptySlot584Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot584CardGfx ; gfx
+	tx EmptySlotName584 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT584
@@ -39005,8 +39005,8 @@ EmptySlot584Card:
 
 EmptySlot585Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot585CardGfx ; gfx
+	tx EmptySlotName585 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT585
@@ -39055,8 +39055,8 @@ EmptySlot585Card:
 
 EmptySlot586Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot586CardGfx ; gfx
+	tx EmptySlotName586 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT586
@@ -39105,8 +39105,8 @@ EmptySlot586Card:
 
 EmptySlot587Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot587CardGfx ; gfx
+	tx EmptySlotName587 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT587
@@ -39155,8 +39155,8 @@ EmptySlot587Card:
 
 EmptySlot588Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot588CardGfx ; gfx
+	tx EmptySlotName588 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT588
@@ -39205,8 +39205,8 @@ EmptySlot588Card:
 
 EmptySlot589Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot589CardGfx ; gfx
+	tx EmptySlotName589 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT589
@@ -39255,8 +39255,8 @@ EmptySlot589Card:
 
 EmptySlot590Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot590CardGfx ; gfx
+	tx EmptySlotName590 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT590
@@ -39305,8 +39305,8 @@ EmptySlot590Card:
 
 EmptySlot591Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot591CardGfx ; gfx
+	tx EmptySlotName591 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT591
@@ -39355,8 +39355,8 @@ EmptySlot591Card:
 
 EmptySlot592Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot592CardGfx ; gfx
+	tx EmptySlotName592 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT592
@@ -39405,8 +39405,8 @@ EmptySlot592Card:
 
 EmptySlot593Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot593CardGfx ; gfx
+	tx EmptySlotName593 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT593
@@ -39455,8 +39455,8 @@ EmptySlot593Card:
 
 EmptySlot594Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot594CardGfx ; gfx
+	tx EmptySlotName594 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT594
@@ -39505,8 +39505,8 @@ EmptySlot594Card:
 
 EmptySlot595Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot595CardGfx ; gfx
+	tx EmptySlotName595 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT595
@@ -39555,8 +39555,8 @@ EmptySlot595Card:
 
 EmptySlot596Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot596CardGfx ; gfx
+	tx EmptySlotName596 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT596
@@ -39605,8 +39605,8 @@ EmptySlot596Card:
 
 EmptySlot597Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot597CardGfx ; gfx
+	tx EmptySlotName597 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT597
@@ -39655,8 +39655,8 @@ EmptySlot597Card:
 
 EmptySlot598Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot598CardGfx ; gfx
+	tx EmptySlotName598 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT598
@@ -39705,8 +39705,8 @@ EmptySlot598Card:
 
 EmptySlot599Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot599CardGfx ; gfx
+	tx EmptySlotName599 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT599
@@ -39755,8 +39755,8 @@ EmptySlot599Card:
 
 EmptySlot600Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot600CardGfx ; gfx
+	tx EmptySlotName600 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT600
@@ -39805,8 +39805,8 @@ EmptySlot600Card:
 
 EmptySlot601Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot601CardGfx ; gfx
+	tx EmptySlotName601 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT601
@@ -39855,8 +39855,8 @@ EmptySlot601Card:
 
 EmptySlot602Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot602CardGfx ; gfx
+	tx EmptySlotName602 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT602
@@ -39905,8 +39905,8 @@ EmptySlot602Card:
 
 EmptySlot603Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot603CardGfx ; gfx
+	tx EmptySlotName603 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT603
@@ -39955,8 +39955,8 @@ EmptySlot603Card:
 
 EmptySlot604Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot604CardGfx ; gfx
+	tx EmptySlotName604 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT604
@@ -40005,8 +40005,8 @@ EmptySlot604Card:
 
 EmptySlot605Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot605CardGfx ; gfx
+	tx EmptySlotName605 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT605
@@ -40055,8 +40055,8 @@ EmptySlot605Card:
 
 EmptySlot606Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot606CardGfx ; gfx
+	tx EmptySlotName606 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT606
@@ -40105,8 +40105,8 @@ EmptySlot606Card:
 
 EmptySlot607Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot607CardGfx ; gfx
+	tx EmptySlotName607 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT607
@@ -40155,8 +40155,8 @@ EmptySlot607Card:
 
 EmptySlot608Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot608CardGfx ; gfx
+	tx EmptySlotName608 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT608
@@ -40205,8 +40205,8 @@ EmptySlot608Card:
 
 EmptySlot609Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot609CardGfx ; gfx
+	tx EmptySlotName609 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT609
@@ -40255,8 +40255,8 @@ EmptySlot609Card:
 
 EmptySlot610Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot610CardGfx ; gfx
+	tx EmptySlotName610 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT610
@@ -40305,8 +40305,8 @@ EmptySlot610Card:
 
 EmptySlot611Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot611CardGfx ; gfx
+	tx EmptySlotName611 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT611
@@ -40355,8 +40355,8 @@ EmptySlot611Card:
 
 EmptySlot612Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot612CardGfx ; gfx
+	tx EmptySlotName612 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT612
@@ -40405,8 +40405,8 @@ EmptySlot612Card:
 
 EmptySlot613Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot613CardGfx ; gfx
+	tx EmptySlotName613 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT613
@@ -40455,8 +40455,8 @@ EmptySlot613Card:
 
 EmptySlot614Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot614CardGfx ; gfx
+	tx EmptySlotName614 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT614
@@ -40505,8 +40505,8 @@ EmptySlot614Card:
 
 EmptySlot615Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot615CardGfx ; gfx
+	tx EmptySlotName615 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT615
@@ -40555,8 +40555,8 @@ EmptySlot615Card:
 
 EmptySlot616Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot616CardGfx ; gfx
+	tx EmptySlotName616 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT616
@@ -40605,8 +40605,8 @@ EmptySlot616Card:
 
 EmptySlot617Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot617CardGfx ; gfx
+	tx EmptySlotName617 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT617
@@ -40655,8 +40655,8 @@ EmptySlot617Card:
 
 EmptySlot618Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot618CardGfx ; gfx
+	tx EmptySlotName618 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT618
@@ -40705,8 +40705,8 @@ EmptySlot618Card:
 
 EmptySlot619Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot619CardGfx ; gfx
+	tx EmptySlotName619 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT619
@@ -40755,8 +40755,8 @@ EmptySlot619Card:
 
 EmptySlot620Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot620CardGfx ; gfx
+	tx EmptySlotName620 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT620
@@ -40805,8 +40805,8 @@ EmptySlot620Card:
 
 EmptySlot621Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot621CardGfx ; gfx
+	tx EmptySlotName621 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT621
@@ -40855,8 +40855,8 @@ EmptySlot621Card:
 
 EmptySlot622Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot622CardGfx ; gfx
+	tx EmptySlotName622 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT622
@@ -40905,8 +40905,8 @@ EmptySlot622Card:
 
 EmptySlot623Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot623CardGfx ; gfx
+	tx EmptySlotName623 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT623
@@ -40955,8 +40955,8 @@ EmptySlot623Card:
 
 EmptySlot624Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot624CardGfx ; gfx
+	tx EmptySlotName624 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT624
@@ -41005,8 +41005,8 @@ EmptySlot624Card:
 
 EmptySlot625Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot625CardGfx ; gfx
+	tx EmptySlotName625 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT625
@@ -41055,8 +41055,8 @@ EmptySlot625Card:
 
 EmptySlot626Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot626CardGfx ; gfx
+	tx EmptySlotName626 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT626
@@ -41105,8 +41105,8 @@ EmptySlot626Card:
 
 EmptySlot627Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot627CardGfx ; gfx
+	tx EmptySlotName627 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT627
@@ -41155,8 +41155,8 @@ EmptySlot627Card:
 
 EmptySlot628Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot628CardGfx ; gfx
+	tx EmptySlotName628 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT628
@@ -41205,8 +41205,8 @@ EmptySlot628Card:
 
 EmptySlot629Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot629CardGfx ; gfx
+	tx EmptySlotName629 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT629
@@ -41255,8 +41255,8 @@ EmptySlot629Card:
 
 EmptySlot630Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot630CardGfx ; gfx
+	tx EmptySlotName630 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT630
@@ -41305,8 +41305,8 @@ EmptySlot630Card:
 
 EmptySlot631Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot631CardGfx ; gfx
+	tx EmptySlotName631 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT631
@@ -41355,8 +41355,8 @@ EmptySlot631Card:
 
 EmptySlot632Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot632CardGfx ; gfx
+	tx EmptySlotName632 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT632
@@ -41405,8 +41405,8 @@ EmptySlot632Card:
 
 EmptySlot633Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot633CardGfx ; gfx
+	tx EmptySlotName633 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT633
@@ -41455,8 +41455,8 @@ EmptySlot633Card:
 
 EmptySlot634Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot634CardGfx ; gfx
+	tx EmptySlotName634 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT634
@@ -41505,8 +41505,8 @@ EmptySlot634Card:
 
 EmptySlot635Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot635CardGfx ; gfx
+	tx EmptySlotName635 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT635
@@ -41555,8 +41555,8 @@ EmptySlot635Card:
 
 EmptySlot636Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot636CardGfx ; gfx
+	tx EmptySlotName636 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT636
@@ -41605,8 +41605,8 @@ EmptySlot636Card:
 
 EmptySlot637Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot637CardGfx ; gfx
+	tx EmptySlotName637 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT637
@@ -41655,8 +41655,8 @@ EmptySlot637Card:
 
 EmptySlot638Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot638CardGfx ; gfx
+	tx EmptySlotName638 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT638
@@ -41705,8 +41705,8 @@ EmptySlot638Card:
 
 EmptySlot639Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot639CardGfx ; gfx
+	tx EmptySlotName639 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT639
@@ -41755,8 +41755,8 @@ EmptySlot639Card:
 
 EmptySlot640Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot640CardGfx ; gfx
+	tx EmptySlotName640 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT640
@@ -41805,8 +41805,8 @@ EmptySlot640Card:
 
 EmptySlot641Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot641CardGfx ; gfx
+	tx EmptySlotName641 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT641
@@ -41855,8 +41855,8 @@ EmptySlot641Card:
 
 EmptySlot642Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot642CardGfx ; gfx
+	tx EmptySlotName642 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT642
@@ -41905,8 +41905,8 @@ EmptySlot642Card:
 
 EmptySlot643Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot643CardGfx ; gfx
+	tx EmptySlotName643 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT643
@@ -41955,8 +41955,8 @@ EmptySlot643Card:
 
 EmptySlot644Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot644CardGfx ; gfx
+	tx EmptySlotName644 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT644
@@ -42005,8 +42005,8 @@ EmptySlot644Card:
 
 EmptySlot645Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot645CardGfx ; gfx
+	tx EmptySlotName645 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT645
@@ -42055,8 +42055,8 @@ EmptySlot645Card:
 
 EmptySlot646Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot646CardGfx ; gfx
+	tx EmptySlotName646 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT646
@@ -42105,8 +42105,8 @@ EmptySlot646Card:
 
 EmptySlot647Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot647CardGfx ; gfx
+	tx EmptySlotName647 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT647
@@ -42155,8 +42155,8 @@ EmptySlot647Card:
 
 EmptySlot648Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot648CardGfx ; gfx
+	tx EmptySlotName648 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT648
@@ -42205,8 +42205,8 @@ EmptySlot648Card:
 
 EmptySlot649Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot649CardGfx ; gfx
+	tx EmptySlotName649 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT649
@@ -42255,8 +42255,8 @@ EmptySlot649Card:
 
 EmptySlot650Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot650CardGfx ; gfx
+	tx EmptySlotName650 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT650
@@ -42305,8 +42305,8 @@ EmptySlot650Card:
 
 EmptySlot651Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot651CardGfx ; gfx
+	tx EmptySlotName651 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT651
@@ -42355,8 +42355,8 @@ EmptySlot651Card:
 
 EmptySlot652Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot652CardGfx ; gfx
+	tx EmptySlotName652 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT652
@@ -42405,8 +42405,8 @@ EmptySlot652Card:
 
 EmptySlot653Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot653CardGfx ; gfx
+	tx EmptySlotName653 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT653
@@ -42455,8 +42455,8 @@ EmptySlot653Card:
 
 EmptySlot654Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot654CardGfx ; gfx
+	tx EmptySlotName654 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT654
@@ -42505,8 +42505,8 @@ EmptySlot654Card:
 
 EmptySlot655Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot655CardGfx ; gfx
+	tx EmptySlotName655 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT655
@@ -42555,8 +42555,8 @@ EmptySlot655Card:
 
 EmptySlot656Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot656CardGfx ; gfx
+	tx EmptySlotName656 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT656
@@ -42605,8 +42605,8 @@ EmptySlot656Card:
 
 EmptySlot657Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot657CardGfx ; gfx
+	tx EmptySlotName657 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT657
@@ -42655,8 +42655,8 @@ EmptySlot657Card:
 
 EmptySlot658Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot658CardGfx ; gfx
+	tx EmptySlotName658 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT658
@@ -42705,8 +42705,8 @@ EmptySlot658Card:
 
 EmptySlot659Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot659CardGfx ; gfx
+	tx EmptySlotName659 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT659
@@ -42755,8 +42755,8 @@ EmptySlot659Card:
 
 EmptySlot660Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot660CardGfx ; gfx
+	tx EmptySlotName660 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT660
@@ -42805,8 +42805,8 @@ EmptySlot660Card:
 
 EmptySlot661Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot661CardGfx ; gfx
+	tx EmptySlotName661 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT661
@@ -42855,8 +42855,8 @@ EmptySlot661Card:
 
 EmptySlot662Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot662CardGfx ; gfx
+	tx EmptySlotName662 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT662
@@ -42905,8 +42905,8 @@ EmptySlot662Card:
 
 EmptySlot663Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot663CardGfx ; gfx
+	tx EmptySlotName663 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT663
@@ -42955,8 +42955,8 @@ EmptySlot663Card:
 
 EmptySlot664Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot664CardGfx ; gfx
+	tx EmptySlotName664 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT664
@@ -43005,8 +43005,8 @@ EmptySlot664Card:
 
 EmptySlot665Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot665CardGfx ; gfx
+	tx EmptySlotName665 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT665
@@ -43055,8 +43055,8 @@ EmptySlot665Card:
 
 EmptySlot666Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot666CardGfx ; gfx
+	tx EmptySlotName666 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT666
@@ -43105,8 +43105,8 @@ EmptySlot666Card:
 
 EmptySlot667Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot667CardGfx ; gfx
+	tx EmptySlotName667 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT667
@@ -43155,8 +43155,8 @@ EmptySlot667Card:
 
 EmptySlot668Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot668CardGfx ; gfx
+	tx EmptySlotName668 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT668
@@ -43205,8 +43205,8 @@ EmptySlot668Card:
 
 EmptySlot669Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot669CardGfx ; gfx
+	tx EmptySlotName669 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT669
@@ -43255,8 +43255,8 @@ EmptySlot669Card:
 
 EmptySlot670Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot670CardGfx ; gfx
+	tx EmptySlotName670 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT670
@@ -43305,8 +43305,8 @@ EmptySlot670Card:
 
 EmptySlot671Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot671CardGfx ; gfx
+	tx EmptySlotName671 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT671
@@ -43355,8 +43355,8 @@ EmptySlot671Card:
 
 EmptySlot672Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot672CardGfx ; gfx
+	tx EmptySlotName672 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT672
@@ -43405,8 +43405,8 @@ EmptySlot672Card:
 
 EmptySlot673Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot673CardGfx ; gfx
+	tx EmptySlotName673 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT673
@@ -43455,8 +43455,8 @@ EmptySlot673Card:
 
 EmptySlot674Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot674CardGfx ; gfx
+	tx EmptySlotName674 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT674
@@ -43505,8 +43505,8 @@ EmptySlot674Card:
 
 EmptySlot675Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot675CardGfx ; gfx
+	tx EmptySlotName675 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT675
@@ -43555,8 +43555,8 @@ EmptySlot675Card:
 
 EmptySlot676Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot676CardGfx ; gfx
+	tx EmptySlotName676 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT676
@@ -43605,8 +43605,8 @@ EmptySlot676Card:
 
 EmptySlot677Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot677CardGfx ; gfx
+	tx EmptySlotName677 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT677
@@ -43655,8 +43655,8 @@ EmptySlot677Card:
 
 EmptySlot678Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot678CardGfx ; gfx
+	tx EmptySlotName678 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT678
@@ -43705,8 +43705,8 @@ EmptySlot678Card:
 
 EmptySlot679Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot679CardGfx ; gfx
+	tx EmptySlotName679 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT679
@@ -43755,8 +43755,8 @@ EmptySlot679Card:
 
 EmptySlot680Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot680CardGfx ; gfx
+	tx EmptySlotName680 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT680
@@ -43805,8 +43805,8 @@ EmptySlot680Card:
 
 EmptySlot681Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot681CardGfx ; gfx
+	tx EmptySlotName681 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT681
@@ -43855,8 +43855,8 @@ EmptySlot681Card:
 
 EmptySlot682Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot682CardGfx ; gfx
+	tx EmptySlotName682 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT682
@@ -43905,8 +43905,8 @@ EmptySlot682Card:
 
 EmptySlot683Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot683CardGfx ; gfx
+	tx EmptySlotName683 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT683
@@ -43955,8 +43955,8 @@ EmptySlot683Card:
 
 EmptySlot684Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot684CardGfx ; gfx
+	tx EmptySlotName684 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT684
@@ -44005,8 +44005,8 @@ EmptySlot684Card:
 
 EmptySlot685Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot685CardGfx ; gfx
+	tx EmptySlotName685 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT685
@@ -44055,8 +44055,8 @@ EmptySlot685Card:
 
 EmptySlot686Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot686CardGfx ; gfx
+	tx EmptySlotName686 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT686
@@ -44105,8 +44105,8 @@ EmptySlot686Card:
 
 EmptySlot687Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot687CardGfx ; gfx
+	tx EmptySlotName687 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT687
@@ -44155,8 +44155,8 @@ EmptySlot687Card:
 
 EmptySlot688Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot688CardGfx ; gfx
+	tx EmptySlotName688 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT688
@@ -44205,8 +44205,8 @@ EmptySlot688Card:
 
 EmptySlot689Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot689CardGfx ; gfx
+	tx EmptySlotName689 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT689
@@ -44255,8 +44255,8 @@ EmptySlot689Card:
 
 EmptySlot690Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot690CardGfx ; gfx
+	tx EmptySlotName690 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT690
@@ -44305,8 +44305,8 @@ EmptySlot690Card:
 
 EmptySlot691Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot691CardGfx ; gfx
+	tx EmptySlotName691 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT691
@@ -44355,8 +44355,8 @@ EmptySlot691Card:
 
 EmptySlot692Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot692CardGfx ; gfx
+	tx EmptySlotName692 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT692
@@ -44405,8 +44405,8 @@ EmptySlot692Card:
 
 EmptySlot693Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot693CardGfx ; gfx
+	tx EmptySlotName693 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT693
@@ -44455,8 +44455,8 @@ EmptySlot693Card:
 
 EmptySlot694Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot694CardGfx ; gfx
+	tx EmptySlotName694 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT694
@@ -44505,8 +44505,8 @@ EmptySlot694Card:
 
 EmptySlot695Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot695CardGfx ; gfx
+	tx EmptySlotName695 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT695
@@ -44555,8 +44555,8 @@ EmptySlot695Card:
 
 EmptySlot696Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot696CardGfx ; gfx
+	tx EmptySlotName696 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT696
@@ -44605,8 +44605,8 @@ EmptySlot696Card:
 
 EmptySlot697Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot697CardGfx ; gfx
+	tx EmptySlotName697 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT697
@@ -44655,8 +44655,8 @@ EmptySlot697Card:
 
 EmptySlot698Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot698CardGfx ; gfx
+	tx EmptySlotName698 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT698
@@ -44705,8 +44705,8 @@ EmptySlot698Card:
 
 EmptySlot699Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot699CardGfx ; gfx
+	tx EmptySlotName699 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT699
@@ -44755,8 +44755,8 @@ EmptySlot699Card:
 
 EmptySlot700Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot700CardGfx ; gfx
+	tx EmptySlotName700 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT700
@@ -44805,8 +44805,8 @@ EmptySlot700Card:
 
 EmptySlot701Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot701CardGfx ; gfx
+	tx EmptySlotName701 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT701
@@ -44855,8 +44855,8 @@ EmptySlot701Card:
 
 EmptySlot702Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot702CardGfx ; gfx
+	tx EmptySlotName702 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT702
@@ -44905,8 +44905,8 @@ EmptySlot702Card:
 
 EmptySlot703Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot703CardGfx ; gfx
+	tx EmptySlotName703 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT703
@@ -44955,8 +44955,8 @@ EmptySlot703Card:
 
 EmptySlot704Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot704CardGfx ; gfx
+	tx EmptySlotName704 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT704
@@ -45005,8 +45005,8 @@ EmptySlot704Card:
 
 EmptySlot705Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot705CardGfx ; gfx
+	tx EmptySlotName705 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT705
@@ -45055,8 +45055,8 @@ EmptySlot705Card:
 
 EmptySlot706Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot706CardGfx ; gfx
+	tx EmptySlotName706 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT706
@@ -45105,8 +45105,8 @@ EmptySlot706Card:
 
 EmptySlot707Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot707CardGfx ; gfx
+	tx EmptySlotName707 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT707
@@ -45155,8 +45155,8 @@ EmptySlot707Card:
 
 EmptySlot708Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot708CardGfx ; gfx
+	tx EmptySlotName708 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT708
@@ -45205,8 +45205,8 @@ EmptySlot708Card:
 
 EmptySlot709Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot709CardGfx ; gfx
+	tx EmptySlotName709 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT709
@@ -45255,8 +45255,8 @@ EmptySlot709Card:
 
 EmptySlot710Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot710CardGfx ; gfx
+	tx EmptySlotName710 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT710
@@ -45305,8 +45305,8 @@ EmptySlot710Card:
 
 EmptySlot711Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot711CardGfx ; gfx
+	tx EmptySlotName711 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT711
@@ -45355,8 +45355,8 @@ EmptySlot711Card:
 
 EmptySlot712Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot712CardGfx ; gfx
+	tx EmptySlotName712 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT712
@@ -45405,8 +45405,8 @@ EmptySlot712Card:
 
 EmptySlot713Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot713CardGfx ; gfx
+	tx EmptySlotName713 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT713
@@ -45455,8 +45455,8 @@ EmptySlot713Card:
 
 EmptySlot714Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot714CardGfx ; gfx
+	tx EmptySlotName714 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT714
@@ -45505,8 +45505,8 @@ EmptySlot714Card:
 
 EmptySlot715Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot715CardGfx ; gfx
+	tx EmptySlotName715 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT715
@@ -45555,8 +45555,8 @@ EmptySlot715Card:
 
 EmptySlot716Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot716CardGfx ; gfx
+	tx EmptySlotName716 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT716
@@ -45605,8 +45605,8 @@ EmptySlot716Card:
 
 EmptySlot717Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot717CardGfx ; gfx
+	tx EmptySlotName717 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT717
@@ -45655,8 +45655,8 @@ EmptySlot717Card:
 
 EmptySlot718Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot718CardGfx ; gfx
+	tx EmptySlotName718 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT718
@@ -45705,8 +45705,8 @@ EmptySlot718Card:
 
 EmptySlot719Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot719CardGfx ; gfx
+	tx EmptySlotName719 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT719
@@ -45755,8 +45755,8 @@ EmptySlot719Card:
 
 EmptySlot720Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot720CardGfx ; gfx
+	tx EmptySlotName720 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT720
@@ -45805,8 +45805,8 @@ EmptySlot720Card:
 
 EmptySlot721Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot721CardGfx ; gfx
+	tx EmptySlotName721 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT721
@@ -45855,8 +45855,8 @@ EmptySlot721Card:
 
 EmptySlot722Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot722CardGfx ; gfx
+	tx EmptySlotName722 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT722
@@ -45905,8 +45905,8 @@ EmptySlot722Card:
 
 EmptySlot723Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot723CardGfx ; gfx
+	tx EmptySlotName723 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT723
@@ -45955,8 +45955,8 @@ EmptySlot723Card:
 
 EmptySlot724Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot724CardGfx ; gfx
+	tx EmptySlotName724 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT724
@@ -46005,8 +46005,8 @@ EmptySlot724Card:
 
 EmptySlot725Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot725CardGfx ; gfx
+	tx EmptySlotName725 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT725
@@ -46055,8 +46055,8 @@ EmptySlot725Card:
 
 EmptySlot726Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot726CardGfx ; gfx
+	tx EmptySlotName726 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT726
@@ -46105,8 +46105,8 @@ EmptySlot726Card:
 
 EmptySlot727Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot727CardGfx ; gfx
+	tx EmptySlotName727 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT727
@@ -46155,8 +46155,8 @@ EmptySlot727Card:
 
 EmptySlot728Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot728CardGfx ; gfx
+	tx EmptySlotName728 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT728
@@ -46205,8 +46205,8 @@ EmptySlot728Card:
 
 EmptySlot729Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot729CardGfx ; gfx
+	tx EmptySlotName729 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT729
@@ -46255,8 +46255,8 @@ EmptySlot729Card:
 
 EmptySlot730Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot730CardGfx ; gfx
+	tx EmptySlotName730 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT730
@@ -46305,8 +46305,8 @@ EmptySlot730Card:
 
 EmptySlot731Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot731CardGfx ; gfx
+	tx EmptySlotName731 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT731
@@ -46355,8 +46355,8 @@ EmptySlot731Card:
 
 EmptySlot732Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot732CardGfx ; gfx
+	tx EmptySlotName732 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT732
@@ -46405,8 +46405,8 @@ EmptySlot732Card:
 
 EmptySlot733Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot733CardGfx ; gfx
+	tx EmptySlotName733 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT733
@@ -46455,8 +46455,8 @@ EmptySlot733Card:
 
 EmptySlot734Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot734CardGfx ; gfx
+	tx EmptySlotName734 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT734
@@ -46505,8 +46505,8 @@ EmptySlot734Card:
 
 EmptySlot735Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot735CardGfx ; gfx
+	tx EmptySlotName735 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT735
@@ -46555,8 +46555,8 @@ EmptySlot735Card:
 
 EmptySlot736Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot736CardGfx ; gfx
+	tx EmptySlotName736 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT736
@@ -46605,8 +46605,8 @@ EmptySlot736Card:
 
 EmptySlot737Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot737CardGfx ; gfx
+	tx EmptySlotName737 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT737
@@ -46655,8 +46655,8 @@ EmptySlot737Card:
 
 EmptySlot738Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot738CardGfx ; gfx
+	tx EmptySlotName738 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT738
@@ -46705,8 +46705,8 @@ EmptySlot738Card:
 
 EmptySlot739Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot739CardGfx ; gfx
+	tx EmptySlotName739 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT739
@@ -46755,8 +46755,8 @@ EmptySlot739Card:
 
 EmptySlot740Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot740CardGfx ; gfx
+	tx EmptySlotName740 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT740
@@ -46805,8 +46805,8 @@ EmptySlot740Card:
 
 EmptySlot741Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot741CardGfx ; gfx
+	tx EmptySlotName741 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT741
@@ -46855,8 +46855,8 @@ EmptySlot741Card:
 
 EmptySlot742Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot742CardGfx ; gfx
+	tx EmptySlotName742 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT742
@@ -46905,8 +46905,8 @@ EmptySlot742Card:
 
 EmptySlot743Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot743CardGfx ; gfx
+	tx EmptySlotName743 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT743
@@ -46955,8 +46955,8 @@ EmptySlot743Card:
 
 EmptySlot744Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot744CardGfx ; gfx
+	tx EmptySlotName744 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT744
@@ -47005,8 +47005,8 @@ EmptySlot744Card:
 
 EmptySlot745Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot745CardGfx ; gfx
+	tx EmptySlotName745 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT745
@@ -47055,8 +47055,8 @@ EmptySlot745Card:
 
 EmptySlot746Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot746CardGfx ; gfx
+	tx EmptySlotName746 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT746
@@ -47105,8 +47105,8 @@ EmptySlot746Card:
 
 EmptySlot747Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot747CardGfx ; gfx
+	tx EmptySlotName747 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT747
@@ -47155,8 +47155,8 @@ EmptySlot747Card:
 
 EmptySlot748Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot748CardGfx ; gfx
+	tx EmptySlotName748 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT748
@@ -47205,8 +47205,8 @@ EmptySlot748Card:
 
 EmptySlot749Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot749CardGfx ; gfx
+	tx EmptySlotName749 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT749
@@ -47255,8 +47255,8 @@ EmptySlot749Card:
 
 EmptySlot750Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot750CardGfx ; gfx
+	tx EmptySlotName750 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT750
@@ -47305,8 +47305,8 @@ EmptySlot750Card:
 
 EmptySlot751Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot751CardGfx ; gfx
+	tx EmptySlotName751 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT751
@@ -47355,8 +47355,8 @@ EmptySlot751Card:
 
 EmptySlot752Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot752CardGfx ; gfx
+	tx EmptySlotName752 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT752
@@ -47405,8 +47405,8 @@ EmptySlot752Card:
 
 EmptySlot753Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot753CardGfx ; gfx
+	tx EmptySlotName753 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT753
@@ -47455,8 +47455,8 @@ EmptySlot753Card:
 
 EmptySlot754Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot754CardGfx ; gfx
+	tx EmptySlotName754 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT754
@@ -47505,8 +47505,8 @@ EmptySlot754Card:
 
 EmptySlot755Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot755CardGfx ; gfx
+	tx EmptySlotName755 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT755
@@ -47555,8 +47555,8 @@ EmptySlot755Card:
 
 EmptySlot756Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot756CardGfx ; gfx
+	tx EmptySlotName756 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT756
@@ -47605,8 +47605,8 @@ EmptySlot756Card:
 
 EmptySlot757Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot757CardGfx ; gfx
+	tx EmptySlotName757 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT757
@@ -47655,8 +47655,8 @@ EmptySlot757Card:
 
 EmptySlot758Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot758CardGfx ; gfx
+	tx EmptySlotName758 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT758
@@ -47705,8 +47705,8 @@ EmptySlot758Card:
 
 EmptySlot759Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot759CardGfx ; gfx
+	tx EmptySlotName759 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT759
@@ -47755,8 +47755,8 @@ EmptySlot759Card:
 
 EmptySlot760Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot760CardGfx ; gfx
+	tx EmptySlotName760 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT760
@@ -47805,8 +47805,8 @@ EmptySlot760Card:
 
 EmptySlot761Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot761CardGfx ; gfx
+	tx EmptySlotName761 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT761
@@ -47855,8 +47855,8 @@ EmptySlot761Card:
 
 EmptySlot762Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot762CardGfx ; gfx
+	tx EmptySlotName762 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT762
@@ -47905,8 +47905,8 @@ EmptySlot762Card:
 
 EmptySlot763Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot763CardGfx ; gfx
+	tx EmptySlotName763 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT763
@@ -47955,8 +47955,8 @@ EmptySlot763Card:
 
 EmptySlot764Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot764CardGfx ; gfx
+	tx EmptySlotName764 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT764
@@ -48005,8 +48005,8 @@ EmptySlot764Card:
 
 EmptySlot765Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot765CardGfx ; gfx
+	tx EmptySlotName765 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT765
@@ -48055,8 +48055,8 @@ EmptySlot765Card:
 
 EmptySlot766Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot766CardGfx ; gfx
+	tx EmptySlotName766 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT766
@@ -48105,8 +48105,8 @@ EmptySlot766Card:
 
 EmptySlot767Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot767CardGfx ; gfx
+	tx EmptySlotName767 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT767
@@ -48155,8 +48155,8 @@ EmptySlot767Card:
 
 EmptySlot768Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot768CardGfx ; gfx
+	tx EmptySlotName768 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT768
@@ -48205,8 +48205,8 @@ EmptySlot768Card:
 
 EmptySlot769Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot769CardGfx ; gfx
+	tx EmptySlotName769 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT769
@@ -48255,8 +48255,8 @@ EmptySlot769Card:
 
 EmptySlot770Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot770CardGfx ; gfx
+	tx EmptySlotName770 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT770
@@ -48305,8 +48305,8 @@ EmptySlot770Card:
 
 EmptySlot771Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot771CardGfx ; gfx
+	tx EmptySlotName771 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT771
@@ -48355,8 +48355,8 @@ EmptySlot771Card:
 
 EmptySlot772Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot772CardGfx ; gfx
+	tx EmptySlotName772 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT772
@@ -48405,8 +48405,8 @@ EmptySlot772Card:
 
 EmptySlot773Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot773CardGfx ; gfx
+	tx EmptySlotName773 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT773
@@ -48455,8 +48455,8 @@ EmptySlot773Card:
 
 EmptySlot774Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot774CardGfx ; gfx
+	tx EmptySlotName774 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT774
@@ -48505,8 +48505,8 @@ EmptySlot774Card:
 
 EmptySlot775Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot775CardGfx ; gfx
+	tx EmptySlotName775 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT775
@@ -48555,8 +48555,8 @@ EmptySlot775Card:
 
 EmptySlot776Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot776CardGfx ; gfx
+	tx EmptySlotName776 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT776
@@ -48605,8 +48605,8 @@ EmptySlot776Card:
 
 EmptySlot777Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot777CardGfx ; gfx
+	tx EmptySlotName777 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT777
@@ -48655,8 +48655,8 @@ EmptySlot777Card:
 
 EmptySlot778Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot778CardGfx ; gfx
+	tx EmptySlotName778 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT778
@@ -48705,8 +48705,8 @@ EmptySlot778Card:
 
 EmptySlot779Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot779CardGfx ; gfx
+	tx EmptySlotName779 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT779
@@ -48755,8 +48755,8 @@ EmptySlot779Card:
 
 EmptySlot780Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot780CardGfx ; gfx
+	tx EmptySlotName780 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT780
@@ -48805,8 +48805,8 @@ EmptySlot780Card:
 
 EmptySlot781Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot781CardGfx ; gfx
+	tx EmptySlotName781 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT781
@@ -48855,8 +48855,8 @@ EmptySlot781Card:
 
 EmptySlot782Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot782CardGfx ; gfx
+	tx EmptySlotName782 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT782
@@ -48905,8 +48905,8 @@ EmptySlot782Card:
 
 EmptySlot783Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot783CardGfx ; gfx
+	tx EmptySlotName783 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT783
@@ -48955,8 +48955,8 @@ EmptySlot783Card:
 
 EmptySlot784Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot784CardGfx ; gfx
+	tx EmptySlotName784 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT784
@@ -49005,8 +49005,8 @@ EmptySlot784Card:
 
 EmptySlot785Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot785CardGfx ; gfx
+	tx EmptySlotName785 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT785
@@ -49055,8 +49055,8 @@ EmptySlot785Card:
 
 EmptySlot786Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot786CardGfx ; gfx
+	tx EmptySlotName786 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT786
@@ -49105,8 +49105,8 @@ EmptySlot786Card:
 
 EmptySlot787Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot787CardGfx ; gfx
+	tx EmptySlotName787 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT787
@@ -49155,8 +49155,8 @@ EmptySlot787Card:
 
 EmptySlot788Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot788CardGfx ; gfx
+	tx EmptySlotName788 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT788
@@ -49205,8 +49205,8 @@ EmptySlot788Card:
 
 EmptySlot789Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot789CardGfx ; gfx
+	tx EmptySlotName789 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT789
@@ -49255,8 +49255,8 @@ EmptySlot789Card:
 
 EmptySlot790Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot790CardGfx ; gfx
+	tx EmptySlotName790 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT790
@@ -49305,8 +49305,8 @@ EmptySlot790Card:
 
 EmptySlot791Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot791CardGfx ; gfx
+	tx EmptySlotName791 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT791
@@ -49355,8 +49355,8 @@ EmptySlot791Card:
 
 EmptySlot792Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot792CardGfx ; gfx
+	tx EmptySlotName792 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT792
@@ -49405,8 +49405,8 @@ EmptySlot792Card:
 
 EmptySlot793Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot793CardGfx ; gfx
+	tx EmptySlotName793 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT793
@@ -49455,8 +49455,8 @@ EmptySlot793Card:
 
 EmptySlot794Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot794CardGfx ; gfx
+	tx EmptySlotName794 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT794
@@ -49505,8 +49505,8 @@ EmptySlot794Card:
 
 EmptySlot795Card:
 	db TYPE_PKMN_GRASS ; type
-	gfx BulbasaurCardGfx ; gfx
-	tx BulbasaurName ; name
+	gfx EmptySlot795CardGfx ; gfx
+	tx EmptySlotName795 ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
 	dw EMPTYSLOT795

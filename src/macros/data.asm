@@ -81,14 +81,14 @@ MACRO? energy
 	ENDC
 ENDM
 
-MACRO? gfx
-	dw ($4000 * (BANK(\1) - BANK(CardGraphics)) + ((\1) - $4000)) / 8
-ENDM
-
-;for later implementation of graphics
 ; MACRO? gfx
-;     dab \1
+; 	dw ($4000 * (BANK(\1) - BANK(CardGraphics)) + ((\1) - $4000)) / 8
 ; ENDM
+
+; for later implementation of graphics
+MACRO? gfx
+    dab \1
+ENDM
 
 
 

@@ -1,6 +1,6 @@
 # Pokémon TCG Extended
 
-Modified disassembly of [Pokémon TCG](https://github.com/pret/poketcg) that supports double the cards as the vanilla game, meant to be used as a base for hacks. The modified engine supports up to 511 cards, as opposed to 254 from the base game.
+Modified disassembly of [Pokémon TCG](https://github.com/pret/poketcg) that supports up to 1023 the cards, meant to be used as a base for hacks.
 
 ![duel_scene](https://github.com/user-attachments/assets/82321fe2-81ab-4d1e-8b4f-6ca97852f623)
 

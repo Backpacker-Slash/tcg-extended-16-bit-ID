@@ -437,7 +437,7 @@ wNumCardsTryingToDraw:: ; cbe8
 wNumCardsBeingDrawn:: ; cbe9
 	ds $1
 
-	ds $b
+	ds $9;$b -2 bytes for larger card_data_struct 
 
 ; when non-0, AIMakeDecision doesn't wait 60 frames and print DuelistIsThinkingText
 wSkipDuelistIsThinkingDelay:: ; cbf9
