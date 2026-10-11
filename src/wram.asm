@@ -1924,6 +1924,11 @@ wCurTilemap:: ; d131
 
 UNION
 
+;Each candidate entry takes three bytes: a two-byte card ID and a type byte. The buffer can therefore 
+;hold 84 candidates for a particular set and rarity, including the space needed for its terminator.
+;If adding new cards brings one set's common, uncommon, or rare pool beyond that limit, 
+;FindCardsInSetAndRarity can overwrite other WRAM and potentially crash the game.
+;more booster packs would need to be added to cover all 1023 cards.
 ; when opening a booster pack, list of cards available in the booster pack of a specific rarity
 wBoosterViableCardList:: ; d133
 	ds $100
