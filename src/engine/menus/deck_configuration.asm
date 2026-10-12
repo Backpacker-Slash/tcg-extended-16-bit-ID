@@ -1093,6 +1093,38 @@ CreateFilteredCardList:
 	ld hl, wCardListVisibleOffset
 	cp [hl]
 	jr c, .outside_window
+	;____Too slow________
+; .rank_after_offset
+; 	pop hl ; restore absolute rank
+; 	push hl ; keep it while computing the local window index
+; 	ld b, h ; preserve rank high byte before hl becomes an offset pointer
+; 	ld a, l
+; 	ld hl, wCardListVisibleOffset
+; 	sub [hl]
+; 	ld c, a
+; 	ld a, b
+; 	inc hl
+; 	sbc [hl]
+; 	ld b, a ; bc = rank - window start
+; 	ld a, b
+; 	or a
+; 	jr nz, .restore_rank
+; 	ld a, c
+; 	cp MAX_NUM_CARDS_PER_TYPE
+; 	jr nc, .restore_rank
+; 	ld l, c
+; 	ld h, 0
+; 	add hl, hl
+; 	ld bc, wFilteredCardList
+; 	add hl, bc
+; 	ld [hl], e
+; 	inc hl
+; 	ld [hl], d
+; .restore_rank
+; 	pop hl
+; 	inc hl ; count this included card
+; 	jr .next_card
+
 .rank_after_offset
 	pop hl ; restore absolute rank
 	push hl ; keep it while computing the local window index
@@ -1110,7 +1142,8 @@ CreateFilteredCardList:
 	jr nz, .restore_rank
 	ld a, c
 	cp MAX_NUM_CARDS_PER_TYPE
-	jr nc, .restore_rank
+	jr nc, .window_full
+
 	ld l, c
 	ld h, 0
 	add hl, hl
@@ -1119,10 +1152,20 @@ CreateFilteredCardList:
 	ld [hl], e
 	inc hl
 	ld [hl], d
+
 .restore_rank
 	pop hl
 	inc hl ; count this included card
 	jr .next_card
+
+.window_full
+	; All 80 slots in the window are filled!
+	; Stop scanning ROM immediately:
+	pop hl
+	inc hl
+	pop bc
+	jr .store_count
+
 .outside_window
 	pop hl
 	inc hl ; count this included card even though it is outside the window

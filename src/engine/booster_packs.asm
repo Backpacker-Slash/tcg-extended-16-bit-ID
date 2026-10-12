@@ -156,6 +156,15 @@ FindCardsInSetAndRarity:
 	jr c, .check_card_viable_loop
 	ret
 
+
+; Optional Performance Boost:
+; for potential speed up a cached compact Card Metadata Lookup Table in ROM:
+; Since each card only needs its Type (4 bits), Rarity (2 bits), and Set (4 bits), 
+; a single 2-byte word per card in a dedicated lookup table would allow checking 
+; CheckCardInSetAndRarity in just a handful of CPU cycles without needing 
+; BankpushROM2 / BankpopROM switches for every card header.
+
+
 ; return nc if card de belongs to the current set and rarity
 CheckCardInSetAndRarity:
 	push bc
